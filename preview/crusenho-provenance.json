@@ -1,0 +1,20 @@
+{
+  "source": "https://crusenho.itch.io/complete-ui-book-styles-pack",
+  "license": "Custom creator licence, copied in assets/crusenho-book/LICENSE.txt; not CC0",
+  "credit": "Crusenho Agus Hennihuno",
+  "integration": "Three PNG originals copied unchanged from UI-03; CSS tint and 9-slice scaling. No paid book styles used.",
+  "assets": [
+    {
+      "file": "assets/crusenho-book/cover.png",
+      "sha256": "f9c3cb81ecc24121e81e2fdc4a5c6649301c9762ab69c56688aae8ecf3d4dd92"
+    },
+    {
+      "file": "assets/crusenho-book/page-left.png",
+      "sha256": "c995619ce22336ad77839e8db7361a0172aa6c9f364f6690129389c3a97ddfb4"
+    },
+    {
+      "file": "assets/crusenho-book/page-right.png",
+      "sha256": "6aa209c941f73b9ce9553fa20e5dcaf7fe8083cb30ccbc2287437ad38a398b61"
+    }
+  ]
+}

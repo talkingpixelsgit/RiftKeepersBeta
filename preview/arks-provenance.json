@@ -1,0 +1,40 @@
+{
+  "source": "https://arks.itch.io/ps4-buttons",
+  "license": "CC BY 4.0",
+  "credit": "Mikkel Julian Arks Petersen / Arks @Scissormarks",
+  "integration": "Eight PNGs copied unchanged from UI-03; display scaled, no raster edits. Credits in Settings.",
+  "assets": [
+    {
+      "file": "assets/arks-ps4/circle.png",
+      "sha256": "84d90d0ee555a9ab8a50780f1968ee9b1352359227ef6602ceef2c6120d85259"
+    },
+    {
+      "file": "assets/arks-ps4/cross.png",
+      "sha256": "fd38583c20d852dd676b12413c47ed4ab5e43174f7b0be277733a6d69d8c88db"
+    },
+    {
+      "file": "assets/arks-ps4/l1.png",
+      "sha256": "9e30551dc646067cccfc2627c5405eed516a27c6a98f5c0205d419877debdfe8"
+    },
+    {
+      "file": "assets/arks-ps4/l2.png",
+      "sha256": "cc5b0a11b0bb0e23baadf02e03efc597e854b49078bf25cd0b2b62a01ff85b79"
+    },
+    {
+      "file": "assets/arks-ps4/r1.png",
+      "sha256": "a861c3155e807bfe0afe09156fc8145a25c4d7fb8bb827fc8b087408be5736c4"
+    },
+    {
+      "file": "assets/arks-ps4/r2.png",
+      "sha256": "8f0237c23907ad69aa18bfff6d1ae8a587033589414d8ad803ff10aa668af37d"
+    },
+    {
+      "file": "assets/arks-ps4/square.png",
+      "sha256": "cd7d1fa0e2bfbd033e950d212b6694e057d715a4c4d49b48514e095877a6bad1"
+    },
+    {
+      "file": "assets/arks-ps4/triangle.png",
+      "sha256": "23568ef932d404ea8c29fe03fcbabdf94e5a2f38ca033bf52239033c2637a9ff"
+    }
+  ]
+}

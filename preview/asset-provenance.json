@@ -1,0 +1,76 @@
+{
+  "credit": "Talking Pixels",
+  "note": "Neutral Keeper only; no new walking animation. Forest concept reused as an illustrated location, not a seamless terrain tile. UI audio candidates included for user listening review.",
+  "assets": [
+    {
+      "file": "assets/keeper.png",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-028-R2-Idle-001\\exports\\neutral.png",
+      "sha256": "85d1a8a17f0399b8f5fbd31aa2ff89ce2d46fa1d7d78ca6d0a79f132eb30ae95"
+    },
+    {
+      "file": "assets/cloak.png",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-028-R2-Idle-001\\sources\\layers\\cloak-mask\\idle-00.png",
+      "sha256": "237e08489e4b10c5d23804252cebe4a888853982d2b5233d4c6b7b0c063e18d4"
+    },
+    {
+      "file": "assets/eye-left.png",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-028-R2-Idle-001\\sources\\layers\\eyes-left\\idle-00.png",
+      "sha256": "5f944401446800020b8e8f837f36d46778c59b836200fdfddf2879c88715ebc2"
+    },
+    {
+      "file": "assets/eye-right.png",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-028-R2-Idle-001\\sources\\layers\\eyes-right\\idle-00.png",
+      "sha256": "ace25728b265890f7d3f419c3e336b14b3cf972f8ff4ee082b09cce74a477687"
+    },
+    {
+      "file": "assets/forest.png",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Environments\\Forest Route Concept 027\\forest-route-concept-v1.png",
+      "sha256": "18e33fc1afba2d2c46d7d0fe4b9c2e68082aaa32d735bcc5e039560e9daaf6b4"
+    },
+    {
+      "file": "assets/ui-back.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-back.wav",
+      "sha256": "8910920d306e36f49e4883394d7bbe25f407aa5a8038d7cc51175ce5703c0fd6"
+    },
+    {
+      "file": "assets/ui-close.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-close.wav",
+      "sha256": "418d02d840e62d306e8960db9fb116b46fa49cd7e5e6f416ae7eb140e5eb3d7a"
+    },
+    {
+      "file": "assets/ui-confirm.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-confirm.wav",
+      "sha256": "d85fce6eb472c848a1814b86780a210bf2bea1b7d44a7bf492333cbe894939b6"
+    },
+    {
+      "file": "assets/ui-equip.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-equip.wav",
+      "sha256": "ea4d0dd59a51e78f5e7fadf490fe182e9f70ce2ccec7b2c4da1560013890ccbb"
+    },
+    {
+      "file": "assets/ui-focus-01.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-focus-01.wav",
+      "sha256": "fc5ce0be0a2a8409cfbe9e09e207ece3f788c6cf2e414fc29e7f216ef046803c"
+    },
+    {
+      "file": "assets/ui-focus-02.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-focus-02.wav",
+      "sha256": "49b46909b000bb6c309ba1f0a4e9aee31193c6cbd2650a6a88c59307ebd04cd2"
+    },
+    {
+      "file": "assets/ui-open.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-open.wav",
+      "sha256": "302b53f6b4da610a08b38890550fb7e14a9d1cb3a6461456c6b103e7ebd1d388"
+    },
+    {
+      "file": "assets/ui-reveal.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-reveal.wav",
+      "sha256": "08da142de49b9ab1770fae3a0223d2cc1b082edf4fb7f27bf6067e2ea8c7eec7"
+    },
+    {
+      "file": "assets/ui-unavailable.wav",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Audio\\UI\\Rain-UI-001-Clean-Magic\\exports\\wav\\ui-unavailable.wav",
+      "sha256": "b96cd04f03823bd8be56e1261bbac3e0bc88028709e393023c576083c8914659"
+    }
+  ]
+}

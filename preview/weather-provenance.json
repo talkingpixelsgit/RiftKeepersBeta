@@ -1,0 +1,18 @@
+{
+  "assets": [
+    {
+      "file": "assets/weather/smoke.png",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Effects\\Rain-006-V26-Readability-Voth\\source\\assets\\candidate\\smoke_07_a.png",
+      "sha256": "7a2448e7c2fefc0888fd068c37ec991d44309ecdae8ca338cec5e63d7065b700",
+      "terms": "CC0 per supplied Rain-006 manifest"
+    },
+    {
+      "file": "assets/weather/light.png",
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Effects\\Rain-006-V26-Readability-Voth\\source\\assets\\candidate\\light_01_a.png",
+      "sha256": "c9b4a8c59a756e0c11d8eff670508295ddde8d12605367c1df08814114a34908",
+      "terms": "CC0 per supplied Rain-006 manifest"
+    }
+  ],
+  "adaptation": "Rain-006 weather_particles.gd particle counts and readability rules; independently implemented browser canvas. No shader source copied.",
+  "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Effects\\Rain-006-V26-Readability-Voth"
+}

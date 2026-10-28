@@ -1,0 +1,55 @@
+{
+  "note": "Existing child Voth artwork from the current Time Keepers battle catalog; copied unchanged. Stances 3x2, attack sequences 6x2. Browser registration in combat-art.js.",
+  "assets": [
+    {
+      "file": "assets/voth-child/voth.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth.png",
+      "sha256": "d00aed6dc3024af82477bf010b08ea9ab6e47ba7e3062d7afc71e8885a2b9f49"
+    },
+    {
+      "file": "assets/voth-child/voth-portrait.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth-portrait.png",
+      "sha256": "952bf23bf6fc69d6c812437293aed1e720a4970e98ca42c12c133d612f249abc"
+    },
+    {
+      "file": "assets/voth-child/voth-attack-0.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth-attack-0.png",
+      "sha256": "e05567e95cb9ff839b1e89f790def1d35aa39e8bd0d8c45efcefb93726b3a4e8"
+    },
+    {
+      "file": "assets/voth-child/voth-attack-1.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth-attack-1.png",
+      "sha256": "9ff1c06f1d41f11686aabc56688f94867c91eaa9fb35000c4160f2498cf40507"
+    },
+    {
+      "file": "assets/voth-child/voth-attack-2.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth-attack-2.png",
+      "sha256": "e9f14523a53f1d0ce6bb3e6a7a07139d23cd672d3d97b5d9c65bdb9c34f93469"
+    },
+    {
+      "file": "assets/voth-child/voth2.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth2.png",
+      "sha256": "0d2ea9bb8a3e68f22d196b75b5729d0643ed112630d60c73faf195581c73594f"
+    },
+    {
+      "file": "assets/voth-child/voth2-portrait.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth2-portrait.png",
+      "sha256": "b3f97df004d10776c801ecfe0005f7a6b6198faf99b331940b3de6f625046f4b"
+    },
+    {
+      "file": "assets/voth-child/voth2-attack-0.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth2-attack-0.png",
+      "sha256": "3cede5bfa10dc93d3bd5192a0d17b7e816209db3695e615341a70b805649dfd0"
+    },
+    {
+      "file": "assets/voth-child/voth2-attack-1.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth2-attack-1.png",
+      "sha256": "1be8ff1193b671bccfe09962ffb1bfd065e1b8b6585bc2ba2564055339c26f17"
+    },
+    {
+      "file": "assets/voth-child/voth2-attack-2.png",
+      "source": "C:\\ProjectTK\\TimeKeepers-RiftTamers\\TimeKeepersOnline\\assets\\battle\\voth2-attack-2.png",
+      "sha256": "9abc12eed9c50a02895cb4a8fef735f8ab36bdc2ceddcd6ea93597af542e1003"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "credit": "Talking Pixels",
+  "files": [
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper Creative Reset 028\\neutral-fit-r2\\idle-r2\\playback\\composite-24.png",
+      "file": "composite-24.png",
+      "sha256": "50578AC22D629F7E03F994EE6663D26511BE6B4311C07156713419516506D3C5"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper Creative Reset 028\\neutral-fit-r2\\idle-r2\\playback\\cloak-mask-24.png",
+      "file": "cloak-mask-24.png",
+      "sha256": "017FC2C57DF75811C2598C34745F2468884C2F63053624DCCFB0799A0390651F"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper Creative Reset 028\\neutral-fit-r2\\idle-r2\\playback\\eyes-left-24.png",
+      "file": "eyes-left-24.png",
+      "sha256": "775885A951ED8161052EF2B36229F3AF3AC15FEA906B789998373D8D1B1A18A1"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper Creative Reset 028\\neutral-fit-r2\\idle-r2\\playback\\eyes-right-24.png",
+      "file": "eyes-right-24.png",
+      "sha256": "66CC0E6B7F3074450EE5E4B85648F7919A1A41CE71C406637CF51A1E0C354EAE"
+    }
+  ],
+  "status": "Motion review candidate integrated in isolated Phase 2 only; not a production approval"
+}

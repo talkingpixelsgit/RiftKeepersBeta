@@ -1,0 +1,122 @@
+{
+  "artist": "Hypnobius",
+  "product": "Dark Ages UI v1.0",
+  "source_archive": "C:\\Users\\talki\\Downloads\\DarkAgesUi_v1.0.zip",
+  "source_sha256": "dfa3c1127feb17e7625c3a5826bf12ec75f9525c5da0d0ba7c22997b70435850",
+  "source_pixels": "Unchanged. SVG viewports select sprite regions; SVG colour tables map luminance to explicit Void/aqua ink. No AI-generated raster artwork.",
+  "views": [
+    {
+      "file": "frame-void.svg",
+      "rect": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "palette": "void"
+    },
+    {
+      "file": "scroll-void.svg",
+      "rect": [
+        96,
+        0,
+        96,
+        96
+      ],
+      "palette": "scroll"
+    },
+    {
+      "file": "divider-aqua.svg",
+      "rect": [
+        96,
+        136,
+        96,
+        16
+      ],
+      "palette": "aqua"
+    },
+    {
+      "file": "selection-aqua.svg",
+      "rect": [
+        64,
+        224,
+        32,
+        32
+      ],
+      "palette": "aqua"
+    }
+  ],
+  "palette_tables": {
+    "void": [
+      [
+        ".025",
+        ".035",
+        ".10",
+        ".38",
+        ".65"
+      ],
+      [
+        ".03",
+        ".045",
+        ".08",
+        ".25",
+        ".50"
+      ],
+      [
+        ".07",
+        ".12",
+        ".26",
+        ".61",
+        ".94"
+      ]
+    ],
+    "aqua": [
+      [
+        ".025",
+        ".035",
+        ".08",
+        ".30",
+        ".52"
+      ],
+      [
+        ".035",
+        ".06",
+        ".16",
+        ".63",
+        ".95"
+      ],
+      [
+        ".08",
+        ".15",
+        ".28",
+        ".70",
+        ".92"
+      ]
+    ],
+    "scroll": [
+      [
+        ".32",
+        ".29",
+        ".14",
+        ".065",
+        ".05"
+      ],
+      [
+        ".38",
+        ".31",
+        ".13",
+        ".08",
+        ".065"
+      ],
+      [
+        ".64",
+        ".55",
+        ".33",
+        ".19",
+        ".16"
+      ]
+    ]
+  },
+  "credit_url": "https://hypnobius.itch.io/",
+  "use": "Embedded game UI; original license retained. Not a standalone asset pack."
+}

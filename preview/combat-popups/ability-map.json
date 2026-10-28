@@ -1,0 +1,54 @@
+{
+  "entries": {
+    "keeper:capture:channel": {
+      "actor": "keeper",
+      "cue": "capture-bind",
+      "phase": "anticipation",
+      "art": "keeper-capture-right.png"
+    },
+    "keeper:capture:success": {
+      "actor": "keeper",
+      "cue": "capture-bind",
+      "phase": "result",
+      "art": "keeper-capture-right.png"
+    },
+    "keeper:capture:failure": {
+      "actor": "keeper",
+      "cue": "capture-break",
+      "phase": "result",
+      "art": "keeper-recoil-right.png"
+    },
+    "voth:chargeup": {
+      "actor": "voth",
+      "cue": "red-charge",
+      "phase": "anticipation",
+      "art": "voth-charge-right.png"
+    },
+    "voth:spiritbrand": {
+      "actor": "voth",
+      "cue": "spirit-release",
+      "phase": "result",
+      "art": "voth-blast-right.png"
+    },
+    "beast:fusehide": {
+      "actor": "beast",
+      "cue": "iron-roar",
+      "phase": "anticipation",
+      "art": "beast-guard-right.png"
+    },
+    "ticktail:tackle": {
+      "actor": "ticktail",
+      "cue": "enemy-tell",
+      "phase": "anticipation",
+      "art": "ticktail-tell-right.png"
+    }
+  },
+  "notes": [
+    "Map capture states to confirmed local capture lifecycle, not speculative success.",
+    "Voth charge persists until existing QTE cancellation/completion; do not use an art timer as a game clock.",
+    "fusehide is displayed as Face Me! in current Phase2. iron-roar is an internal visual identifier only.",
+    "Counter and guard-break accents are optional reaction studies only; no new counter or guard mechanic is implied.",
+    "No weapon-attack replacement. Keeper028 remains capture/idle/walk; original Phase2 attacks stay.",
+    "Facing is visual only: right original, left reflected using same crop and bottom-centre anchor."
+  ]
+}

@@ -1,0 +1,8 @@
+Complete UI Book Styles Pack / Travel Book Lite by Crusenho Agus Hennihuno.
+https://crusenho.itch.io/complete-ui-book-styles-pack
+User supplied Complete_UI_Book_Styles_Pack_Free.7z, SHA256:
+7278B830DAF46F49BC5CE21E7D93DCB98879B324A1BAEDF99B56339AC1769760
+Original PNGs unchanged. CSS 9-slice scaling and purple-blue display tint applied.
+Credit creator and product link; indicate CSS adaptation in distributed credits.
+Custom licence copied verbatim in LICENSE.txt. Not CC0. No standalone asset resale.
+Only Travel Book Lite is in supplied free archive; no Wizard/Holo paid art imported.

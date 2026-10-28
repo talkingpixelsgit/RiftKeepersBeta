@@ -1,0 +1,111 @@
+{
+  "source": "C:/Talking Pixels/Assets/Library/2D/Characters/Keeper-Sprite-Sheets-028.zip",
+  "verifiedFiles": 812,
+  "notes": "Original composite PNGs unchanged. Source archive and layered originals preserved in review. Contains world idle/walk and soul-capture only; no weapon attack clips.",
+  "files": [
+    {
+      "path": "world/right/walk/composite.png",
+      "sha256": "ec3f23fab223f4ca62f4974bd7e110004ac368c5fe27e772ee2badf6ac00466f"
+    },
+    {
+      "path": "world/left/walk/composite.png",
+      "sha256": "e965f3626dc8cef374c44b201002a6c49d8b318335d7c99d7150c34b9a16bf9e"
+    },
+    {
+      "path": "world/right/idle/composite.png",
+      "sha256": "6f2b68edd36182eb3db5e562319574eb4a3a25f6333ece16f42031347ed9aaee"
+    },
+    {
+      "path": "world/left/idle/composite.png",
+      "sha256": "bcb060e56fff8dbbc4d0fd60227751850186487c1ed414a96716848214907d8e"
+    },
+    {
+      "path": "battle/right/prepare_plant/composite.png",
+      "sha256": "4000d5e8efcc24457abd9860424916fe0f843698914f63af16964d5d955f94cf"
+    },
+    {
+      "path": "battle/left/prepare_plant/composite.png",
+      "sha256": "84ad344ebe382ff781624e4c1b8431d14ef74f6c936791af6a47645420b9ffba"
+    },
+    {
+      "path": "battle/right/channel/composite.png",
+      "sha256": "6fd66bf11c60e9bff7d21132ee39adaeb57e3ae6b1f68c0607e3fe9760806446"
+    },
+    {
+      "path": "battle/left/channel/composite.png",
+      "sha256": "5e8b37b38efe3ae839a87da9fa70b8687631d7b99cc881daf7d50b3cc630fe36"
+    },
+    {
+      "path": "battle/right/cast_draw/composite.png",
+      "sha256": "8ff6107ef0488f81fdacd172bd60070ad847c2885247351aad659c0aaed9a1c4"
+    },
+    {
+      "path": "battle/left/cast_draw/composite.png",
+      "sha256": "506e7bb4bf4e8b781a62c19fce2cc5cf974044de6e057d2ac5a12b936107d578"
+    },
+    {
+      "path": "battle/right/channel_await/composite.png",
+      "sha256": "f2cda49c5cadc5d0b5542a6cae82a9c6a09e8713a4ccddc3c3e003f3d36bf926"
+    },
+    {
+      "path": "battle/left/channel_await/composite.png",
+      "sha256": "2c488b520ce28c55e4967e06f0455cc22a2f69a2b02105f10aaf595d4b8084e5"
+    },
+    {
+      "path": "battle/right/success/composite.png",
+      "sha256": "41fd02e0144d54c38d9ae0e04745e9b19862cf504aa8e675fbd2cc0f0be2977a"
+    },
+    {
+      "path": "battle/left/success/composite.png",
+      "sha256": "bbcc141c3653a1a8dd554d937b3741fc870e20484a1c867f4edb1f0b74c46824"
+    },
+    {
+      "path": "battle/right/failure/composite.png",
+      "sha256": "3dbbda7e69becb500c0a91fa8353137a430797357ca903f9fc168ea4c7855d71"
+    },
+    {
+      "path": "battle/left/failure/composite.png",
+      "sha256": "7c4ae7096f0af5e8224594b2e6120fc738d7ae7d9d142834b89166af2c72c828"
+    },
+    {
+      "path": "battle/right/retrieve/composite.png",
+      "sha256": "7de03f41745b9dc2934181694f77893637b2ca26f6a99be3699439256e5e4add"
+    },
+    {
+      "path": "battle/left/retrieve/composite.png",
+      "sha256": "184b30f40b5bbb84db8048b2b7246c093744132f6ea71c1f3c6da4436ed77f53"
+    },
+    {
+      "path": "battle/right/retrieve_success/composite.png",
+      "sha256": "ef42d51bb94debad860ac5197a54b228775ea3c43481bb59377326bb0f912b2b"
+    },
+    {
+      "path": "battle/left/retrieve_success/composite.png",
+      "sha256": "b57776b09864fe361862ba937df5712bd91f9f41b0c520c694481cf872784ed7"
+    },
+    {
+      "path": "battle/right/retrieve_failure/composite.png",
+      "sha256": "e73ec3f654115c25d573ff985c286ccd9d26bafe9d8dafd5c07f9baf9f581964"
+    },
+    {
+      "path": "battle/left/retrieve_failure/composite.png",
+      "sha256": "374453b88d8cf1bf70f70b62f6c5847e66efc826f912a234b1372cdabb29e309"
+    },
+    {
+      "path": "battle/right/return_to_battle/composite.png",
+      "sha256": "1bd868559a22f375e1aa87fd18a1585fca610836dab24bd6a28ee43e37f6e2e0"
+    },
+    {
+      "path": "battle/left/return_to_battle/composite.png",
+      "sha256": "0e5219ba42221f6858a65b759f91e1f874c2b01f820f6f282eba29fbf0008ceb"
+    },
+    {
+      "path": "battle/right/cancel_retrieve/composite.png",
+      "sha256": "29610e1758c853dea87912e615778a1fd20261ba2d8df84987c6aad70d1a0594"
+    },
+    {
+      "path": "battle/left/cancel_retrieve/composite.png",
+      "sha256": "b4edcbd136c210f8ff30c4ac09e79c94a8f861c0566a5517e19d72d31de062aa"
+    }
+  ]
+}

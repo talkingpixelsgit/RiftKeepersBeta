@@ -1,0 +1,26 @@
+COZY UI SOUND PACK - LICENSE
+
+Copyright (c) 2026 Oliver Malling. All rights reserved except as granted below.
+
+You MAY, with a single purchase/download:
+- Use the sounds in personal and commercial projects: games, apps, websites,
+  videos, streams, podcasts, films, prototypes and software products.
+- Edit, layer, pitch-shift, process and mix the sounds into your own work,
+  with no royalties and no attribution required (credit is appreciated).
+- Use the sounds on any number of your own projects, and in projects you
+  create for clients (the client receives the finished project, not the files).
+
+You MAY NOT:
+- Redistribute, resell, sublicense, share or upload the sound files, in original
+  or modified form, as a sound pack, sample library, asset pack, or any
+  collection where the sounds are the main value (including free packs and
+  public repositories of raw files).
+- Include the raw files in a game/app asset store listing or template that
+  lets buyers extract them as standalone sounds.
+- Use the sounds to train, fine-tune or benchmark machine learning models
+  or to build sound-effect generation datasets.
+- Claim to have created the sound pack itself.
+
+All sounds were synthesized from scratch with original code (numpy/scipy).
+No sampled or third-party audio is included.
+THE SOUNDS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.

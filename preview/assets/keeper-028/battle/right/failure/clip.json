@@ -1,0 +1,184 @@
+{
+  "cell": [
+    320,
+    256
+  ],
+  "grid": [
+    8,
+    1
+  ],
+  "frame_count": 3,
+  "durations_ms": [
+    80,
+    100,
+    120
+  ],
+  "duration_ms": 300,
+  "loop": false,
+  "root": [
+    135,
+    215
+  ],
+  "mirrored": false,
+  "layers": {
+    "feet": "battle/right/failure/feet.png",
+    "sleeve-far": "battle/right/failure/sleeve-far.png",
+    "cloak_core": "battle/right/failure/cloak_core.png",
+    "sleeve-near": "battle/right/failure/sleeve-near.png",
+    "forearm-far": "battle/right/failure/forearm-far.png",
+    "forearm-near": "battle/right/failure/forearm-near.png",
+    "hands-front": "battle/right/failure/hands-front.png",
+    "cloak_mask": "battle/right/failure/cloak_mask.png",
+    "eye_mask": "battle/right/failure/eye_mask.png",
+    "composite": "battle/right/failure/composite.png"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "cell": [
+        0,
+        0
+      ],
+      "start_ms": 0,
+      "duration_ms": 80,
+      "hands": [
+        [
+          136.18,
+          131.938
+        ],
+        [
+          139.512,
+          131.7
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          114.73224483132894,
+          152.91402913386477
+        ],
+        [
+          153.0275425945104,
+          144.69586889653687
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        137.846,
+        131.819
+      ]
+    },
+    {
+      "index": 1,
+      "cell": [
+        1,
+        0
+      ],
+      "start_ms": 80,
+      "duration_ms": 100,
+      "hands": [
+        [
+          140.21587072,
+          131.938
+        ],
+        [
+          154.75862272,
+          129.90627968
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          119.25145153635444,
+          153.397103622761
+        ],
+        [
+          156.37714021098785,
+          111.22626626642437
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        147.48724672,
+        130.92213984
+      ]
+    },
+    {
+      "index": 2,
+      "cell": [
+        2,
+        0
+      ],
+      "start_ms": 180,
+      "duration_ms": 120,
+      "hands": [
+        [
+          140.464,
+          131.938
+        ],
+        [
+          155.696,
+          129.796
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          119.50454547027167,
+          153.40195270718442
+        ],
+        [
+          156.08895882134658,
+          111.05011822920227
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        148.07999999999998,
+        130.867
+      ]
+    }
+  ]
+}

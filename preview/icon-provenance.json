@@ -1,0 +1,223 @@
+{
+  "credit": "Game-icons.net contributors; author credited per file",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "assets": [
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/lorc/scythe.svg",
+      "sha256": "1fa37fa8eaa1eed3cc9fe4d49ad5db01f1149116573e46d353887c2f4371af33",
+      "author": "lorc",
+      "file": "assets/icons/scythe.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/lorc/trident.svg",
+      "sha256": "2b210ecb0e80b85224b3c28dd6396d0b7919e22824d6fb4a6ad9946a3bb866ba",
+      "author": "lorc",
+      "file": "assets/icons/trident.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/lorc/umbrella.svg",
+      "sha256": "509433edc03214cfee9d131cbb08789e792fc199dbee40586be10bb30cd4586e",
+      "author": "lorc",
+      "file": "assets/icons/umbrella.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/lorc/anchor.svg",
+      "sha256": "134bba71f6b20c1983e821a0a36d6c83b813080951f1a5806c86a8136556f550",
+      "author": "lorc",
+      "file": "assets/icons/anchor.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/lorc/flying-flag.svg",
+      "sha256": "6c8494106cbf51024af8af4e6cb76c134df47dba7403f020681cc91e414ff7bb",
+      "author": "lorc",
+      "file": "assets/icons/flying-flag.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/lorc/crossed-pistols.svg",
+      "sha256": "4c31098d4b301c3327b904715a533122d8b6755d19f657b8753297c69c7f122f",
+      "author": "lorc",
+      "file": "assets/icons/crossed-pistols.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/delapouite/kite.svg",
+      "sha256": "6368d39bc4104cf4121b4ea3d86678ec04fc75c3469d98624ff4eb006aa3ff25",
+      "author": "delapouite",
+      "file": "assets/icons/kite.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/delapouite/orange.svg",
+      "sha256": "a4c72278127b23248070c0b40d64ae619a09e14927cd7a80e069f4aa574c0581",
+      "author": "delapouite",
+      "file": "assets/icons/orange.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/delapouite/spear-feather.svg",
+      "sha256": "6bf70610d61bd724ade6aab36015fc88b4a0a76f844ae6f3e42991061c5cdaf9",
+      "author": "delapouite",
+      "file": "assets/icons/spear-feather.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/delapouite/chakram.svg",
+      "sha256": "3cb36ff2f663e074ce16a1f9cfd8ab1b8c6702de7133dfc53fa7b8cfb308ca5e",
+      "author": "delapouite",
+      "file": "assets/icons/chakram.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/delapouite/handheld-fan.svg",
+      "sha256": "158c773fd888d895796ccb1d3b77507b330cd73821d59e228491bf1f5ad4af8d",
+      "author": "delapouite",
+      "file": "assets/icons/handheld-fan.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/lorc/relic-blade.svg",
+      "sha256": "21ad2751466a96f1c73d6f1ab74dc47c06442ea956586032158910680afcc249",
+      "author": "lorc",
+      "file": "assets/icons/relic-blade.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\01_bleeding.png",
+      "file": "assets/status/01_bleeding.png",
+      "author": "Eldrion Team",
+      "sha256": "3313c8fa7b41b8644a8259f44132e158c25790fdb9cb58a0b7a7fa1f00257f54"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\02_burning.png",
+      "file": "assets/status/02_burning.png",
+      "author": "Eldrion Team",
+      "sha256": "be71ae4a73846051df147ef5a618529fba2300a4d0244cb7ef1a5603979175b5"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\03_poisoned.png",
+      "file": "assets/status/03_poisoned.png",
+      "author": "Eldrion Team",
+      "sha256": "30e9720cdb9178922184a0f4b927cbe24b22e3ea2ab69b2fff7a700a19d7feb4"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\04_frozen.png",
+      "file": "assets/status/04_frozen.png",
+      "author": "Eldrion Team",
+      "sha256": "f1ca41a76fb7b57c5bed5a8fe3a55210c8a2a800f59aeb0c5e6bc01208ae0a53"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\05_shocked.png",
+      "file": "assets/status/05_shocked.png",
+      "author": "Eldrion Team",
+      "sha256": "760c700beb97c7f563c4208d5793c62c594325554bb09b187c69f962f781e317"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\06_stunned.png",
+      "file": "assets/status/06_stunned.png",
+      "author": "Eldrion Team",
+      "sha256": "b249f94bffe07d2e9f19961d385793c5a6c43af96cda86abf0c9f1353fd17f13"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\07_silenced.png",
+      "file": "assets/status/07_silenced.png",
+      "author": "Eldrion Team",
+      "sha256": "0ee5997343e0d3c88b2f0870a3a2a64c6a9a2ade09eae9066503cf94687b9123"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\08_feared.png",
+      "file": "assets/status/08_feared.png",
+      "author": "Eldrion Team",
+      "sha256": "b56943fb8d8121a4c7a524f556965e5f93b130b697a226eb08b4699d83011399"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\09_regeneration.png",
+      "file": "assets/status/09_regeneration.png",
+      "author": "Eldrion Team",
+      "sha256": "7afa41a67c70f4c3810ee00946717501d1c4737b678e9377b7c656efc4f98ea0"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\10_shielded.png",
+      "file": "assets/status/10_shielded.png",
+      "author": "Eldrion Team",
+      "sha256": "101916168e8d37e25440b8ebe97954895aeed838b1b7bd8d29b90775be6b237d"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\11_haste.png",
+      "file": "assets/status/11_haste.png",
+      "author": "Eldrion Team",
+      "sha256": "7fc17d0cde2701ab51f62f455461d759e759836739b17860e5870add53bf5a04"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\12_strengthened.png",
+      "file": "assets/status/12_strengthened.png",
+      "author": "Eldrion Team",
+      "sha256": "23e398b8c9e3dda3f13bad8623c00cfe4a0a334aaf8a16d7b82da05a781427fe"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\13_lifesteal.png",
+      "file": "assets/status/13_lifesteal.png",
+      "author": "Eldrion Team",
+      "sha256": "fcfd92d34b19702d0fba1b1a1473be058f6ab0ceca6a6c35a32349d8aed7fd42"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\14_thorns.png",
+      "file": "assets/status/14_thorns.png",
+      "author": "Eldrion Team",
+      "sha256": "e2c03ecb9d15a47b08517699773316e5a030e33ec5c3d864b46c64ecf5cc2815"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\15_invisible.png",
+      "file": "assets/status/15_invisible.png",
+      "author": "Eldrion Team",
+      "sha256": "7eb6b7b0fcfd391df7b2c7852f3e261281e46f7b5f93d40a64973881e1e87207"
+    },
+    {
+      "license": "Cursed Status Effects Free Commercial Asset License",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\2D\\Icons\\Eldrion Team\\Cursed Status Effects v1.0\\PNG\\64\\16_invulnerable.png",
+      "file": "assets/status/16_invulnerable.png",
+      "author": "Eldrion Team",
+      "sha256": "2a166dd1c4d190f7e580c8b35bf1c95397160b03c316f7955ac33a065ed6fbd5"
+    },
+    {
+      "sha256": "f915bb5cc89457f5a9e3450c372a2e675cdd7e525beb19164a9f5819a399e079",
+      "author": "delapouite",
+      "source": "https://raw.githubusercontent.com/game-icons/icons/master/delapouite/paddles.svg",
+      "file": "assets/icons/paddles.svg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "license": "User-provided pack; reused inside local game, original terms retained with source library",
+      "sha256": "f6d35710ccbd9e97beaa99c11d3a04be8113e1b9e11cf0bc4f17068f0d57104a",
+      "file": "assets/icons/waywick.png",
+      "author": "1200 Icons RPG + Recolors - Free version (owned library)",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\UI\\UI\\1200 Icons RPG + Recolors - Free version\\1200 Icons RPG + Recolors - Free version\\Abyssal lamp\\Abyssal lamp1.png"
+    },
+    {
+      "license": "User-provided pack; reused inside local game, original terms retained with source library",
+      "sha256": "7d5eb0765a3847a692d07c0f770bf2602054a1f52384d7f936666caf4f70cd29",
+      "file": "assets/icons/ashwatch.png",
+      "author": "1200 Icons RPG + Recolors - Free version (owned library)",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Assets\\UI\\UI\\1200 Icons RPG + Recolors - Free version\\1200 Icons RPG + Recolors - Free version\\Abyssal lamp\\Abyssal lamp5.png"
+    }
+  ]
+}

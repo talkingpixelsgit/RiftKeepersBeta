@@ -1,0 +1,68 @@
+{
+  "purpose": "Selected UI sound banks and tiny Void particle texture; no raw pack bundling",
+  "files": [
+    {
+      "file": "focus.wav",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\cozy-sounds\\Cozy_UI_Sound_Pack_LITE\\WAV\\hover_soft_v1.wav",
+      "sha256": "37c7dfcb2d03e5527c777d74b9830efee03006eb9189fe84e38a9b2d268cffb6",
+      "modification": "none"
+    },
+    {
+      "file": "confirm.wav",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\cozy-sounds\\Cozy_UI_Sound_Pack_LITE\\WAV\\click_soft_v1.wav",
+      "sha256": "4380a49542adacaa1c37c1963a7c80367e099a8673cf89941816e373807d8385",
+      "modification": "none"
+    },
+    {
+      "file": "open.wav",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\cozy-sounds\\Cozy_UI_Sound_Pack_LITE\\WAV\\menu_open_v1.wav",
+      "sha256": "cb432fb4d32692edb921c37ef42c17404a81bcf1bdf2c8cfcf8c4c0636e21f2c",
+      "modification": "none"
+    },
+    {
+      "file": "discovery.wav",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\cozy-sounds\\Cozy_UI_Sound_Pack_LITE\\WAV\\chime_single_v1.wav",
+      "sha256": "2f35f8042825b803fd0b697b692334d36ab2a1ad3cdc6297d58e73aac1ae80a1",
+      "modification": "none"
+    },
+    {
+      "file": "back.wav",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\signal-sounds\\wav\\cancel-error\\cancel-01.wav",
+      "sha256": "8fe6b55e6aede38ab8e931fd8e6d580249602a0e5be5fc0b687940ba7503b6cb",
+      "modification": "none"
+    },
+    {
+      "file": "sparkle.png",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\sparkles\\magic_sparkles\\assets\\sparkle_sprite.png",
+      "sha256": "944d0653cabb6543b4035c991f74a3d94db23bac4b05f44e7bf42ab32835a386",
+      "modification": "none"
+    },
+    {
+      "file": "Cozy-LICENSE.txt",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\cozy-sounds\\Cozy_UI_Sound_Pack_LITE\\LICENSE.txt",
+      "sha256": "a31df5490e1a1ad8f05036b6f6fdbdc2fd1c8efb0c16336c50899cd9f36b7d3d",
+      "modification": "none"
+    },
+    {
+      "file": "Signal-LICENSE.txt",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\signal-sounds\\LICENSE.txt",
+      "sha256": "b4b13ca926eabe16f1e3258ad6eabd8a6cf079def17f66c45ab7ea76bca7a397",
+      "modification": "none"
+    },
+    {
+      "file": "Sparkles-LICENSE.txt",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\shadow-assets\\sparkles\\magic_sparkles\\LICENSE",
+      "sha256": "0a22d7c45af97bb808a459a51061799627db86c0a41fdee66ef9cd77e8917dd6",
+      "modification": "none"
+    },
+    {
+      "file": "blood-rows.png",
+      "source": "C:\\Talking Pixels\\Pixel Development\\Prototypes\\Rift-Keepers-UI-03\\review\\impact-dash-assets\\blood-fx\\VFX Blood Batch 1_SpriteSheetRows.png",
+      "sha256": "f1a70f738048e967d99854b6594cf7f4b3227b5cb41e9bbee75691e08ae82f66",
+      "modification": "none",
+      "layout": "14 columns x9 rows,110x93px; row lengths11,12,8,11,9,12,14,10,12;60ms/frame",
+      "archive_sha256": "27103483e461cf01be7c85907b6a08a8202a823249baf90660d19c6db0c5363c",
+      "rights_note": "No source credit in archive; user handles rights."
+    }
+  ]
+}

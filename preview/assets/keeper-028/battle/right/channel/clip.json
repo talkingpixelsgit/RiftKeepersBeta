@@ -1,0 +1,334 @@
+{
+  "cell": [
+    320,
+    256
+  ],
+  "grid": [
+    8,
+    1
+  ],
+  "frame_count": 6,
+  "durations_ms": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "duration_ms": 600,
+  "loop": true,
+  "root": [
+    135,
+    215
+  ],
+  "mirrored": false,
+  "layers": {
+    "feet": "battle/right/channel/feet.png",
+    "sleeve-far": "battle/right/channel/sleeve-far.png",
+    "cloak_core": "battle/right/channel/cloak_core.png",
+    "sleeve-near": "battle/right/channel/sleeve-near.png",
+    "forearm-far": "battle/right/channel/forearm-far.png",
+    "forearm-near": "battle/right/channel/forearm-near.png",
+    "hands-front": "battle/right/channel/hands-front.png",
+    "cloak_mask": "battle/right/channel/cloak_mask.png",
+    "eye_mask": "battle/right/channel/eye_mask.png",
+    "composite": "battle/right/channel/composite.png"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "cell": [
+        0,
+        0
+      ],
+      "start_ms": 0,
+      "duration_ms": 100,
+      "hands": [
+        [
+          136.18,
+          131.938
+        ],
+        [
+          139.512,
+          131.7
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          114.73224483132894,
+          152.91402913386477
+        ],
+        [
+          153.0275425945104,
+          144.69586889653687
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        137.846,
+        131.819
+      ]
+    },
+    {
+      "index": 1,
+      "cell": [
+        1,
+        0
+      ],
+      "start_ms": 100,
+      "duration_ms": 100,
+      "hands": [
+        [
+          136.18,
+          131.938
+        ],
+        [
+          139.512,
+          131.7
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          114.73224483132894,
+          152.91402913386477
+        ],
+        [
+          153.0275425945104,
+          144.69586889653687
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        137.846,
+        131.819
+      ]
+    },
+    {
+      "index": 2,
+      "cell": [
+        2,
+        0
+      ],
+      "start_ms": 200,
+      "duration_ms": 100,
+      "hands": [
+        [
+          136.18,
+          131.938
+        ],
+        [
+          139.512,
+          131.7
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          114.73224483132894,
+          152.91402913386477
+        ],
+        [
+          153.0275425945104,
+          144.69586889653687
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        137.846,
+        131.819
+      ]
+    },
+    {
+      "index": 3,
+      "cell": [
+        3,
+        0
+      ],
+      "start_ms": 300,
+      "duration_ms": 100,
+      "hands": [
+        [
+          136.18,
+          131.938
+        ],
+        [
+          139.512,
+          131.7
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          114.73224483132894,
+          152.91402913386477
+        ],
+        [
+          153.0275425945104,
+          144.69586889653687
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        137.846,
+        131.819
+      ]
+    },
+    {
+      "index": 4,
+      "cell": [
+        4,
+        0
+      ],
+      "start_ms": 400,
+      "duration_ms": 100,
+      "hands": [
+        [
+          136.18,
+          131.938
+        ],
+        [
+          139.512,
+          131.7
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          114.73224483132894,
+          152.91402913386477
+        ],
+        [
+          153.0275425945104,
+          144.69586889653687
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        137.846,
+        131.819
+      ]
+    },
+    {
+      "index": 5,
+      "cell": [
+        5,
+        0
+      ],
+      "start_ms": 500,
+      "duration_ms": 100,
+      "hands": [
+        [
+          136.18,
+          131.938
+        ],
+        [
+          139.512,
+          131.7
+        ]
+      ],
+      "shoulders": [
+        [
+          119.90477502221472,
+          125.90486529222807
+        ],
+        [
+          146.45475540977526,
+          127.13565908502889
+        ]
+      ],
+      "elbows": [
+        [
+          114.73224483132894,
+          152.91402913386477
+        ],
+        [
+          153.0275425945104,
+          144.69586889653687
+        ]
+      ],
+      "weapon_center": [
+        173.93383687340696,
+        117.52049787595581
+      ],
+      "weapon_rotation_radians": 2.3544909143275925,
+      "weapon_grip_connected": false,
+      "effect_origin": [
+        137.846,
+        131.819
+      ]
+    }
+  ]
+}
