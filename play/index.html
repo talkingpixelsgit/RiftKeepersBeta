@@ -3328,14 +3328,14 @@ function loginOverlay(){ return new Promise(resolve=>{
     <div id="lgStat"></div>
     <div class="tabs" style="justify-content:center;margin-top:14px"><button aria-selected="${mode==="in"}" data-m="in">Sign in</button><button aria-selected="${mode==="up"}" data-m="up">Create account</button></div>
     <label>Email<input id="lgE" type="email" autocomplete="username"></label><label>Password<input id="lgP" type="password" autocomplete="${mode==="in"?"current-password":"new-password"}" placeholder="${mode==="up"?"8 or more characters":""}"></label>
-    ${mode==="up"?`<label>Keeper name<input id="lgN" maxlength="18" placeholder="3 to 18 characters"></label><label>Invite code<input id="lgI" maxlength="40" placeholder="XXXX-XXXX"></label>`:""}
+    ${mode==="up"?`<label>Keeper name<input id="lgN" maxlength="18" placeholder="3 to 18 characters"></label><label>Invite code <small>(if you have one)</small><input id="lgI" maxlength="40" placeholder="Optional"></label>`:""}
     <p class="lgmsg">${esc(msg)}</p><button class="btn gold" id="lgGo" style="width:100%">${mode==="in"?"Sign in":"Create my Keeper"}</button>
-    <p class="meta" style="margin-top:10px">This is a closed alpha. You need an invite code to create an account.</p>
+    <p class="meta" style="margin-top:10px">Rift Keepers beta. Sign in with your email, or create an account. Your Talking Pixels account will work here later.</p>
     <div class="lgver">Time Keepers Prequel - Rift Keepers Alpha · ${esc(APP_VERSION)}</div>${patchNotesHTML()}</div></div>`;
     if(hw) hw.repaint(o.querySelector("#lgStat")); paintLoginNews(o.querySelector("#lgNews"));
     o.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{ mode=b.dataset.m; draw(); });
     const go=async()=>{ const email=o.querySelector("#lgE").value.trim(), pw=o.querySelector("#lgP").value; const name=mode==="up"?o.querySelector("#lgN").value.trim():undefined, code=mode==="up"?o.querySelector("#lgI").value.trim():"";
-      if(!email||pw.length<8){ draw("Enter your email and a password of at least 8 characters."); return; } if(mode==="up"&&(!name||!code)){ draw("Choose a Keeper name and enter your invite code."); return; }
+      if(!email||pw.length<8){ draw("Enter your email and a password of at least 8 characters."); return; } if(mode==="up"&&!name){ draw("Choose a Keeper name."); return; }
       o.querySelector("#lgGo").disabled=true;
       try{ const sess=await NK.client.authenticateEmail(email,pw,mode==="up",name); NK.session=sess;
         if(code){ try{ await nkRpc("redeem_invite",{code}); }catch(e){ try{ await nkRpc("claim_creator",{code}); }catch(e2){ draw(await nkReadErr(e)+" You can sign in and enter a new code any time."); return; } } }
