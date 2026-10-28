@@ -8,6 +8,21 @@ Milestone 1: **a less crowded interface and a better design overall.** Do not ad
 
 The target feel is a calm, readable, persistent browser MMO with a city hub. Picture a game you keep open in a tab: a clear top bar, a handful of top-level sections, one focused main panel, and chat that stays out of the way until you want it. Use other persistent browser MMOs as genre references for that *feel*. Don't copy any other game's names, art, layout or text.
 
+### Reference game: Isekai Guardians: Celestria
+The owner's reference for the direction is **Isekai Guardians: Celestria**, a browser MMORPG/PBBG (Steam: https://store.steampowered.com/app/4171130/Isekai_Guardians/). Study it for **structure and feel only**. Its public pitch describes:
+- **A persistent world** with long-term growth of one continuous character, mixing traditional MMORPG systems with a relaxed life-sim.
+- **City hubs**: you travel between major cities, and each city works as a hub for its services.
+- **Combat:** monsters, bosses, PvE and PvP, with character attributes (Power, Agility, Accuracy, Defense) shaping playstyle. Dungeons work solo or in parties of up to six.
+- **Progression beyond combat:** fishing, farming, quests, crafting, collecting, and upgrading your house and gear.
+- **Social and competitive play:** guilds (castle conquest events, group fishing raids), an arena with weekly-reset rankings, and a player marketplace.
+- **Collection:** 100+ collectible companions, races, and hundreds of equipment pieces.
+- **Energy:** an energy budget that refills over time, plus ways to restore it in-game (crafted potions, a daily tavern visit).
+- **Monetization that isn't pay-to-win:** fully free to play; paid items are cosmetic or convenience.
+
+Rift Keepers already has most of these in some form: stamina, fishing/foraging/mining/crafting, the market and trading, guilds, the arena and tournaments, the tavern, soul collecting and the codex, "My door" (a personal space), duels and PvP, and area/world chat. What it lacks is the **calm, organized hub presentation** that makes a game like this easy to live in. That's your job in this milestone. Take from the reference: one clear status bar (energy, gold, level, location), a few top-level sections, each town as a hub of service cards, and secondary panels (chat, online list) that stay quiet until needed.
+
+**Don't copy** its names, cities, races, story, art, icons, UI layout or text. Everything on screen stays Rift Keepers' own (section 3 has the lore names).
+
 The game is **free to play**. There is no subscription and no monetization code today. A cosmetic-only cash shop will come later; you may reserve a quiet place for it in the navigation, but don't design it. Note: "Patron" in the code (`preview/patron.js`, view `patron`) is **not** a subscription. It's a story quest at Honest Drew's ("The Guest Who Never Left"), so keep it reachable.
 
 ## 2. Repo and how to run it
