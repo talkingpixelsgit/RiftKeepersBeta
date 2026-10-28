@@ -26,6 +26,13 @@ server {
   }
   location = /healthcheck { proxy_pass http://nakama:7350; }
 
+  # Ported services: answered by Nakama modules. The http key is filled in from the environment at start-up
+  # (nginx's template step), so players can read the feed without signing in.
+  location = /mmo/bulletin {
+    proxy_method GET;
+    proxy_pass http://nakama:7350/v2/rpc/bulletin?http_key=${NAKAMA_HTTP_KEY}&unwrap;
+  }
+
   # Round-2 shared play, served by the mmo bridge (Nakama sign-in required).
   location ^~ /mmo/ {
     proxy_pass http://mmo:8090;

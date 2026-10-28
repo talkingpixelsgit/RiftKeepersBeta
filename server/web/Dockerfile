@@ -1,7 +1,7 @@
 # The game client, served by nginx, with Nakama proxied on the same origin.
 # Build context is the repository root (see server/docker-compose.yml).
 FROM nginx:1.27-alpine
-COPY server/web/nginx.conf /etc/nginx/conf.d/default.conf
+COPY server/web/default.conf.template /etc/nginx/templates/default.conf.template
 COPY server/web/40-rift-keepers.sh /docker-entrypoint.d/40-rift-keepers.sh
 RUN chmod +x /docker-entrypoint.d/40-rift-keepers.sh
 WORKDIR /usr/share/nginx/html

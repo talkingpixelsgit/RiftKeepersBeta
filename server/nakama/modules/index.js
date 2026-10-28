@@ -288,6 +288,115 @@ function rpcListReports(ctx, logger, nk, payload) {
   return JSON.stringify({ items: items });
 }
 
+// ---------- bulletin: news and timed notices (ported from round-2 bulletin-service.cjs) ----------
+// Players read the public feed at GET /mmo/bulletin (nginx calls `bulletin` with the http key).
+// Staff (owner, gm, mod) manage it with `bulletin_admin`: preview -> (revise) -> publish, unpublish, revoke.
+var BULLETIN_PREVIEW_MS = 600000;
+function bulletinState(nk) { return readSys(nk, "rk_bulletin", "main") || { revision: 0, news: [], notices: [] }; }
+function bulletinActive(state) {
+  for (var i = 0; i < state.notices.length; i++) { var n = state.notices[i]; if (!n.revoked && n.expiresAt > now()) return n; }
+  return null;
+}
+function bulletinFeed(state) {
+  var n = bulletinActive(state);
+  var news = state.news.filter(function (x) { return x.published; }).sort(function (a, b) { return b.updatedAt - a.updatedAt; });
+  return {
+    revision: state.revision, serverTime: now(), scope: "rift-keepers-beta", news: news,
+    notice: n ? { id: n.id, proclamation: n.proclamation, message: n.message, publishedAt: n.publishedAt, expiresAt: n.expiresAt } : null
+  };
+}
+function bulletinAdminView(state) {
+  return { revision: state.revision, news: state.news, notice: bulletinFeed(state).notice, recentNotices: state.notices.slice(0, 10) };
+}
+function bulletinText(v, max, name) {
+  if (typeof v !== "string" || !v.trim() || v.length > max || /[\x00-\x08\x0b\x0c\x0e-\x1f]/.test(v)) throw rkError(name + " is required and must be at most " + max + " characters.", 3);
+  return v;
+}
+function proclamationFor(message) {
+  var m = message.trim(), time = m.match(/^server restart in (\d+ (?:minutes?|mins?|hours?|seconds?))[.!]?$/i);
+  if (time) return "In " + time[1] + ", the world will pause and return. Even eternity needs a moment to gather itself.";
+  if (/^server restart[.!]?$/i.test(m)) return "The world must pause and return. A closing door need not be an ending.";
+  if (/^welcome\b/i.test(m)) return "To those newly arrived: the Hall has room for another story. Bring yours through the door.";
+  if (/^please (?:send|share|report)\b.*(?:feedback|bugs?|issues?)/i.test(m)) return "Speak of what you have found. Even a world in the making must learn to listen.";
+  return "Attend to the words entrusted below. Decide what you will make of them.";
+}
+var PHRASES = null;
+function phrases(nk) {
+  if (!PHRASES) {
+    var bank = JSON.parse(nk.fileRead("proclamation-lines.json"));
+    PHRASES = { thoughtful: bank.thoughtful, funny: bank.dryly_funny, ominous: bank.unsettling, whimsical: bank.whimsical };
+  }
+  return PHRASES;
+}
+
+function rpcBulletin(ctx, logger, nk, payload) {
+  return JSON.stringify(bulletinFeed(bulletinState(nk)));
+}
+
+function rpcBulletinAdmin(ctx, logger, nk, payload) {
+  var role = roleOf(nk, ctx.userId);
+  if (role !== "owner" && role !== "gm" && role !== "mod") throw rkError("Staff only.", 7);
+  var c = parse(payload), state = bulletinState(nk);
+  if (!c.type || c.type === "read") return JSON.stringify({ state: bulletinAdminView(state) });
+  if (c.type === "preview" || c.type === "revise") {
+    var content;
+    if (c.type === "revise") {
+      var prior = readSys(nk, "rk_bulletin_preview", String(c.previewId || ""));
+      if (!prior || prior.until <= now() || prior.revision !== state.revision || prior.content.kind !== "notice") throw rkError("Preview expired or changed. Preview again.", 9);
+      deleteSys(nk, "rk_bulletin_preview", String(c.previewId));
+      content = Object.assign({}, prior.content, { proclamation: bulletinText(c.proclamation, 3000, "Proclamation") });
+    } else if (c.kind === "news") {
+      if (["News", "Update", "Notice"].indexOf(c.category) < 0) throw rkError("Choose a news category.", 3);
+      if (c.id && !state.news.some(function (n) { return n.id === c.id; })) throw rkError("News entry no longer exists.", 5);
+      content = { kind: "news", id: c.id || null, title: bulletinText(c.title, 100, "Title"), body: bulletinText(c.body, 4000, "News text"), category: c.category };
+    } else if (c.kind === "notice") {
+      var message = bulletinText(c.message, 2000, "Actual message");
+      if (!(c.minutes === (c.minutes | 0) && c.minutes >= 5 && c.minutes <= 1440)) throw rkError("Expiry must be 5–1440 minutes.", 3);
+      var P = phrases(nk);
+      if (c.tone !== "random" && !P[c.tone]) throw rkError("Choose an anonymous tone.", 3);
+      var bank = c.tone === "random" ? [].concat(P.thoughtful, P.funny, P.ominous, P.whimsical) : P[c.tone];
+      var phrase = bank[Math.floor(Math.random() * bank.length)];
+      content = { kind: "notice", message: message, minutes: c.minutes, proclamation: proclamationFor(message) + "\n\n" + phrase };
+    } else throw rkError("Unknown preview kind.", 3);
+    var preview = { id: nk.uuidv4(), revision: state.revision, until: now() + BULLETIN_PREVIEW_MS, content: content };
+    writeSys(nk, "rk_bulletin_preview", preview.id, preview);
+    return JSON.stringify({ preview: preview, state: bulletinAdminView(state) });
+  }
+  if (c.revision !== state.revision) throw rkError("Bulletin changed. Reload and preview again.", 9);
+  if (c.type === "publish") {
+    var p = readSys(nk, "rk_bulletin_preview", String(c.previewId || ""));
+    if (!p || p.until <= now() || p.revision !== state.revision) throw rkError("Preview expired or changed. Preview again before publishing.", 9);
+    var d = p.content;
+    if (d.kind === "news") {
+      var entry = null;
+      state.news.forEach(function (n) { if (n.id === d.id) entry = n; });
+      if (!entry) {
+        if (state.news.length >= 30) throw rkError("Thirty news entries maximum. Edit an existing entry.", 9);
+        entry = { id: nk.uuidv4(), createdAt: now() };
+        state.news.push(entry);
+      }
+      Object.assign(entry, { title: d.title, body: d.body, category: d.category, published: true, updatedAt: now() });
+    } else {
+      state.notices.forEach(function (n) { n.revoked = true; });
+      state.notices.unshift({ id: nk.uuidv4(), proclamation: d.proclamation, message: d.message, publishedAt: now(), expiresAt: now() + d.minutes * 60000, revoked: false });
+      state.notices = state.notices.slice(0, 20);
+    }
+    deleteSys(nk, "rk_bulletin_preview", p.id);
+  } else if (c.type === "unpublish") {
+    var hit = state.news.filter(function (n) { return n.id === c.id; })[0];
+    if (!hit) throw rkError("News entry no longer exists.", 5);
+    if (!hit.published) throw rkError("Already unpublished.", 9);
+    hit.published = false; hit.updatedAt = now();
+  } else if (c.type === "revoke") {
+    var active = bulletinActive(state);
+    if (!active || active.id !== c.id) throw rkError("Notice is no longer active.", 9);
+    active.revoked = true;
+  } else throw rkError("Unknown bulletin command.", 3);
+  state.revision++;
+  writeSys(nk, "rk_bulletin", "main", state);
+  return JSON.stringify({ state: bulletinAdminView(state) });
+}
+
 // ---------- hooks ----------
 function beforeAuthenticateEmail(ctx, logger, nk, data) {
   if (data.create && data.username) {
@@ -315,6 +424,8 @@ function InitModule(ctx, logger, nk, initializer) {
   initializer.registerRpc("module_get", rpcModuleGet);
   initializer.registerRpc("report", rpcReport);
   initializer.registerRpc("list_reports", rpcListReports);
+  initializer.registerRpc("bulletin", rpcBulletin);
+  initializer.registerRpc("bulletin_admin", rpcBulletinAdmin);
   initializer.registerRtBefore("ChannelMessageSend", beforeChannelMessageSend);
   initializer.registerBeforeAuthenticateEmail(beforeAuthenticateEmail);
   logger.info("Rift Keepers modules loaded (invite only: %s)", inviteOnly(ctx));

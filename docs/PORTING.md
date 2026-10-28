@@ -5,8 +5,8 @@ Started 28 October 2026. Every system is **online now** through the `/mmo` bridg
 | # | Service (round-2 file) | Size | Nakama target | Status |
 |---|---|---|---|---|
 | 0 | Name policy (`name-policy.cjs`) | 1.5 KB | `nameProblem` in the module | **Done** |
-| 1 | Bulletin and news (`bulletin-service.cjs`) | 6 KB | System storage + `bulletin` RPC; staff posting | Next |
-| 2 | Guilds (`guild-service.cjs`) | 5 KB | Nakama **groups** (members, ranks, history in group metadata) | |
+| 1 | Bulletin and news (`bulletin-service.cjs`) | 6 KB | System storage; `bulletin` (public, via nginx with the http key) and `bulletin_admin` (staff) RPCs | **Done** |
+| 2 | Guilds (`guild-service.cjs`) | 5 KB | Nakama **groups** (members, ranks, history in group metadata) | Next |
 | 3 | Trading and crafting wallet (`trade-service.cjs`) | 7 KB | User storage (wallet) + RPCs; merge with `econ_apply` so one purse exists | |
 | 4 | Honest Drew's tavern (`tavern-service.cjs`) | 15 KB | User and system storage + RPCs | |
 | 5 | Arena brackets and wars (`arena-service.cjs`) | 6 KB | **Leaderboards with a weekly reset** (`0 0 * * 1`) + RPCs: the weekly-season goal | |

@@ -1,0 +1,45 @@
+{
+  "purpose": "Anonymous optional proclamation lines; no speaker IDs or implied gameplay grants. Exact operator message remains separately displayed.",
+  "thoughtful": [
+    "A door does not promise a better world. Only another chance to enter one.",
+    "You count the things you carry. Have you counted the things that carry you?",
+    "Not every lost traveller has taken the wrong turn.",
+    "An ending is a name given by those who cannot see the next room.",
+    "You cannot keep every moment. Choose which ones you will be worthy of remembering.",
+    "Some doors open only after you stop mistaking them for walls."
+  ],
+  "dryly_funny": [
+    "Your petitions have been heard. Several were about the same missing boot.",
+    "Eternity is very impressive until someone asks you to organise it.",
+    "The universe has a plan. Its handwriting is unfortunate.",
+    "Please stop challenging the doors to single combat. They are already unhinged.",
+    "Mortals have named another thing forbidden. Attendance should be excellent.",
+    "I had a grand revelation prepared. Someone has put a cup on it."
+  ],
+  "unsettling": [
+    "A room in the Hall has remembered its occupant. The occupant has not remembered the room.",
+    "If an echo answers before you speak, consider your next words carefully.",
+    "There is a silence between worlds. Tonight, it seems to be listening.",
+    "Somewhere, a door has opened inward for the first time.",
+    "Do not mistake a familiar voice for a familiar intention.",
+    "Something has stopped knocking. I have not decided whether this is good news."
+  ],
+  "whimsical": [
+    "A small moth has crossed a very large darkness. Let us allow it a moment of pride.",
+    "The stars have rearranged themselves. Apparently the old arrangement was uncomfortable.",
+    "Someone has taught the void to hum. It knows only the chorus.",
+    "There should be a word for missing a place you have not yet found.",
+    "A cloud has applied to become a mountain. I admire its ambition.",
+    "Today, somewhere beyond the doors, a very ordinary pebble is having an extraordinary time."
+  ],
+  "restart_context": [
+    "Even eternity requires maintenance. Finish your small miracles, and leave room for the next.",
+    "The Hall must briefly close its eyes. Even ancient things occasionally need a moment.",
+    "A pause is not an ending. Though I understand the confusion."
+  ],
+  "update_context": [
+    "The world has acquired a few new possibilities. Try not to put all of them in your pockets.",
+    "Creation is rarely finished. Some of us merely become less embarrassed by the drafts.",
+    "A familiar room may hold an unfamiliar door. Look again."
+  ]
+}
