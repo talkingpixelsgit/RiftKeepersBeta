@@ -1,0 +1,43 @@
+.rk-map-scroll{width:100%;min-width:0;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scrollbar-color:#77cfc7 #11192e;scrollbar-width:thin}
+.rk-unified-ui #main .rk-map-scroll .wmap,.rk-unified-ui #main .rk-map-scroll>svg{width:100%!important;min-width:760px!important;height:auto!important;aspect-ratio:5/3;max-height:none!important;display:block;touch-action:pan-x pan-y pinch-zoom}
+.rk-unified-ui #main .islemap .rk-map-scroll>svg{aspect-ratio:1000/460}
+.rk-unified-ui #main .rk-map-scroll .wmap{height:340px!important;aspect-ratio:auto!important;min-height:0!important}
+.rk-unified-ui #main .rk-map-scroll :is(.nlbl,.ilabel){font-size:22px!important;font-weight:700;paint-order:stroke;stroke:#090f25;stroke-width:4px;stroke-linejoin:round}
+.rk-unified-ui #main .mapwrap:has(.rk-map-scroll){display:block;height:auto!important;min-height:0!important;overflow:hidden!important}
+.rk-unified-ui #main .islemap:has(.rk-map-scroll){min-width:0;max-width:100%}
+.rk-map-pan-note{font:12px/1.4 system-ui;color:#bfdae7;margin:4px 0 8px}
+@media(min-width:900px){.rk-map-pan-note{display:none}}
+@media(max-width:700px){
+ body.rk-portrait-battles #main .battle .cam .stage{grid-template-rows:var(--rk-enemy-height,144px) 104px auto!important}
+ body.rk-portrait-battles #main .battle .stage>.vs,body.rk-portrait-battles #main .rk-portrait-moment{min-height:104px!important}
+ body.rk-portrait-battles #main .battle>.rk-cinema,body.rk-portrait-battles #main .combat-shell>.rk-cinema{height:104px!important;min-height:104px!important}
+ body.rk-portrait-battles #main .rk-cinema-art>.rk-cinema-portrait{height:100px!important}
+ body.rk-portrait-battles #main .rk-cinema-portrait .posecell{height:100px!important;width:100px!important}
+ body.rk-portrait-battles #main .rk-cinema-art canvas:not(.cp-sprite canvas){height:122px!important;width:183px!important;top:-7px!important}
+ body.rk-portrait-battles #main .rk-cinema-copy strong{font-size:19px!important}
+ body.rk-portrait-battles #main .rk-cinema-copy span{font-size:11px!important;line-height:1.25!important}
+ body.rk-portrait-battles #main .battle .stage .unit.enemy .portrait,body.rk-portrait-battles #main .battle .stage .unit.enemy .portrait:has(img.sprite),body.rk-portrait-battles #main .facing-battle [data-side=enemy] .exp-portrait{width:94px!important;height:76px!important;max-height:76px!important}
+ body.rk-portrait-battles #main .battle .cam .stage>.side-row.rk-portrait-allies,body.rk-portrait-battles #main .facing-battle .exp-allies{gap:4px!important;padding:5px!important}
+ body.rk-portrait-battles #main .battle .stage .unit:not(.enemy){display:grid!important;grid-template-columns:34px minmax(0,1fr)!important;align-items:center!important;gap:3px!important;padding:4px!important}
+ body.rk-portrait-battles #main .battle .stage .unit:not(.enemy)>.portrait{width:34px!important;height:44px!important;max-height:44px!important;grid-column:1!important;grid-row:1!important}
+ body.rk-portrait-battles #main .battle .stage .unit:not(.enemy)>.plate{grid-column:2!important;grid-row:1!important;text-align:left!important;padding:0!important;min-width:0!important}
+ body.rk-portrait-battles #main .battle .stage .unit:not(.enemy) .nm{font-size:11px!important;white-space:normal!important;line-height:1.2!important}
+ body.rk-portrait-battles #main .battle .stage .hpnum{font-size:10px!important}
+ body.rk-portrait-battles #main .battle .stage .unit:not(.enemy) .cond{font-size:9px!important}
+ body.rk-portrait-battles #main .battle .cmdmain:not(.sub)>.act,body.rk-portrait-battles #main .battle .cmdmain:not(.sub)>.act:nth-child(-n+3){min-height:48px!important}
+ body.rk-portrait-battles #main .battle .actions{position:sticky!important;bottom:0;z-index:20;background:#11172cf5!important;box-shadow:0 -6px 18px #060b20bb}
+ body.rk-portrait-battles #main .battle .actions:has(.cmdmain.sub){max-height:44dvh;overflow-y:auto}
+ body.rk-portrait-battles #main .facing-battle .expedition-stage{grid-template-rows:auto 104px auto!important}
+ body.rk-portrait-battles #main .facing-battle .exp-enemies{min-height:160px!important}
+ body.rk-portrait-battles #main .facing-battle .exp-commands{position:sticky;bottom:0;z-index:20;background:#11172cf5!important}
+}
+/* Compact cards still retain every status label; no combat information is removed. */
+@media(max-width:420px){body.rk-portrait-battles #main .battle .cam .stage>.side-row.rk-portrait-allies{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+/* Guard timing owns a full row even while ordinary portrait cut-ins are compact. */
+@media(max-width:700px){
+ body.rk-portrait-battles #main .battle:has(.rk-timing-guard) .cam .stage{grid-template-rows:var(--rk-enemy-height,168px) 160px auto!important}
+ body.rk-portrait-battles #main .battle:has(.rk-timing-guard) .stage>.vs,body.rk-portrait-battles #main .combat-shell:has(.rk-timing-guard) .rk-portrait-moment{min-height:160px!important}
+ body.rk-portrait-battles #main .battle:has(.rk-timing-guard)>.rk-cinema,body.rk-portrait-battles #main .combat-shell:has(.rk-timing-guard)>.rk-cinema{height:160px!important;min-height:160px!important}
+ body.rk-portrait-battles #main .facing-battle:has(.rk-timing-guard) .expedition-stage{grid-template-rows:auto 160px auto!important}
+ body.rk-portrait-battles #main .battle:has(.rk-timing-guard) .actions{position:static!important}
+}

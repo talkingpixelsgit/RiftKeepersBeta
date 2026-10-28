@@ -1,0 +1,115 @@
+/* Build28 non-combat shell. Supplied Dark Ages details; navy/violet/aqua ink. */
+.first-light-build .rk-void-shell{--void-ink:#0b1022;--void-panel:#15192f;--void-line:#4f506f;--void-aqua:#96e7df;--void-lilac:#c4b2e8}
+.rk-void-shell .rk-void-edge{position:absolute;inset:0;z-index:0;display:block;border:20px solid transparent;border-image:url('assets/void-archive/frame-void.svg') 24 / 20px stretch;pointer-events:none!important;background:none}
+.first-light-build .rk-void-shell .rk-void-heading{position:relative;isolation:isolate;min-width:0;border:0;border-bottom:1px solid #514963;background-color:#111529;color:#e8edf9;padding:26px 30px;margin-bottom:26px;border-radius:0;box-shadow:none}
+.first-light-build .rk-void-shell .rk-void-heading :is(h1,h2){font:500 clamp(30px,3.4vw,43px)/1.15 Georgia,'Times New Roman',serif;letter-spacing:-.018em;text-transform:none;color:#f0eaff;margin:9px 0 14px;overflow-wrap:anywhere}
+.first-light-build .rk-void-shell .rk-void-heading>p,.first-light-build .rk-void-shell .rk-void-heading>div>p{max-width:68ch;font-size:14px;line-height:1.7;color:#b6c9dc}
+.first-light-build .rk-void-shell .rk-void-heading .eyebrow{color:#9cddd9;font-size:10px;letter-spacing:.16em}
+.first-light-build .rk-void-shell .btn{border-radius:0;background:#17233a;border:1px solid #63748f;border-bottom:2px solid #6e6695;color:#e2eff9;min-height:46px;box-shadow:none}
+.first-light-build .rk-void-shell .btn:hover:not(:disabled){background:#25314c;border-color:#93c8d2}
+.first-light-build .rk-void-shell .btn.gold{background:#9adfd8;color:#0c1728;border-color:#b3eee7}
+.first-light-build .rk-void-shell :is(button,select,input,textarea,summary):focus-visible{outline:3px solid #99efe3!important;outline-offset:3px!important;box-shadow:none!important}
+.first-light-build .rk-void-shell :is(input,select,textarea){background:#0c1428;border-color:#63728d;color:#eef2ff;min-height:44px;max-width:100%}
+.first-light-build .rk-void-shell :is(input[type=range],input[type=checkbox]){accent-color:#9ce5df}
+/* A menu index inside one old frame, with open rows instead of tile cards. */
+.first-light-build .rk-void-shell .hub{align-items:flex-start;padding-top:28px}
+.first-light-build .rk-void-shell .hubframe{position:relative;isolation:isolate;width:min(860px,100%);min-height:0;padding:26px 30px 22px;border:1px solid #49435e;border-radius:0;background:#0e1326;box-shadow:none}
+.first-light-build .rk-void-shell .hubframe::before,.first-light-build .rk-void-shell .hubframe::after{content:none}
+.first-light-build .rk-void-shell .hubtitle{position:static;transform:none;padding:0 0 22px;margin:0 0 8px;border:0;border-bottom:1px solid #4b4866;border-radius:0;background:none;box-shadow:none;text-shadow:none;font:500 38px/1.2 Georgia,serif;letter-spacing:0;text-transform:none;color:#ede7fb}
+.first-light-build .rk-void-shell .hubgrid{margin-left:0;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 16px}
+.first-light-build .rk-void-shell .hubbtn{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:12px;min-width:0;min-height:68px;padding:12px 6px;border:0;border-bottom:1px solid #32394e;border-radius:0;background:transparent;box-shadow:none;text-align:left;color:#d6e1ef}
+.first-light-build .rk-void-shell .hubbtn:hover{background:#1d2540;color:#fff}
+.first-light-build .rk-void-shell .hubico{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;flex:none;background:none;border:0;border-radius:0;box-shadow:none;color:#98cbd4}
+.first-light-build .rk-void-shell .hubico svg{width:26px;height:26px}
+.first-light-build .rk-void-shell .hubn{font:600 13px/1.4 var(--body);white-space:normal}
+.first-light-build .rk-void-shell .hubfoot{margin-left:0;border-top:0;color:#899eb7;font-size:11px;line-height:1.6;padding-top:22px}
+.first-light-build .rk-void-shell .rk-void-feature-flag{position:static;display:block;margin:3px 0 0;padding:0;background:none;border:0;border-radius:0;font:500 9px/1.4 var(--body);color:#9bdbd4;white-space:normal}
+/* Inventory: a clean item ledger and an ink detail leaf. */
+.first-light-build .rk-void-shell .inventory-screen>header{padding-bottom:24px}
+.first-light-build .rk-void-shell .inventory-toolbar{padding:18px 0 20px;border-block:1px solid #3a405b;background:none;margin-bottom:20px}
+.first-light-build .rk-void-shell .inventory-toolbar label{font-size:12px;font-weight:600;color:#a9c9d7}
+.first-light-build .rk-void-shell .inventory-list>article{border:0;border-bottom:1px solid #3b415d;border-radius:0;background:transparent;box-shadow:none;gap:6px}
+.first-light-build .rk-void-shell .inventory-item{padding:14px 10px;border:0;border-radius:0;background:none;color:#d5e0ef;min-height:72px}
+.first-light-build .rk-void-shell .inventory-item[aria-pressed=true]{background:linear-gradient(90deg,#27243f,#172d3d);box-shadow:inset 2px 0 #9de5df}
+.first-light-build .rk-void-shell .inventory-item small{font-size:11px;line-height:1.5;color:#9ab0c8}
+.first-light-build .rk-void-shell .inventory-icon{background:#111c30;border:1px solid #4e5876;border-radius:0;color:#a7d1d9}
+.first-light-build .rk-void-shell .inventory-detail{position:relative;isolation:isolate;padding:26px;border:1px solid #494c6e;border-radius:0;background:#12182d;box-shadow:none}
+.first-light-build .rk-void-shell .inventory-detail>h3{font:500 26px/1.2 Georgia,serif;color:#e7ddfa;margin:0 0 18px;padding-bottom:16px;border-bottom:1px solid #514967}
+.first-light-build .rk-void-shell .inventory-detail p{font-size:14px;line-height:1.75;color:#bacde1}
+.first-light-build .rk-void-shell .inventory-selection{color:#9bded7!important}
+.first-light-build .rk-void-shell .equipment-compare :is(td,th){border-color:#373e59;color:#c7d7e9;line-height:1.5}
+.first-light-build .rk-void-shell .equipment-compare .different{background:#24213e}
+.first-light-build .rk-void-shell .equipment-compare caption{color:#9bd9d6}
+/* Keeper and companions keep their source art and appearance controls. */
+.first-light-build .rk-void-shell .keeperhead{padding:24px;border:1px solid #535274;border-top:2px solid #9b87b9;border-radius:0;background:linear-gradient(105deg,#171a33,#0e1728);box-shadow:none;gap:28px}
+.first-light-build .rk-void-shell .keeperhead h3{font:500 30px/1.2 Georgia,serif!important;color:#eee9fb}
+.first-light-build .rk-void-shell .keeperhead .stats{font-size:13px;line-height:1.5;gap:7px 20px}
+.first-light-build .rk-void-shell :is(.slot,.moncard,.recipe){border-radius:0;box-shadow:none}
+.first-light-build .rk-void-shell .slot{border:1px solid #42465f;background:#10172a}
+.first-light-build .rk-void-shell .slot.filled{border-top:2px solid #9983b6;background:#161a31}
+.first-light-build .rk-void-shell .slot>b{font:500 21px/1.25 Georgia,serif;color:#e6e1f9}
+.first-light-build .rk-void-shell .slot small,.first-light-build .rk-void-shell .mvs{color:#a9c0d6;line-height:1.6}
+.first-light-build .rk-void-shell .moncard{padding:16px;border:0;border-left:2px solid #4f5775;border-bottom:1px solid #343c58;background:#10162a;color:#d6e4f2;gap:14px}
+.first-light-build .rk-void-shell .moncard.in{background:#22233e;border-left-color:#96e4dd;box-shadow:none}
+.first-light-build .rk-void-shell .heldbox{border:0;border-left:2px solid #8076ae;border-radius:0;background:#172039;padding:16px;color:#cedced;line-height:1.7}
+.first-light-build .rk-void-shell .heldbox.over{border-left-color:#e29c9e}
+.first-light-build .rk-void-shell .rk-arena-roster{flex-wrap:wrap;row-gap:8px!important}
+/* Story and community pages share the book's serif chapter hierarchy. */
+.first-light-build .rk-void-shell :is(.journey-page,.party-create,.party-kit){position:relative;isolation:isolate;border:1px solid #474761;border-radius:0;background:#13182d;box-shadow:none;padding:28px}
+.first-light-build .rk-void-shell .journey-page h2{font:500 32px/1.25 Georgia,serif;color:#e7ddfb}
+.first-light-build .rk-void-shell .journey-lead{font-size:17px;color:#c5d7e7;line-height:1.8}
+.first-light-build .rk-void-shell .journey-rule,.first-light-build .rk-void-shell .journey-objective{background:none;border-color:#514c70}
+.first-light-build .rk-void-shell .field-guide-layout nav .btn{border-bottom-color:#394360;background:transparent;color:#aebfd7}
+.first-light-build .rk-void-shell .field-guide-layout nav [aria-current=step]{background:#23253c;border-left-color:#9bded7;color:#edf4ff}
+.first-light-build .rk-void-shell .journey-head{background:transparent;padding:12px 20px 22px}
+.first-light-build .rk-void-shell .journey-head h1{font-size:clamp(32px,4vw,48px);text-transform:none}
+.first-light-build .rk-void-shell .location-art{position:relative;border:1px solid #635779;border-radius:0;box-shadow:none}
+.first-light-build .rk-void-shell .location-art>.rk-void-edge{border-width:16px;border-image-width:16px}
+.first-light-build .rk-void-shell .location-detail{border-radius:0;border-color:#444b69;background:#11182d}
+.first-light-build .rk-void-shell .fellowship-head h1{font-family:Georgia,serif;font-weight:500;letter-spacing:-.015em;text-transform:none}
+.first-light-build .rk-void-shell .party-connection{border:0;border-left:2px solid #6e6b99;background:#0d172a;color:#b4cede;min-width:0;line-height:1.6}
+.first-light-build .rk-void-shell .party-post,.first-light-build .rk-void-shell .party-member{border-color:#454968;box-shadow:none;background:none;border-radius:0}
+.first-light-build .rk-void-shell :is(.party-create,.party-kit) h2{font:500 28px/1.2 Georgia,serif;color:#e7e1f8}
+.first-light-build .rk-void-shell .shared-look-preview{border-radius:0;background:radial-gradient(ellipse at 50% 35%,#30335366,transparent 70%),#10162a;border-color:#615773}
+.first-light-build .rk-void-shell .activity-book{padding:30px;max-width:1120px;margin-inline:auto}
+.first-light-build .rk-void-shell .activity-ledger article{border-bottom:1px solid #44465f;background:none;padding:24px 0}
+.first-light-build .rk-void-shell .activity-ledger h2{font:500 25px/1.3 Georgia,serif;color:#e7ddf7}
+.first-light-build .rk-void-shell .bulletin-notice{background:#14182e;border:1px solid #62557b;box-shadow:none;border-radius:0;padding:28px 32px}
+.first-light-build .rk-void-shell .bulletin-notice .proclamation{font:400 clamp(20px,2vw,26px)/1.75 Georgia,serif;color:#ede4fb}
+.first-light-build .rk-void-shell .bulletin-entry{border-color:#434761;background:none}
+.first-light-build .rk-void-shell .setgrid{gap:24px}
+.first-light-build .rk-void-shell .admin-sec{border:0;border-top:2px solid #746893;border-radius:0;background:#10162a;box-shadow:none;padding:22px 20px}
+.first-light-build .rk-void-shell .admin-sec h3{font:500 23px/1.25 Georgia,serif;color:#e5def7;padding-bottom:14px;margin-bottom:12px;border-bottom:1px solid #3d425c}
+.first-light-build .rk-void-shell .setrow{gap:16px;padding:14px 0;border-color:#343f59;line-height:1.5}
+.first-light-build .rk-void-shell .setrow small{line-height:1.6;color:#9eb4cd}
+.first-light-build .rk-void-shell .setrow input[type=checkbox]{width:22px;height:22px;min-height:22px;flex:none}
+/* Title keeps its illustrated scene; its form now uses the same page materials. */
+.first-light-build.rk-void-finished .first-light-form{border-radius:0;border-left:1px solid #67557d;background:#0f1428}
+.first-light-build.rk-void-finished .first-light-form h2{font:500 clamp(33px,4vw,50px)/1.1 Georgia,serif;letter-spacing:-.02em;color:#e9e2fc}
+.first-light-build.rk-void-finished :is(.calling-choices,.companion-picks) button{border-radius:0;box-shadow:none;background:#131b30}
+.first-light-build.rk-void-finished :is(.calling-choices,.companion-picks) button[aria-pressed=true]{background:#25243f;border-color:#9ee5dd;box-shadow:inset 0 -2px #9ee5dd}
+/* Existing portal and reading dialogs keep their controls and lifecycle. */
+.first-light-build.rk-void-finished #portalOv .portalbox,.first-light-build.rk-void-finished .readbox{border:1px solid #70638e;border-radius:0;background:#11182d;box-shadow:0 16px 44px #03071399;color:#d9e7f4}
+.first-light-build.rk-void-finished #portalOv .portalbox h2,.first-light-build.rk-void-finished .readbox h2{font:500 30px/1.2 Georgia,serif;color:#e9e1fb;letter-spacing:-.01em}
+.first-light-build.rk-void-finished .readbox .readtext{box-sizing:border-box;max-width:100%;border:16px solid transparent;border-image:url('assets/void-archive/scroll-void.svg') 12 fill / 16px stretch;border-radius:0;background:#11172b;padding:14px 12px;color:#e4e7f3;font:400 17px/1.8 Georgia,serif}
+.first-light-build.rk-void-finished #portalOv :is(button,input,select):focus-visible,.first-light-build.rk-void-finished .readbox button:focus-visible{outline:3px solid #9ee6de!important;outline-offset:3px!important}
+@media(max-width:1000px){.first-light-build .rk-void-shell .hubgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:800px){
+ .first-light-build .rk-void-shell .rk-void-heading{padding:22px 20px;margin-bottom:22px}
+ .first-light-build .rk-void-shell .rk-void-heading :is(h1,h2){font-size:30px}
+ .first-light-build .rk-void-shell .rk-void-heading>p{font-size:13px}
+ .first-light-build .rk-void-shell .hub{padding-top:16px}
+ .first-light-build .rk-void-shell .hubframe{padding:24px 18px 20px}
+ .first-light-build .rk-void-shell .hubgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px}
+ .first-light-build .rk-void-shell .hubbtn{min-height:68px;gap:8px;padding:10px 2px}
+ .first-light-build .rk-void-shell .hubn{font-size:12px;overflow-wrap:anywhere}
+ .first-light-build .rk-void-shell .hubico{width:26px}
+ .first-light-build .rk-void-shell .keeperhead{padding:20px;gap:20px}
+ .first-light-build .rk-void-shell :is(.journey-page,.party-create,.party-kit,.inventory-detail){padding:23px 20px}
+ .first-light-build .rk-void-shell .inventory-toolbar{padding-block:16px}
+ .first-light-build .rk-void-shell .inventory-detail{position:static}
+ .first-light-build .rk-void-shell .bulletin-notice{padding:24px 20px}
+ .first-light-build .rk-void-shell .activity-book{padding:22px 18px}
+ .first-light-build .rk-void-shell .admin-sec{padding:20px 16px}
+ .first-light-build .rk-void-shell .setgrid{grid-template-columns:minmax(0,1fr)}
+}

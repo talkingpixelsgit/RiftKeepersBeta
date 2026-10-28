@@ -1,0 +1,34 @@
+.skill-cinema{position:fixed;inset:0;z-index:56;pointer-events:none;overflow:hidden;background:linear-gradient(90deg,#080d19d9,transparent 80%);--skill-color:#9be3ed;--direction:1}
+.skill-cinema.foe{--direction:-1;background:linear-gradient(-90deg,#080d19d9,transparent 80%)}
+.skill-figure{position:absolute;left:2vw;bottom:0;width:58vw;max-width:850px;height:82vh;filter:drop-shadow(0 0 25px var(--skill-color));transform-origin:50% 80%;animation:skill-arrive .26s ease-out both}
+.skill-figure img,.skill-figure svg,.skill-figure .sprite,.skill-figure .portrait{height:100%!important;width:100%!important;max-width:100%!important;object-fit:contain;object-position:center bottom}
+.skill-figure .posecell{width:auto!important;max-width:100%;aspect-ratio:1/1;display:block;margin:auto}
+.skill-cinema.foe .skill-figure{left:auto;right:2vw}.skill-cinema.foe .skill-figure>img,.skill-cinema.foe .skill-figure>.sprite{transform:scaleX(-1)}
+.skill-halo,.skill-smoke,.skill-orbit{position:absolute;left:8vw;bottom:6vh;width:42vw;height:62vh;border-radius:50%;transform-origin:center;pointer-events:none}
+.skill-cinema.foe .skill-halo,.skill-cinema.foe .skill-smoke,.skill-cinema.foe .skill-orbit{left:auto;right:8vw}
+.skill-halo{background:radial-gradient(ellipse,color-mix(in srgb,var(--skill-color) 45%,transparent),transparent 68%);animation:skill-bloom .8s ease-out both}
+.skill-smoke{opacity:0}.skill-orbit{border:2px solid color-mix(in srgb,var(--skill-color) 60%,transparent);height:18vh;bottom:8vh;animation:skill-bloom .8s ease-out both}
+.skill-caption{position:absolute;left:6vw;bottom:8vh;color:#fff;text-shadow:0 2px 8px #000,0 0 20px var(--skill-color);z-index:2}.skill-caption small{display:block;font-size:clamp(14px,1.7vw,24px);letter-spacing:.06em}.skill-caption strong{display:block;font-size:clamp(24px,3.6vw,52px);line-height:1.15}.foe .skill-caption{left:auto;right:6vw;text-align:right}
+.skill-strike .skill-figure{animation:skill-arrive .2s ease-out both,skill-slash .5s ease-in-out .2s both}
+.skill-cast .skill-figure{animation:skill-arrive .22s ease-out both,skill-cast .55s ease-in-out .22s both}
+.skill-heal .skill-figure{animation:skill-arrive .22s ease-out both,skill-lift .6s ease-out .22s both}.skill-heal .skill-orbit{height:55vh;bottom:12vh;border-style:dashed;animation:skill-rise .8s ease-out both}
+.skill-guard .skill-orbit{height:64vh;bottom:8vh;border-width:5px;box-shadow:inset 0 0 30px var(--skill-color),0 0 20px var(--skill-color)}.skill-guard .skill-figure{animation:skill-arrive .2s ease-out both,skill-brace .45s ease-out .2s both}
+.skill-wave .skill-orbit{animation:skill-wave .8s ease-out both}.skill-wave .skill-figure{animation:skill-arrive .2s ease-out both,skill-lift .6s ease-out .2s both}
+.skill-charge .skill-figure{animation:skill-arrive .25s ease-out both,skill-charge .9s ease-in .25s both}.skill-charge .skill-halo{animation:skill-bloom 1.25s ease-in both}
+.voth-charge .skill-halo{background:radial-gradient(ellipse,#ff3949aa 0%,#d7244077 30%,#8a8e9955 52%,transparent 72%);filter:blur(8px)}
+.voth-charge .skill-smoke{opacity:.85;background:radial-gradient(ellipse at 20% 70%,#a7abb77a,transparent 38%),radial-gradient(ellipse at 75% 55%,#767e8990,transparent 43%),radial-gradient(ellipse at 50% 95%,#d72f4970,transparent 50%);animation:skill-smoke 1.3s ease-out both;filter:blur(13px)}
+.voth-charge .skill-orbit{border-color:#a9abb6;border-width:4px;box-shadow:0 0 25px #f43e53,inset 0 0 35px #8c939b}.voth-charged .portrait{box-shadow:0 0 0 3px #a0a4ae,0 0 28px 12px #ea324d99,0 0 60px 24px #8c939b55!important}
+.atkcut{height:76vh;top:6%}.atkcut .sprite,.atkcut img,.atkcut .portrait{height:76vh!important;max-width:72vw!important;object-fit:contain}
+@keyframes skill-arrive{from{opacity:0;transform:translateX(calc(-8vw * var(--direction)))}to{opacity:1;transform:none}}
+@keyframes skill-slash{35%{transform:translateX(calc(-2vw * var(--direction))) rotate(calc(-4deg * var(--direction)))}75%{transform:translateX(calc(12vw * var(--direction))) rotate(calc(5deg * var(--direction)))}to{transform:translateX(calc(9vw * var(--direction)))}}
+@keyframes skill-cast{50%{transform:translateY(-3vh) scale(1.03)}to{transform:translateX(calc(4vw * var(--direction))) scale(1.05)}}
+@keyframes skill-lift{to{transform:translateY(-4vh);filter:drop-shadow(0 0 45px var(--skill-color))}}
+@keyframes skill-brace{45%{transform:scale(.95) translateY(2vh)}to{transform:scale(1.02)}}
+@keyframes skill-bloom{from{opacity:.15;transform:scale(.5)}to{opacity:1;transform:scale(1.1)}}
+@keyframes skill-rise{from{opacity:0;transform:translateY(12vh) scale(.75)}to{opacity:.8;transform:translateY(-4vh) scale(1.05)}}
+@keyframes skill-wave{from{opacity:1;transform:scale(.4)}to{opacity:0;transform:scale(2.8)}}
+@keyframes skill-charge{20%,60%{transform:translateX(-2px) scale(1.02)}40%,80%{transform:translateX(2px) scale(1.04)}to{transform:scale(1.06);filter:drop-shadow(0 0 45px var(--skill-color)) brightness(1.15)}}
+@keyframes skill-smoke{from{transform:translateY(10vh) scale(.7);opacity:.1}to{transform:translateY(-5vh) scale(1.2);opacity:.9}}
+@media(max-width:760px){.skill-figure{width:86vw;height:70vh;left:-6vw}.skill-cinema.foe .skill-figure{right:-6vw}.skill-halo,.skill-smoke,.skill-orbit{width:70vw;left:0}.skill-cinema.foe .skill-halo,.skill-cinema.foe .skill-smoke,.skill-cinema.foe .skill-orbit{right:0}.skill-caption{bottom:13vh}.atkcut{height:62vh;top:10%}.atkcut .sprite,.atkcut img,.atkcut .portrait{height:62vh!important;max-width:88vw!important}}
+.skill-cinema.still *{animation:none!important}.skill-cinema.still .skill-smoke{opacity:.5}
+@media(prefers-reduced-motion:reduce){.skill-cinema *{animation:none!important}}

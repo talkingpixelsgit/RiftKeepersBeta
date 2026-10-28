@@ -1,0 +1,2332 @@
+{
+ "_how": "Put image files in web/art/ and list them here. Anything listed replaces the built-in art; anything missing keeps the default. Effects may be a sprite sheet: {sheet,w,h,cols,rows,fps,scale,hue,bright}. 'impact' is used for any type without its own entry, tinted to the type colour; 'explosion' plays on heavy hits, 'slash' on melee, 'splatter' on big wounds. Music entries are base paths; .m4a and .ogg are both tried. 'battle' backdrops (per area) are used behind fights; map cards keep 'backdrops'.",
+ "backdrops": {
+  "gate": "art/bg/gate.gif",
+  "meadow": "art/bg/meadow.gif",
+  "emberwood": "art/bg/emberwood.gif",
+  "shallows": "art/bg/shallows.gif",
+  "riftscar": "art/bg/riftscar.gif",
+  "hall": "art/bg/hall.png",
+  "town": "art/bg/town.gif",
+  "fen": "art/bg/fen.gif",
+  "court": "art/bg/court.gif",
+  "arena": "art/bg/arena.gif",
+  "cliffs": "art/bg/cliffs.gif",
+  "isl_door": "art/bg/isl_door.jpg",
+  "isl_light": "art/bg/isl_light.jpg",
+  "isl_path": "art/bg/isl_path.jpg",
+  "isl_shore": "art/bg/isl_shore.jpg",
+  "isl_grotto": "art/bg/isl_grotto.jpg",
+  "title": "art/bg/title.jpg",
+  "title_portrait": "art/bg/title_portrait.jpg"
+ },
+ "portraits": {
+  "voth": "art/portraits/voth.webp",
+  "ruri": "art/portraits/ruri.webp",
+  "tibrs": "art/portraits/tibrs.webp",
+  "beast": "art/portraits/beast.webp",
+  "keeper_m1": "art/portraits/keeper_m1.webp",
+  "keeper_m2": "art/portraits/keeper_m2.webp",
+  "keeper_m3": "art/portraits/keeper_m3.webp",
+  "keeper_f1": "art/portraits/keeper_f1.webp",
+  "keeper_f2": "art/portraits/keeper_f2.webp",
+  "keeper_f3": "art/portraits/keeper_f3.webp",
+  "beast_awakened": "art/portraits/beast.webp"
+ },
+ "icons": {
+  "fishingpole": "art/icons/i256.png",
+  "herbsatchel": "art/icons/i137.png",
+  "pickaxe": "art/icons/i162.png",
+  "brewpot": "art/icons/i312.png",
+  "cookpan": "art/icons/i313.png",
+  "anvilhammer": "art/icons/i164.png",
+  "glimmerleaf": "art/icons/i189.png",
+  "emberroot": "art/icons/i194.png",
+  "reedmint": "art/icons/i191.png",
+  "frostmoss": "art/icons/i190.png",
+  "saltbloom": "art/icons/i193.png",
+  "nightshade": "art/icons/i192.png",
+  "starpetal": "art/icons/i5.png",
+  "inkcap": "art/icons/i236.png",
+  "minnow": "art/icons/i259.png",
+  "glassfin": "art/icons/i262.png",
+  "bogeel": "art/icons/i261.png",
+  "bellfish": "art/icons/i264.png",
+  "tidecarp": "art/icons/i260.png",
+  "goldkoi": "art/icons/i263.png",
+  "voidfish": "art/icons/i267.png",
+  "oldboot": "art/icons/i268.png",
+  "ironore": "art/icons/i273.png",
+  "copperore": "art/icons/i274.png",
+  "frostcrystal": "art/icons/i276.png",
+  "saltcrystal": "art/icons/i250.png",
+  "riftshard": "art/icons/i206.png",
+  "goldnugget": "art/icons/i275.png",
+  "moonstone": "art/icons/i289.png",
+  "p_heal": "art/icons/i144.png",
+  "p_stam": "art/icons/i146.png",
+  "p_ess": "art/icons/i145.png",
+  "p_luck": "art/icons/i150.png",
+  "p_swift": "art/icons/i149.png",
+  "p_calm": "art/icons/i151.png",
+  "p_grow": "art/icons/i154.png",
+  "p_gold": "art/icons/i155.png",
+  "p_moon": "art/icons/i158.png",
+  "p_sight": "art/icons/i169.png",
+  "sludge": "art/icons/i322.png",
+  "m_grill": "art/icons/food_grill.png",
+  "m_stew": "art/icons/food_stew.png",
+  "m_feast": "art/icons/food_feast.png",
+  "m_tea": "art/icons/i254.png",
+  "charcoal": "art/icons/i321.png",
+  "scrap": "art/icons/i165.png",
+  "bentkey": "art/icons/i185.png",
+  "q_key1": "art/icons/i186.png",
+  "q_key2": "art/icons/i185.png",
+  "q_key3": "art/icons/i186.png",
+  "q_key4": "art/icons/i185.png",
+  "crown": "art/icons/i199.png",
+  "dice": "art/icons/i221.png",
+  "feather": "art/icons/i282.png",
+  "hgfeather": "art/icons/i175.png",
+  "lens": "art/icons/i168.png",
+  "seerlens": "art/icons/i177.png",
+  "crackedwatch": "art/icons/i175.png",
+  "stoppedwatch": "art/icons/i175.png",
+  "glowsand": "art/icons/i5.png",
+  "draught": "art/icons/i254.png",
+  "pshard": "art/icons/i207.png",
+  "shard_meadow": "art/icons/i290.png",
+  "shard_ember": "art/icons/i288.png",
+  "shard_tide": "art/icons/i289.png",
+  "sigil": "art/icons/i176.png",
+  "speakstone": "art/icons/i176.png",
+  "hallhorn": "art/icons/i184.png",
+  "greycoin": "art/icons/i200.png",
+  "warmcoin": "art/icons/i202.png",
+  "note_self": "art/icons/i217.png",
+  "page_journal": "art/icons/i219.png",
+  "keeper_letter": "art/icons/i217.png",
+  "fen_hymn": "art/icons/i219.png",
+  "clock_timetable": "art/icons/i219.png",
+  "star_chart": "art/icons/i220.png",
+  "court_invite": "art/icons/i217.png",
+  "deep_map": "art/icons/i220.png",
+  "lady_riddle": "art/icons/i171.png",
+  "tome_mirror": "art/icons/i208.png",
+  "tome_veil": "art/icons/i209.png",
+  "tome_dawn": "art/icons/i211.png",
+  "tome_bell": "art/icons/i212.png",
+  "tome_rewind": "art/icons/i210.png",
+  "tome_knots": "art/icons/i213.png",
+  "tome_dread": "art/icons/i215.png",
+  "tome_elixir": "art/icons/i214.png",
+  "tome_hearth": "art/icons/i216.png",
+  "note_lamp": "art/icons/i218.png",
+  "note_wanted": "art/icons/i219.png",
+  "note_drawing": "art/icons/i218.png",
+  "note_tally": "art/icons/i218.png",
+  "note_clock": "art/icons/i218.png",
+  "note_map": "art/icons/i220.png",
+  "q_mapleft": "art/icons/i220.png",
+  "q_mapright": "art/icons/i220.png",
+  "q_fork": "art/icons/i182.png",
+  "q_sheet": "art/icons/i219.png",
+  "q_grain": "art/icons/i175.png",
+  "vault_tidecaller": "art/icons/i208.png",
+  "q_page1": "art/icons/i219.png",
+  "q_page2": "art/icons/i219.png",
+  "q_page3": "art/icons/i219.png",
+  "q_page4": "art/icons/i219.png",
+  "q_page5": "art/icons/i219.png",
+  "q_page6": "art/icons/i219.png",
+  "q_page7": "art/icons/i219.png",
+  "w:greatsword": "art/icons/i82.png",
+  "w:censer": "art/icons/i169.png",
+  "w:staff": "art/icons/i103.png",
+  "w:shield": "art/icons/i98.png",
+  "w:gauntlets": "art/icons/i129.png",
+  "w:sai": "art/icons/i88.png",
+  "w:anchorwhip": "art/icons/i94.png",
+  "w:vinewhip": "art/icons/i94.png",
+  "w:wardlantern": "art/icons/i169.png",
+  "w:miner": "art/icons/i169.png",
+  "w:ashgrimoire": "art/icons/i208.png",
+  "w:ledger": "art/icons/i208.png",
+  "w:drownharpoon": "art/icons/i257.png",
+  "w:fishspear": "art/icons/i257.png",
+  "w:horizonbow": "art/icons/i99.png",
+  "w:shortbow": "art/icons/i99.png",
+  "w:faultmaul": "art/icons/i164.png",
+  "w:smithhammer": "art/icons/i164.png",
+  "w:pocketdial": "art/icons/i175.png",
+  "w:tavernlute": "art/icons/i179.png",
+  "w:minstrellute": "art/icons/i179.png",
+  "w:bonedice": "art/icons/i221.png",
+  "w:fatedice": "art/icons/i221.png",
+  "w:duelrapier": "art/icons/i84.png",
+  "w:practicerapier": "art/icons/i84.png",
+  "w:hunterang": "art/icons/i102.png",
+  "w:stickrang": "art/icons/i102.png",
+  "w:stillblade": "art/icons/i85.png",
+  "w:roadblade": "art/icons/i85.png",
+  "w:hallkey": "art/icons/i185.png",
+  "w:brasskey": "art/icons/i185.png",
+  "w:vanitymirror": "art/icons/i177.png",
+  "w:compact": "art/icons/i177.png",
+  "w:bellflail": "art/icons/i92.png",
+  "w:threshflail": "art/icons/i92.png",
+  "w:moonglaive": "art/icons/i103.png",
+  "w:guardglaive": "art/icons/i103.png",
+  "w:clockhammer": "art/icons/i164.png",
+  "w:starbow": "art/icons/i99.png",
+  "w:glasscensor": "art/icons/i169.png",
+  "w:deeplantern": "art/icons/i169.png",
+  "w:gs_iron": "art/icons/i82.png",
+  "w:gs_glacier": "art/icons/i82.png",
+  "w:gs_ash": "art/icons/i82.png",
+  "w:db_twin": "art/icons/i89.png",
+  "w:db_mirror": "art/icons/i89.png",
+  "w:db_venom": "art/icons/i89.png",
+  "w:st_tin": "art/icons/i89.png",
+  "w:st_wind": "art/icons/i89.png",
+  "w:st_prism": "art/icons/i89.png",
+  "w:ku_plain": "art/icons/i86.png",
+  "w:ku_shade": "art/icons/i86.png",
+  "w:ka_brass": "art/icons/i87.png",
+  "w:ka_court": "art/icons/i87.png",
+  "w:cl_bone": "art/icons/i281.png",
+  "w:cl_blood": "art/icons/i281.png",
+  "w:nu_oak": "art/icons/i94.png",
+  "w:nu_bell": "art/icons/i94.png",
+  "w:bo_ash": "art/icons/i103.png",
+  "w:bo_earth": "art/icons/i103.png",
+  "w:ha_guard": "art/icons/i91.png",
+  "w:ha_war": "art/icons/i91.png",
+  "w:ax_wood": "art/icons/i91.png",
+  "w:ax_quake": "art/icons/i91.png",
+  "w:tx_raider": "art/icons/i90.png",
+  "w:tx_crimson": "art/icons/i90.png",
+  "w:cb_hunt": "art/icons/i100.png",
+  "w:cb_gale": "art/icons/i100.png",
+  "w:sl_leather": "art/icons/i101.png",
+  "w:sl_skip": "art/icons/i101.png",
+  "w:or_glass": "art/icons/i288.png",
+  "w:or_arcane": "art/icons/i288.png",
+  "w:hp_lap": "art/icons/i179.png",
+  "w:hp_heal": "art/icons/i179.png",
+  "w:ks_chain": "art/icons/i92.png",
+  "w:ks_shadow": "art/icons/i92.png",
+  "w:cn_walk": "art/icons/i103.png",
+  "w:cn_gent": "art/icons/i103.png",
+  "w:cd_deck": "art/icons/i222.png",
+  "w:cd_trick": "art/icons/i222.png",
+  "w:hg_sand": "art/icons/i175.png",
+  "w:to_guard": "art/icons/i80.png",
+  "w:gt_rocket": "art/icons/i129.png",
+  "w:or_dream": "art/icons/i288.png",
+  "w:ha_gravity": "art/icons/i91.png",
+  "w:my_hourglass": "art/icons/i175.png",
+  "w:my_stars": "art/icons/i89.png",
+  "w:my_dawn": "art/icons/i82.png",
+  "w:my_bloodmoon": "art/icons/i281.png",
+  "w:my_world": "art/icons/i82.png",
+  "w:my_verse": "art/icons/i179.png",
+  "w:my_dream": "art/icons/i288.png",
+  "w:my_shadow": "art/icons/i89.png",
+  "w:my_fate": "art/icons/i222.png"
+ },
+ "effects": {
+  "impact": {
+   "sheet": "art/fx/impact.png",
+   "w": 96,
+   "h": 96,
+   "cols": 7,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.3,
+   "baseHue": 52
+  },
+  "explosion": {
+   "sheet": "art/fx/explosion.png",
+   "w": 96,
+   "h": 96,
+   "cols": 9,
+   "rows": 1,
+   "fps": 16,
+   "scale": 1.6,
+   "baseHue": 45
+  },
+  "splatter": {
+   "sheet": "art/fx/splatter.png",
+   "w": 64,
+   "h": 64,
+   "cols": 8,
+   "rows": 1,
+   "fps": 16,
+   "scale": 1.6,
+   "baseHue": 355
+  },
+  "slash": {
+   "sheet": "art/fx/slash1.png",
+   "w": 128,
+   "h": 128,
+   "cols": 5,
+   "rows": 2,
+   "fps": 24,
+   "scale": 1.4
+  },
+  "fire": {
+   "sheet": "art/fx/MediumFire.png",
+   "w": 64,
+   "h": 64,
+   "cols": 5,
+   "rows": 1,
+   "fps": 12,
+   "scale": 1.5
+  },
+  "lightning": {
+   "sheet": "art/fx/lightning_strike.png",
+   "w": 128,
+   "h": 128,
+   "cols": 8,
+   "rows": 1,
+   "fps": 16,
+   "scale": 1.4
+  },
+  "blood": {
+   "sheet": "art/fx/splatter.png",
+   "w": 64,
+   "h": 64,
+   "cols": 8,
+   "rows": 1,
+   "fps": 16,
+   "scale": 1.6
+  },
+  "poison": {
+   "sheet": "art/fx/poison.png",
+   "w": 128,
+   "h": 128,
+   "cols": 17,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.2
+  },
+  "water": {
+   "sheet": "art/fx/impact_blue.png",
+   "w": 96,
+   "h": 96,
+   "cols": 10,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.3
+  },
+  "ice": {
+   "sheet": "art/fx/impact_blue.png",
+   "w": 96,
+   "h": 96,
+   "cols": 10,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.3,
+   "hue": -25,
+   "bright": 1.3
+  },
+  "dark": {
+   "sheet": "art/fx/smoke.png",
+   "w": 64,
+   "h": 64,
+   "cols": 10,
+   "rows": 1,
+   "fps": 14,
+   "scale": 1.6,
+   "bright": 0.5
+  },
+  "shadow": {
+   "sheet": "art/fx/smoke.png",
+   "w": 64,
+   "h": 64,
+   "cols": 10,
+   "rows": 1,
+   "fps": 14,
+   "scale": 1.6,
+   "bright": 0.4
+  },
+  "void": {
+   "sheet": "art/fx/smoke.png",
+   "w": 64,
+   "h": 64,
+   "cols": 10,
+   "rows": 1,
+   "fps": 14,
+   "scale": 1.6,
+   "hue": 230,
+   "bright": 0.7
+  },
+  "heal": {
+   "sheet": "art/fx/heal.png",
+   "w": 128,
+   "h": 128,
+   "cols": 16,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.2,
+   "hue": 100
+  },
+  "leaf": {
+   "sheet": "art/fx/poison.png",
+   "w": 128,
+   "h": 128,
+   "cols": 17,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.2,
+   "hue": 45,
+   "bright": 1.1
+  },
+  "earth": {
+   "sheet": "art/fx/smoke.png",
+   "w": 64,
+   "h": 64,
+   "cols": 10,
+   "rows": 1,
+   "fps": 14,
+   "scale": 1.7,
+   "hue": 15,
+   "bright": 1.2
+  },
+  "wind": {
+   "sheet": "art/fx/smoke.png",
+   "w": 64,
+   "h": 64,
+   "cols": 10,
+   "rows": 1,
+   "fps": 16,
+   "scale": 1.7,
+   "hue": 170,
+   "bright": 1.6
+  },
+  "light": {
+   "sheet": "art/fx/heal.png",
+   "w": 128,
+   "h": 128,
+   "cols": 16,
+   "rows": 1,
+   "fps": 20,
+   "scale": 1.2,
+   "hue": -95,
+   "bright": 1.2
+  },
+  "spirit": {
+   "sheet": "art/fx/heal.png",
+   "w": 128,
+   "h": 128,
+   "cols": 16,
+   "rows": 1,
+   "fps": 16,
+   "scale": 1.2,
+   "hue": 120,
+   "bright": 1.1
+  },
+  "time": {
+   "sheet": "art/fx/lightning_burst.png",
+   "w": 64,
+   "h": 64,
+   "cols": 8,
+   "rows": 1,
+   "fps": 14,
+   "scale": 1.8,
+   "hue": 70,
+   "bright": 1.2
+  },
+  "crystal": {
+   "sheet": "art/fx/impact_blue.png",
+   "w": 96,
+   "h": 96,
+   "cols": 10,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.3,
+   "hue": -40,
+   "bright": 1.3
+  },
+  "mind": {
+   "sheet": "art/fx/heal.png",
+   "w": 128,
+   "h": 128,
+   "cols": 16,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.2,
+   "hue": 200,
+   "bright": 0.9
+  },
+  "cosmic": {
+   "sheet": "art/fx/lightning_burst.png",
+   "w": 64,
+   "h": 64,
+   "cols": 8,
+   "rows": 1,
+   "fps": 16,
+   "scale": 1.9,
+   "hue": -60,
+   "bright": 1.1
+  },
+  "metal": {
+   "sheet": "art/fx/impact.png",
+   "w": 96,
+   "h": 96,
+   "cols": 7,
+   "rows": 1,
+   "fps": 18,
+   "scale": 1.3,
+   "hue": 0,
+   "bright": 0.7
+  },
+  "gravity": {
+   "sheet": "art/fx/smoke.png",
+   "w": 64,
+   "h": 64,
+   "cols": 10,
+   "rows": 1,
+   "fps": 12,
+   "scale": 1.9,
+   "hue": 250,
+   "bright": 0.6
+  },
+  "dream": {
+   "sheet": "art/fx/heal.png",
+   "w": 128,
+   "h": 128,
+   "cols": 16,
+   "rows": 1,
+   "fps": 14,
+   "scale": 1.3,
+   "hue": 260,
+   "bright": 1.0
+  },
+  "sound": {
+   "sheet": "art/fx/impact_blue.png",
+   "w": 96,
+   "h": 96,
+   "cols": 10,
+   "rows": 1,
+   "fps": 20,
+   "scale": 1.4,
+   "hue": 120,
+   "bright": 1.0
+  }
+ },
+ "music": {
+  "title": "art/music/title",
+  "world": "art/music/world"
+ },
+ "battle": {
+  "hall": "art/bg/hall_battle.jpg",
+  "town": "art/bg/town_battle.jpg",
+  "arena": "art/bg/arena_battle.jpg",
+  "fen": "art/bg/fen_battle.jpg",
+  "star": "art/bg/star_battle.jpg",
+  "clock": "art/bg/clock_battle.jpg",
+  "cliffs": "art/bg/cliffs_battle.jpg",
+  "shallows": "art/bg/shallows_battle.jpg",
+  "night": "art/bg/night_battle.jpg",
+  "tidew": "art/bg/tidew_battle.jpg",
+  "peaks": "art/bg/peaks_battle.jpg",
+  "riftscar": "art/bg/riftscar_battle.jpg",
+  "court": "art/bg/court_battle.jpg",
+  "deep": "art/bg/deep_battle.jpg",
+  "flats": "art/bg/flats_battle.jpg",
+  "emberwood": "art/bg/emberwood_battle.jpg",
+  "meadow": "art/bg/meadow_battle.jpg"
+ },
+ "sfx": {
+  "_how": "Sound files by event name. A list means one is picked at random each time. 'move:<moveId>' gives a move its own sound. Names the game uses: hit, heavy, slash, whoosh, tick, perfect, catch, caught, fail, levelup, coin, item, page, open, back, drink, guard, ki, blood, faint, win, lose. Put files in web/art/sfx/ (ogg or m4a).",
+  "hit": [
+   "art/sfx/sword_impact_hit_1.ogg",
+   "art/sfx/sword_impact_hit_2.ogg",
+   "art/sfx/sword_impact_hit_3.ogg"
+  ],
+  "crunch": [
+   "art/sfx/sword_impact_hit_3.ogg",
+   "art/sfx/big_distant_thump_1.ogg",
+   "art/sfx/big_distant_thump_2.ogg"
+  ],
+  "whoosh": [
+   "art/sfx/sword_attack_1.ogg",
+   "art/sfx/sword_attack_2.ogg",
+   "art/sfx/sword_attack_3.ogg"
+  ],
+  "guard": [
+   "art/sfx/sword_blocked_1.ogg",
+   "art/sfx/sword_blocked_2.ogg",
+   "art/sfx/sword_parry_1.ogg"
+  ],
+  "shield": [
+   "art/sfx/sword_blocked_1.ogg",
+   "art/sfx/rock_wall_1.ogg"
+  ],
+  "seal": [
+   "art/sfx/chest_close_1.ogg",
+   "art/sfx/lock_unlock.ogg"
+  ],
+  "appear": [
+   "art/sfx/sword_unsheath_1.ogg"
+  ],
+  "break": [
+   "art/sfx/rock_meteor_throw_1.ogg"
+  ],
+  "faint": [
+   "art/sfx/big_distant_thump_5.ogg"
+  ],
+  "type:fire": [
+   "art/sfx/fireball_1.ogg",
+   "art/sfx/fireball_2.ogg",
+   "art/sfx/fireball_3.ogg"
+  ],
+  "type:ice": [
+   "art/sfx/ice_throw_1.ogg",
+   "art/sfx/ice_throw_2.ogg",
+   "art/sfx/ice_barrage_1.ogg"
+  ],
+  "type:water": [
+   "art/sfx/wave_attack_1.ogg",
+   "art/sfx/wave_attack_2.ogg",
+   "art/sfx/waterspray_1.ogg"
+  ],
+  "type:earth": [
+   "art/sfx/rock_meteor_throw_1.ogg",
+   "art/sfx/rock_meteor_throw_2.ogg"
+  ],
+  "type:metal": [
+   "art/sfx/sword_attack_1.ogg",
+   "art/sfx/sword_attack_2.ogg",
+   "art/sfx/sword_attack_3.ogg"
+  ],
+  "type:poison": [
+   "art/sfx/goo_1.ogg",
+   "art/sfx/goo_2.ogg",
+   "art/sfx/goo_3.ogg"
+  ],
+  "type:arcane": [
+   "art/sfx/spell_impact_1.ogg",
+   "art/sfx/spell_impact_2.ogg",
+   "art/sfx/spell_impact_3.ogg"
+  ],
+  "type:light": [
+   "art/sfx/spell_impact_1.ogg",
+   "art/sfx/spell_impact_2.ogg"
+  ],
+  "type:dark": [
+   "art/sfx/atmospheric_distortion_1.ogg",
+   "art/sfx/atmospheric_distortion_4.ogg"
+  ],
+  "type:void": [
+   "art/sfx/atmospheric_distortion_6.ogg"
+  ],
+  "type:blood": [
+   "art/sfx/torch_impact_1.ogg",
+   "art/sfx/sword_impact_hit_2.ogg"
+  ],
+  "move:chargeup": [
+   "art/sfx/firebuff_1.ogg"
+  ],
+  "move:moltenshield": [
+   "art/sfx/firebuff_2.ogg"
+  ],
+  "move:firearrow": [
+   "art/sfx/bow_attack_1.ogg"
+  ],
+  "move:frostarrow": [
+   "art/sfx/bow_attack_2.ogg"
+  ],
+  "move:arrowrain": [
+   "art/sfx/bow_attack_1.ogg",
+   "art/sfx/bow_attack_2.ogg"
+  ],
+  "move:fireball": [
+   "art/sfx/fireball_1.ogg"
+  ],
+  "move:flamecone": [
+   "art/sfx/firespray_1.ogg"
+  ],
+  "move:maul": [
+   "art/sfx/torch_impact_1.ogg"
+  ],
+  "move:devour": [
+   "art/sfx/big_distant_thump_2.ogg"
+  ],
+  "chest": [
+   "art/sfx/chest_open_1.ogg",
+   "art/sfx/chest_open_2.ogg"
+  ],
+  "door": [
+   "art/sfx/door_open_1.ogg"
+  ],
+  "gate": [
+   "art/sfx/gate_open.ogg"
+  ],
+  "rift": [
+   "art/sfx/atmospheric_distortion_1.ogg"
+  ],
+  "mine": [
+   "art/sfx/mine_1.ogg",
+   "art/sfx/mine_2.ogg",
+   "art/sfx/mine_3.ogg"
+  ],
+  "chop": [
+   "art/sfx/chop_1.ogg",
+   "art/sfx/chop_2.ogg"
+  ],
+  "slime": [
+   "art/sfx/goo_1.ogg",
+   "art/sfx/goo_2.ogg",
+   "art/sfx/goo_3.ogg",
+   "art/sfx/goo_4.ogg"
+  ]
+ },
+ "poses": {
+  "_how": "A pose sheet is a 3x2 grid of stills for one character; cells maps pose names to cell numbers. attacks: up to three 6-frame attack clips (3x2, row-major) played for regular hits, one picked at random. ult: a sheet of two 3-frame clips; clips maps a move id to its cell list.",
+  "voth": {
+   "sheet": "art/poses/voth.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/voth_a1.webp",
+    "art/poses/voth_a2.webp",
+    "art/poses/voth_a3.webp"
+   ],
+   "clips": {
+    "resolveblast": [
+     0,
+     1,
+     2
+    ],
+    "lastlight": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/voth_ult.webp"
+  },
+  "tibrs": {
+   "sheet": "art/poses/tibrs.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/tibrs_a1.webp",
+    "art/poses/tibrs_a2.webp",
+    "art/poses/tibrs_a3.webp"
+   ],
+   "clips": {
+    "flamecone": [
+     0,
+     1,
+     2
+    ],
+    "wakebear": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/tibrs_ult.webp"
+  },
+  "keeper": {
+   "sheet": "art/poses/keeper.png",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "strike": 1,
+    "guard": 2,
+    "hurt": 3,
+    "cast": 4,
+    "lunge": 5
+   }
+  },
+  "sable": {
+   "sheet": "art/poses/sable.png",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "guard": 1,
+    "strike": 2,
+    "hurt": 3,
+    "cast": 4,
+    "lunge": 5
+   }
+  },
+  "foxsonik": {
+   "sheet": "art/poses/foxsonik.png",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "guard": 1,
+    "cast": 2,
+    "strike": 3,
+    "lunge": 4,
+    "hurt": 5
+   }
+  },
+  "wrenna": {
+   "sheet": "art/poses/wrenna.png",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "guard": 1,
+    "cast": 2,
+    "hurt": 3,
+    "strike": 4,
+    "lunge": 5
+   }
+  },
+  "boltwarden": {
+   "sheet": "art/poses/boltwarden.png",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "cast": 1,
+    "strike": 2,
+    "hurt": 3,
+    "guard": 4,
+    "lunge": 5
+   }
+  },
+  "kilnfang": {
+   "sheet": "art/poses/kilnfang.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/kilnfang_a1.webp",
+    "art/poses/kilnfang_a2.webp",
+    "art/poses/kilnfang_a3.webp"
+   ],
+   "clips": {
+    "rk_kilnbreath": [
+     0,
+     1,
+     2
+    ],
+    "rk_emberfall": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/kilnfang_ult.webp"
+  },
+  "veyra": {
+   "sheet": "art/poses/veyra.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/veyra_a1.webp",
+    "art/poses/veyra_a2.webp",
+    "art/poses/veyra_a3.webp"
+   ],
+   "clips": {
+    "rk_slipstream": [
+     0,
+     1,
+     2
+    ],
+    "rk_horizonlap": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/veyra_ult.webp"
+  },
+  "astergrave": {
+   "sheet": "art/poses/astergrave.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/astergrave_a1.webp",
+    "art/poses/astergrave_a2.webp",
+    "art/poses/astergrave_a3.webp"
+   ],
+   "clips": {
+    "rk_starshot": [
+     0,
+     1,
+     2
+    ],
+    "rk_fallenorbit": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/astergrave_ult.webp"
+  },
+  "cael": {
+   "sheet": "art/poses/cael.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/cael_a1.webp",
+    "art/poses/cael_a2.webp",
+    "art/poses/cael_a3.webp"
+   ],
+   "clips": {
+    "rk_faultline": [
+     0,
+     1,
+     2
+    ],
+    "rk_skysever": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/cael_ult.webp"
+  },
+  "soren": {
+   "sheet": "art/poses/soren.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/soren_a1.webp",
+    "art/poses/soren_a2.webp",
+    "art/poses/soren_a3.webp"
+   ],
+   "clips": {
+    "rk_pulse": [
+     0,
+     1,
+     2
+    ],
+    "rk_lionsequence": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/soren_ult.webp"
+  },
+  "orrix": {
+   "sheet": "art/poses/orrix.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/orrix_a1.webp",
+    "art/poses/orrix_a2.webp",
+    "art/poses/orrix_a3.webp"
+   ],
+   "clips": {
+    "rk_moonfall": [
+     0,
+     1,
+     2
+    ],
+    "rk_tides": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/orrix_ult.webp"
+  },
+  "mossbell": {
+   "sheet": "art/poses/mossbell.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/mossbell_a1.webp",
+    "art/poses/mossbell_a2.webp",
+    "art/poses/mossbell_a3.webp"
+   ],
+   "clips": {
+    "rk_peal": [
+     0,
+     1,
+     2
+    ],
+    "rk_toll": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/mossbell_ult.webp"
+  },
+  "saltlick": {
+   "sheet": "art/poses/saltlick.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/saltlick_a1.webp",
+    "art/poses/saltlick_a2.webp",
+    "art/poses/saltlick_a3.webp"
+   ],
+   "clips": {
+    "rk_grit": [
+     0,
+     1,
+     2
+    ],
+    "rk_flatquake": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/saltlick_ult.webp"
+  },
+  "hingeling": {
+   "sheet": "art/poses/hingeling.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/hingeling_a1.webp",
+    "art/poses/hingeling_a2.webp",
+    "art/poses/hingeling_a3.webp"
+   ],
+   "clips": {
+    "rk_pinshot": [
+     0,
+     1,
+     2
+    ],
+    "rk_doorstop": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/hingeling_ult.webp"
+  },
+  "seren": {
+   "sheet": "art/poses/seren.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/seren_a1.webp",
+    "art/poses/seren_a2.webp",
+    "art/poses/seren_a3.webp"
+   ],
+   "clips": {
+    "rk_canticle": [
+     0,
+     1,
+     2
+    ],
+    "rk_dawnwing": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/seren_ult.webp"
+  },
+  "axiom": {
+   "sheet": "art/poses/axiom.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/axiom_a1.webp",
+    "art/poses/axiom_a2.webp",
+    "art/poses/axiom_a3.webp"
+   ],
+   "clips": {
+    "rk_overcharge": [
+     0,
+     1,
+     2
+    ],
+    "rk_recoil": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/axiom_ult.webp"
+  },
+  "bram": {
+   "sheet": "art/poses/bram.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/bram_a1.webp",
+    "art/poses/bram_a2.webp",
+    "art/poses/bram_a3.webp"
+   ],
+   "clips": {
+    "rk_wrench": [
+     0,
+     1,
+     2
+    ],
+    "rk_stonebounce": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/bram_ult.webp"
+  },
+  "rowan": {
+   "sheet": "art/poses/rowan.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/rowan_a1.webp",
+    "art/poses/rowan_a2.webp",
+    "art/poses/rowan_a3.webp"
+   ],
+   "clips": {
+    "rk_thunderoath": [
+     0,
+     1,
+     2
+    ],
+    "rk_quickening": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/rowan_ult.webp"
+  },
+  "nacresovereign": {
+   "sheet": "art/poses/nacresovereign.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/nacresovereign_a1.webp",
+    "art/poses/nacresovereign_a2.webp",
+    "art/poses/nacresovereign_a3.webp"
+   ],
+   "clips": {
+    "rk_pearltide": [
+     0,
+     1,
+     2
+    ],
+    "rk_drownedcourt": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/nacresovereign_ult.webp"
+  },
+  "nullprior": {
+   "sheet": "art/poses/nullprior.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/nullprior_a1.webp",
+    "art/poses/nullprior_a2.webp",
+    "art/poses/nullprior_a3.webp"
+   ],
+   "clips": {
+    "rk_unmake": [
+     0,
+     1,
+     2
+    ],
+    "rk_closeddoor": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/nullprior_ult.webp"
+  },
+  "inksnout": {
+   "sheet": "art/poses/inksnout.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/inksnout_a1.webp",
+    "art/poses/inksnout_a2.webp",
+    "art/poses/inksnout_a3.webp"
+   ],
+   "clips": {
+    "rk_inkblot": [
+     0,
+     1,
+     2
+    ],
+    "rk_spilledpage": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/inksnout_ult.webp"
+  },
+  "reedkip": {
+   "sheet": "art/poses/reedkip.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/reedkip_a1.webp",
+    "art/poses/reedkip_a2.webp",
+    "art/poses/reedkip_a3.webp"
+   ],
+   "clips": {
+    "rk_bubble": [
+     0,
+     1,
+     2
+    ],
+    "rk_backwash": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/reedkip_ult.webp"
+  },
+  "keeper_m1": {
+   "sheet": "art/poses/keeper_m1.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/keeper_m1_a1.webp",
+    "art/poses/keeper_m1_a2.webp",
+    "art/poses/keeper_m1_a3.webp"
+   ],
+   "clips": {
+    "rk_riftcleave": [
+     0,
+     1,
+     2
+    ],
+    "rk_ward": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/keeper_m1_ult.webp"
+  },
+  "velmora": {
+   "sheet": "art/poses/velmora.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/velmora_a1.webp",
+    "art/poses/velmora_a2.webp",
+    "art/poses/velmora_a3.webp"
+   ],
+   "clips": {
+    "rk_moonfruit": [
+     0,
+     1,
+     2
+    ],
+    "rk_wakingrain": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/velmora_ult.webp"
+  },
+  "palinode": {
+   "sheet": "art/poses/palinode.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/palinode_a1.webp",
+    "art/poses/palinode_a2.webp",
+    "art/poses/palinode_a3.webp"
+   ],
+   "clips": {
+    "rk_backwardbell": [
+     0,
+     1,
+     2
+    ],
+    "rk_hourfall": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/palinode_ult.webp"
+  },
+  "brasswidow": {
+   "sheet": "art/poses/brasswidow.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/brasswidow_a1.webp",
+    "art/poses/brasswidow_a2.webp",
+    "art/poses/brasswidow_a3.webp"
+   ],
+   "clips": {
+    "rk_gearswarm": [
+     0,
+     1,
+     2
+    ],
+    "rk_pendulum": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/brasswidow_ult.webp"
+  },
+  "cinderpip": {
+   "sheet": "art/poses/cinderpip.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/cinderpip_a1.webp",
+    "art/poses/cinderpip_a2.webp",
+    "art/poses/cinderpip_a3.webp"
+   ],
+   "clips": {
+    "rk_embersong": [
+     0,
+     1,
+     2
+    ],
+    "rk_sparkflight": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/cinderpip_ult.webp"
+  },
+  "vesper": {
+   "sheet": "art/poses/vesper.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/vesper_a1.webp",
+    "art/poses/vesper_a2.webp",
+    "art/poses/vesper_a3.webp"
+   ],
+   "clips": {
+    "rk_blackletter": [
+     0,
+     1,
+     2
+    ],
+    "rk_unwritten": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/vesper_ult.webp"
+  },
+  "_frameMs": [
+   180,
+   200,
+   90,
+   180,
+   90,
+   240
+  ],
+  "beast": {
+   "sheet": "art/poses/beast.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/beast_a1.webp",
+    "art/poses/beast_a2.webp",
+    "art/poses/beast_a3.webp"
+   ],
+   "clips": {
+    "devour": [
+     0,
+     1,
+     2
+    ],
+    "souldrain": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/beast_ult.webp"
+  },
+  "seren_awakened": {
+   "sheet": "art/poses/seren.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/seren_a1.webp",
+    "art/poses/seren_a2.webp",
+    "art/poses/seren_a3.webp"
+   ],
+   "clips": {
+    "rk_canticle": [
+     0,
+     1,
+     2
+    ],
+    "rk_dawnwing": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/seren_awakened_ult.webp"
+  },
+  "cael_awakened": {
+   "sheet": "art/poses/cael.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/cael_a1.webp",
+    "art/poses/cael_a2.webp",
+    "art/poses/cael_a3.webp"
+   ],
+   "clips": {
+    "rk_faultline": [
+     0,
+     1,
+     2
+    ],
+    "rk_skysever": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/cael_awakened_ult.webp"
+  },
+  "soren_awakened": {
+   "sheet": "art/poses/soren.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/soren_a1.webp",
+    "art/poses/soren_a2.webp",
+    "art/poses/soren_a3.webp"
+   ],
+   "clips": {
+    "rk_pulse": [
+     0,
+     1,
+     2
+    ],
+    "rk_lionsequence": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/soren_awakened_ult.webp"
+  },
+  "axiom_awakened": {
+   "sheet": "art/poses/axiom.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/axiom_a1.webp",
+    "art/poses/axiom_a2.webp",
+    "art/poses/axiom_a3.webp"
+   ],
+   "clips": {
+    "rk_overcharge": [
+     0,
+     1,
+     2
+    ],
+    "rk_recoil": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/axiom_awakened_ult.webp"
+  },
+  "veyra_awakened": {
+   "sheet": "art/poses/veyra.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/veyra_a1.webp",
+    "art/poses/veyra_a2.webp",
+    "art/poses/veyra_a3.webp"
+   ],
+   "clips": {
+    "rk_slipstream": [
+     0,
+     1,
+     2
+    ],
+    "rk_horizonlap": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/veyra_awakened_ult.webp"
+  },
+  "bram_awakened": {
+   "sheet": "art/poses/bram.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/bram_a1.webp",
+    "art/poses/bram_a2.webp",
+    "art/poses/bram_a3.webp"
+   ],
+   "clips": {
+    "rk_wrench": [
+     0,
+     1,
+     2
+    ],
+    "rk_stonebounce": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/bram_awakened_ult.webp"
+  },
+  "rowan_awakened": {
+   "sheet": "art/poses/rowan.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/rowan_a1.webp",
+    "art/poses/rowan_a2.webp",
+    "art/poses/rowan_a3.webp"
+   ],
+   "clips": {
+    "rk_thunderoath": [
+     0,
+     1,
+     2
+    ],
+    "rk_quickening": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/rowan_awakened_ult.webp"
+  },
+  "mossbell_awakened": {
+   "sheet": "art/poses/mossbell.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/mossbell_a1.webp",
+    "art/poses/mossbell_a2.webp",
+    "art/poses/mossbell_a3.webp"
+   ],
+   "clips": {
+    "rk_peal": [
+     0,
+     1,
+     2
+    ],
+    "rk_toll": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/mossbell_awakened_ult.webp"
+  },
+  "orrix_awakened": {
+   "sheet": "art/poses/orrix.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/orrix_a1.webp",
+    "art/poses/orrix_a2.webp",
+    "art/poses/orrix_a3.webp"
+   ],
+   "clips": {
+    "rk_moonfall": [
+     0,
+     1,
+     2
+    ],
+    "rk_tides": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/orrix_awakened_ult.webp"
+  },
+  "vesper_awakened": {
+   "sheet": "art/poses/vesper.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/vesper_a1.webp",
+    "art/poses/vesper_a2.webp",
+    "art/poses/vesper_a3.webp"
+   ],
+   "clips": {
+    "rk_blackletter": [
+     0,
+     1,
+     2
+    ],
+    "rk_unwritten": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/vesper_awakened_ult.webp"
+  },
+  "kilnfang_awakened": {
+   "sheet": "art/poses/kilnfang.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/kilnfang_a1.webp",
+    "art/poses/kilnfang_a2.webp",
+    "art/poses/kilnfang_a3.webp"
+   ],
+   "clips": {
+    "rk_kilnbreath": [
+     0,
+     1,
+     2
+    ],
+    "rk_emberfall": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/kilnfang_awakened_ult.webp"
+  },
+  "nullprior_awakened": {
+   "sheet": "art/poses/nullprior.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/nullprior_a1.webp",
+    "art/poses/nullprior_a2.webp",
+    "art/poses/nullprior_a3.webp"
+   ],
+   "clips": {
+    "rk_unmake": [
+     0,
+     1,
+     2
+    ],
+    "rk_closeddoor": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/nullprior_awakened_ult.webp"
+  },
+  "brasswidow_awakened": {
+   "sheet": "art/poses/brasswidow.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/brasswidow_a1.webp",
+    "art/poses/brasswidow_a2.webp",
+    "art/poses/brasswidow_a3.webp"
+   ],
+   "clips": {
+    "rk_gearswarm": [
+     0,
+     1,
+     2
+    ],
+    "rk_pendulum": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/brasswidow_awakened_ult.webp"
+  },
+  "reedkip_awakened": {
+   "sheet": "art/poses/reedkip.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/reedkip_a1.webp",
+    "art/poses/reedkip_a2.webp",
+    "art/poses/reedkip_a3.webp"
+   ],
+   "clips": {
+    "rk_bubble": [
+     0,
+     1,
+     2
+    ],
+    "rk_backwash": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/reedkip_awakened_ult.webp"
+  },
+  "cinderpip_awakened": {
+   "sheet": "art/poses/cinderpip.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/cinderpip_a1.webp",
+    "art/poses/cinderpip_a2.webp",
+    "art/poses/cinderpip_a3.webp"
+   ],
+   "clips": {
+    "rk_embersong": [
+     0,
+     1,
+     2
+    ],
+    "rk_sparkflight": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/cinderpip_awakened_ult.webp"
+  },
+  "hingeling_awakened": {
+   "sheet": "art/poses/hingeling.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/hingeling_a1.webp",
+    "art/poses/hingeling_a2.webp",
+    "art/poses/hingeling_a3.webp"
+   ],
+   "clips": {
+    "rk_pinshot": [
+     0,
+     1,
+     2
+    ],
+    "rk_doorstop": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/hingeling_awakened_ult.webp"
+  },
+  "saltlick_awakened": {
+   "sheet": "art/poses/saltlick.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/saltlick_a1.webp",
+    "art/poses/saltlick_a2.webp",
+    "art/poses/saltlick_a3.webp"
+   ],
+   "clips": {
+    "rk_grit": [
+     0,
+     1,
+     2
+    ],
+    "rk_flatquake": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/saltlick_awakened_ult.webp"
+  },
+  "inksnout_awakened": {
+   "sheet": "art/poses/inksnout.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/inksnout_a1.webp",
+    "art/poses/inksnout_a2.webp",
+    "art/poses/inksnout_a3.webp"
+   ],
+   "clips": {
+    "rk_inkblot": [
+     0,
+     1,
+     2
+    ],
+    "rk_spilledpage": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/inksnout_awakened_ult.webp"
+  },
+  "palinode_awakened": {
+   "sheet": "art/poses/palinode.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/palinode_a1.webp",
+    "art/poses/palinode_a2.webp",
+    "art/poses/palinode_a3.webp"
+   ],
+   "clips": {
+    "rk_backwardbell": [
+     0,
+     1,
+     2
+    ],
+    "rk_hourfall": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/palinode_awakened_ult.webp"
+  },
+  "velmora_awakened": {
+   "sheet": "art/poses/velmora.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/velmora_a1.webp",
+    "art/poses/velmora_a2.webp",
+    "art/poses/velmora_a3.webp"
+   ],
+   "clips": {
+    "rk_moonfruit": [
+     0,
+     1,
+     2
+    ],
+    "rk_wakingrain": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/velmora_awakened_ult.webp"
+  },
+  "astergrave_awakened": {
+   "sheet": "art/poses/astergrave.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/astergrave_a1.webp",
+    "art/poses/astergrave_a2.webp",
+    "art/poses/astergrave_a3.webp"
+   ],
+   "clips": {
+    "rk_starshot": [
+     0,
+     1,
+     2
+    ],
+    "rk_fallenorbit": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/astergrave_awakened_ult.webp"
+  },
+  "nacresovereign_awakened": {
+   "sheet": "art/poses/nacresovereign.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/nacresovereign_a1.webp",
+    "art/poses/nacresovereign_a2.webp",
+    "art/poses/nacresovereign_a3.webp"
+   ],
+   "clips": {
+    "rk_pearltide": [
+     0,
+     1,
+     2
+    ],
+    "rk_drownedcourt": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/nacresovereign_awakened_ult.webp"
+  },
+  "beast_awakened": {
+   "sheet": "art/poses/beast.webp",
+   "cols": 3,
+   "rows": 2,
+   "cells": {
+    "idle": 0,
+    "windup": 1,
+    "strike": 2,
+    "recovery": 3,
+    "cast": 4,
+    "hurt": 5,
+    "guard": 5
+   },
+   "attacks": [
+    "art/poses/beast_a1.webp",
+    "art/poses/beast_a2.webp",
+    "art/poses/beast_a3.webp"
+   ],
+   "clips": {
+    "devour": [
+     0,
+     1,
+     2
+    ],
+    "souldrain": [
+     3,
+     4,
+     5
+    ]
+   },
+   "ult": "art/poses/beast_awakened_ult.webp"
+  }
+ }
+}

@@ -1,0 +1,23 @@
+/* Shared browser / Android / iPhone layout foundation. */
+html { -webkit-text-size-adjust:100%; }
+body { min-height:100svh; }
+button, a, input, select, textarea { touch-action:manipulation; }
+button:focus-visible, a:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline:3px solid #a5f3e3; outline-offset:3px;
+}
+@media (pointer:coarse) {
+  button, .btn, input:not([type=checkbox]):not([type=range]), select { min-height:44px; }
+  input, select, textarea { font-size:16px; }
+  .tabs { overflow-x:auto; flex-wrap:nowrap; }
+  .tabs button { flex-shrink:0; }
+}
+@media (max-width:760px) {
+  .app { height:100dvh; }
+  main { padding-left:max(12px,env(safe-area-inset-left)); padding-right:max(12px,env(safe-area-inset-right)); }
+  .mobnav { padding-bottom:env(safe-area-inset-bottom); }
+  .overlay, .ask { padding-top:max(12px,env(safe-area-inset-top)); padding-bottom:max(12px,env(safe-area-inset-bottom)); }
+  .overlay .in, .ask .in { max-height:calc(100dvh - 48px); overflow-y:auto; }
+}
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+}

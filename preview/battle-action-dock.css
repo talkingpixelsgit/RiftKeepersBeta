@@ -1,0 +1,61 @@
+/* Nested image art shares the portrait bounds; external magic stays unclipped. */
+.first-light-build .facing-battle .exp-portrait [data-fighter-art] :is(img.sprite,img.exp-enemy-art){display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;min-width:0;min-height:0}
+/* A low RPG command rail. Original button elements, handlers and focus order remain. */
+/* Bring the shared encounter toward the open central ground, away from edge rocks. */
+.first-light-build .facing-battle .expedition-stage{background-size:cover,112% auto;background-position:center,center 70%;gap:clamp(12px,3vw,40px)}
+.first-light-build .facing-battle .exp-portrait::before{content:"";position:absolute;left:22%;right:22%;bottom:3px;height:9px;background:radial-gradient(ellipse,#0408118c,transparent 70%);pointer-events:none;z-index:0}
+.first-light-build .facing-battle .fighter-facing{position:relative;z-index:1}
+.first-light-build .facing-battle .exp-portrait:has(.posecell[style*="voth.png"])::before{bottom:19%;left:30%;right:18%}
+.first-light-build .facing-battle.full-party .expedition-stage{background-size:cover,cover}
+@media(min-width:801px){
+ .first-light-build .facing-battle:not(.full-party) .exp-unit{grid-template-columns:116px minmax(0,1fr);min-height:154px}
+ .first-light-build .facing-battle:not(.full-party) .exp-portrait{height:136px}
+ .first-light-build .facing-battle:not(.full-party) .exp-portrait .posecell,.first-light-build .facing-battle:not(.full-party) .exp-portrait .portrait{width:116px;height:136px}
+ .first-light-build .facing-battle:not(.full-party) .exp-portrait .keeper-r2{width:92px;height:136px}
+ .first-light-build .facing-battle:not(.full-party) [data-side=ally]{grid-template-columns:minmax(0,1fr) 116px}
+ .first-light-build .facing-battle:not(.full-party) [data-side=ally]>.exp-portrait{grid-column:2;grid-row:1}
+ .first-light-build .facing-battle:not(.full-party) [data-side=ally]>.fighter-readout{grid-column:1;grid-row:1;text-align:right}
+ .first-light-build .facing-battle:not(.full-party) [data-side=ally] .combat-status{justify-content:flex-end}
+}
+@media(max-width:800px){.first-light-build .facing-battle .expedition-stage{background-size:cover,cover}}
+.first-light-build .battle>.actions,.first-light-build .combat-shell>.exp-commands{position:static!important;inset:auto!important;margin:8px 0 0;padding:10px 14px;background:linear-gradient(110deg,#101b2d,#20182d);border:0;border-block:1px solid #73638e;border-radius:0;box-shadow:inset 3px 0 #73d5d5}
+.first-light-build .battle .cmd{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:12px;align-items:stretch}
+.first-light-build .battle .cmdmain{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 12px}
+.first-light-build .battle .cmdfix{display:flex;border-left:1px solid #536078;padding-left:12px}
+.first-light-build .battle .cmd .cmdb{display:flex;align-items:center;justify-content:flex-start;gap:10px;min-height:46px;padding:7px 10px;border:1px solid transparent;border-radius:2px;background:transparent;box-shadow:none;color:#e8e9f7;text-align:left}
+.first-light-build .battle .cmd .cmdb .ui{font-size:20px;width:24px;flex-shrink:0}.first-light-build .battle .cmd .cmdb .ui svg,.first-light-build .battle .cmd .cmdb .ui img{width:22px;height:22px}
+.first-light-build .battle .cmd .cmdb .n{font-size:15px;font-weight:600}.first-light-build .battle .cmd .cmdb .k{position:static;margin-left:auto;font-size:11px;color:#b9cbdc}
+.first-light-build .battle .cmd .cmdb:hover:not(:disabled),.first-light-build .battle .cmd .cmdb:focus-visible,.first-light-build .combat-shell .combat-actions button:focus-visible{background:#234052;border-color:#8de4df;outline:2px solid #8de4df;outline-offset:1px}
+.first-light-build .battle .cmd .cmdb:disabled{opacity:.42}.first-light-build .battle .cmd .tile{min-height:64px;border-radius:2px}.first-light-build .battle .cmd .back{border-left:2px solid #a992d5}
+.first-light-build .combat-shell .combat-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.first-light-build .combat-shell .combat-actions button{min-height:48px;border-radius:2px;background:#152439;border:1px solid #536078;box-shadow:none}
+.battle>.timing.rk-action-dock{position:relative!important;inset:auto!important;display:block!important;width:100%;height:auto;min-height:0;padding:0;margin:8px 0 0;z-index:4;background:none!important;backdrop-filter:none;box-sizing:border-box}
+.battle>.rk-action-dock .tbox{display:grid;grid-template-columns:minmax(140px,1fr) minmax(160px,1fr) 200px;grid-template-rows:auto auto auto;gap:7px 16px;width:100%;max-width:none;max-height:none;padding:12px 16px;border:0;border-block:1px solid #8f78b3;border-radius:0;background:linear-gradient(110deg,#111f32,#21182f);box-shadow:inset 3px 0 #ad91dd;text-align:left}
+.battle>.rk-action-dock .trial-kicker,.battle>.rk-action-dock .rune-dial,.battle>.rk-action-dock .trial-art,.battle>.rk-action-dock .tbox>small,.battle>.rk-action-dock .rk-qte-band-key{display:none!important}
+.battle>.rk-action-dock .tbox>b{grid-column:1;grid-row:1;font:600 19px/1.3 Georgia,serif;margin:0;align-self:center}
+.battle>.rk-action-dock .rune-slots{grid-column:3;grid-row:1;display:flex;margin:0;gap:4px;justify-content:space-between}.battle>.rk-action-dock .rune-slots i{width:62px;height:23px;font-size:10px}
+.battle>.rk-action-dock .rk-qte-score{grid-column:2;grid-row:1;display:flex;flex-direction:column;gap:1px;align-items:stretch;font-size:11px}.battle>.rk-action-dock .rk-qte-score span{text-align:right}
+.battle>.rk-action-dock .rk-qte-track,.battle>.rk-action-dock .track{grid-column:1/3;grid-row:2;width:auto;height:24px;margin:9px 0 4px}
+.battle>.rk-action-dock #trialTap{grid-column:3;grid-row:2/4;margin:0;width:100%;min-height:48px;align-self:stretch;font-size:14px}
+.battle>.rk-action-dock .tbox>*{min-width:0;box-sizing:border-box}.battle>.rk-action-dock #trialTap{padding:8px;white-space:normal;overflow-wrap:anywhere}.battle>.rk-action-dock .rk-qte-key{padding:2px 4px;min-width:0}
+.battle>.rk-action-dock #trialStatus{grid-column:1;grid-row:3;min-height:0;margin:0;font-size:12px}.battle>.rk-action-dock .rk-qte-prompt{grid-column:2;grid-row:3;margin:0;font-size:11px;line-height:1.4}
+@media(max-width:650px){.first-light-build .battle>.actions{padding:8px}.first-light-build .battle .cmd{grid-template-columns:1fr;gap:4px}.first-light-build .battle .cmdmain{grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}.first-light-build .battle .cmdfix{padding:0;border-left:0;border-top:1px solid #536078}.first-light-build .battle .cmd .cmdb{min-height:46px;padding:6px;gap:5px;flex-wrap:wrap}.first-light-build .battle .cmd .cmdb .n{font-size:12px}.first-light-build .battle .cmd .cmdb .ui{width:18px}.first-light-build .battle .cmd .cmdb .ui svg{width:18px}.first-light-build .battle .cmd .cmdb .k{font-size:10px}.battle>.rk-action-dock .tbox{grid-template-columns:minmax(0,1fr) 130px;grid-template-rows:auto auto auto auto;gap:7px 10px;padding:10px}.battle>.rk-action-dock .tbox>b{font-size:17px}.battle>.rk-action-dock .rune-slots{grid-column:2;grid-row:1;gap:2px}.battle>.rk-action-dock .rune-slots i{width:41px;font-size:8px}.battle>.rk-action-dock .rk-qte-score{grid-column:1;grid-row:2}.battle>.rk-action-dock .rk-qte-track,.battle>.rk-action-dock .track{grid-column:1/3;grid-row:3}.battle>.rk-action-dock #trialTap{grid-column:2;grid-row:4;min-height:48px}.battle>.rk-action-dock #trialStatus{grid-column:1;grid-row:4;font-size:11px}.battle>.rk-action-dock .rk-qte-prompt{grid-column:2;grid-row:2;font-size:10px}.first-light-build .combat-shell .combat-actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Timing uses the existing presentation row above the actor, never over the field. */
+.battle:has(>.rk-action-dock)>.rk-cinema{display:none!important}
+.battle>.rk-action-dock .tbox{width:min(640px,100%)}
+.battle>.rk-action-dock{margin-bottom:6px}
+.battle>.rk-action-dock::after{content:"";display:block;width:0;height:0;margin-left:var(--qte-anchor,20%);border:5px solid transparent;border-top-color:#ac92db}
+
+.battle>.timing.rk-action-dock{flex:0 0 auto!important;contain:none!important;min-height:fit-content!important}
+.first-light-build .battle .cmd .cmdb{flex-direction:row;transform:none!important;min-height:46px}
+.first-light-build .battle .cmdmain,.first-light-build .battle .cmdfix{min-height:0}
+
+.battle>.rk-action-dock .rk-action-owner{display:block;font:11px/1.3 system-ui;color:#9fddd9;margin-bottom:3px}
+
+.battle>.rk-action-dock::after{display:none}
+/* Compact idle copy must not shrink the existing block/counter timing host. */
+.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard)):not([data-phase]),.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard))[data-phase=settled]{height:50px;min-height:50px;grid-template-columns:1fr}
+.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard)):not([data-phase]) .rk-cinema-art,.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard))[data-phase=settled] .rk-cinema-art{display:none}
+.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard)):not([data-phase]) .rk-cinema-copy,.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard))[data-phase=settled] .rk-cinema-copy{padding:6px 14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard)):not([data-phase]) .rk-cinema-copy strong,.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard))[data-phase=settled] .rk-cinema-copy strong{font-size:15px}
+.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard)):not([data-phase]) .rk-cinema-copy small,.first-light-build .battle>.rk-cinema:not(:has(.rk-timing-guard))[data-phase=settled] .rk-cinema-copy small{display:none}

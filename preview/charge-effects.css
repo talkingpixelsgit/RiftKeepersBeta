@@ -1,0 +1,28 @@
+/* Energy frames the figure; it never paints over the timing track or controls. */
+.rk-charge-host{position:relative!important;isolation:isolate}
+.rk-qte-actor.rk-charge-host{position:absolute!important;overflow:visible}
+.rk-charge-fx{--charge:#ef3949;position:absolute;inset:-8% -12%;z-index:3;pointer-events:none!important;contain:layout style;overflow:visible}
+.rk-charge-fx[data-colour="yellow"]{--charge:#e7bf46}
+.rk-charge-haze{position:absolute;inset:7% 8% 4%;border-radius:50%;background:radial-gradient(ellipse at 50% 70%,transparent 30%,color-mix(in srgb,var(--charge) 24%,transparent) 58%,transparent 74%);animation:rk-charge-breathe 2.3s ease-in-out infinite}
+.rk-charge-ground{position:absolute;bottom:8%;left:19%;width:62%;height:14%;border:2px solid color-mix(in srgb,var(--charge) 70%,transparent);border-radius:50%;box-shadow:0 0 12px color-mix(in srgb,var(--charge) 35%,transparent);animation:rk-charge-ground 1.9s ease-in-out infinite}
+.rk-charge-ember{position:absolute;left:calc(12% + var(--i)*12%);bottom:12%;width:3px;height:7px;border-radius:50%;background:var(--charge);box-shadow:0 0 5px var(--charge);opacity:0;animation:rk-charge-rise calc(1.5s + var(--i)*.13s) ease-out infinite;animation-delay:calc(var(--i)*-.31s)}
+.rk-charge-bolts{position:absolute;inset:0;width:100%;height:100%;overflow:visible;stroke:var(--charge);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 2px var(--charge))}
+.rk-charge-bolts path{opacity:0;animation:rk-charge-arc 2.7s ease-out infinite}.rk-charge-bolts path:nth-child(2){animation-delay:-1.1s;animation-duration:3.3s}.rk-charge-bolts path:nth-child(3){animation-delay:-1.8s;animation-duration:3.7s}
+.rk-charge-fx[data-phase="release"] .rk-charge-haze{animation:rk-charge-release 1.6s ease-out both}.rk-charge-fx[data-phase="release"] .rk-charge-bolts path{animation:rk-charge-release-arc .9s ease-out both}.rk-charge-fx[data-phase="release"] .rk-charge-bolts path:nth-child(2){animation-delay:.16s}.rk-charge-fx[data-phase="release"] .rk-charge-bolts path:nth-child(3){animation-delay:.3s}
+.rk-charge-fx[data-still="true"] *{animation:none!important}.rk-charge-fx[data-still="true"] .rk-charge-bolts,.rk-charge-fx[data-still="true"] .rk-charge-ember{display:none}.rk-charge-fx[data-still="true"] .rk-charge-haze{opacity:.65}
+/* Respect the game's explicit Full setting even if the OS requests reduced motion. */
+.rk-charge-fx[data-still="false"] .rk-charge-haze{animation-duration:2.3s!important}
+.rk-charge-fx[data-still="false"] .rk-charge-ground{animation-duration:1.9s!important}
+.rk-charge-fx[data-still="false"] .rk-charge-ember{animation-duration:calc(1.5s + var(--i)*.13s)!important}
+.rk-charge-fx[data-still="false"] .rk-charge-bolts path{animation-duration:2.7s!important}
+.rk-charge-fx[data-still="false"] .rk-charge-bolts path:nth-child(2){animation-duration:3.3s!important}
+.rk-charge-fx[data-still="false"] .rk-charge-bolts path:nth-child(3){animation-duration:3.7s!important}
+.rk-charge-fx[data-still="false"][data-phase="release"] .rk-charge-haze{animation-duration:1.6s!important}
+.rk-charge-fx[data-still="false"][data-phase="release"] .rk-charge-bolts path{animation-duration:.9s!important}
+.rk-qte-charge .rk-qte-energy{display:none} /* Red arcs replace the unrelated score sprite. */
+@keyframes rk-charge-breathe{0%,100%{opacity:.65;transform:scale(.94)}55%{opacity:1;transform:scale(1.04)}}
+@keyframes rk-charge-ground{0%,100%{opacity:.45;transform:scaleX(.9)}60%{opacity:.85;transform:scaleX(1.03)}}
+@keyframes rk-charge-rise{0%{opacity:0;transform:translateY(0) rotate(-15deg)}18%{opacity:.65}100%{opacity:0;transform:translate(calc((var(--i) - 3)*4px),-100px) rotate(35deg)}}
+@keyframes rk-charge-arc{0%,56%,100%{opacity:0}62%{opacity:.65}76%{opacity:.2}}
+@keyframes rk-charge-release{0%{opacity:.9;transform:scale(.9)}45%{opacity:.7}100%{opacity:0;transform:scale(1.25)}}
+@keyframes rk-charge-release-arc{0%{opacity:0}18%{opacity:.85}100%{opacity:0}}

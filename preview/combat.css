@@ -1,0 +1,31 @@
+/* Combat alignment is independent of the UI theme. Keep grid columns consistent with hidden chat. */
+@media(min-width:801px){
+ body.first-light-build:has(main>.battle) .app,
+ body.first-light-build:has(.combat-shell) .app{grid-template-columns:188px minmax(0,1fr)}
+ body.first-light-build.navmini:has(main>.battle) .app,
+ body.first-light-build.navmini:has(.combat-shell) .app{grid-template-columns:72px minmax(0,1fr)}
+ body.first-light-build:has(.combat-shell) .social{display:none}
+ body.first-light-build main:has(>.battle){padding:12px 18px;min-width:0}
+}
+.first-light-build main:has(>.battle)>.battle{width:100%;margin:0 auto;min-width:0;box-sizing:border-box}
+.first-light-build .battle .side-row{justify-content:center}
+.combat-shell{width:100%;max-width:1080px;margin:0 auto;min-width:0}
+.fellowship:has(.combat-shell) .fellowship-head{display:none}
+.fellowship:has(.combat-shell)>.local-note{margin:0 0 10px;font-size:11px}
+.combat-heading{text-align:center;margin:6px 0 12px}.combat-heading h2{font-size:26px;margin:6px 0}.combat-heading p{font-size:12px;margin:0}
+.combat-shell .expedition-stage{margin-top:0}.combat-shell .exp-allies{grid-template-columns:repeat(var(--fighters),minmax(0,1fr));max-width:780px;margin:auto}
+.combat-shell .exp-enemies{align-items:stretch}.combat-shell .exp-target{width:240px;max-width:47%;min-width:0}
+.combat-shell .exp-target[aria-pressed=true]{border:2px solid #a5f3e3;background:#163832d9;box-shadow:0 0 0 2px #051816}
+.combat-status{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;min-height:22px;margin-top:5px}.combat-status span{font-size:10px;padding:1px 5px;background:#162b35;color:#c2eee8;border:1px solid #557a80}
+.combat-shell .enemy-intent{font-size:11px;line-height:1.4;min-height:30px;color:#f0d4bc}
+.combat-order{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:7px;padding:10px;background:#0c1b20;font-size:11px}.combat-order span[aria-current]{color:#a5f3e3}.combat-order i{opacity:.4}
+.combat-shell .exp-commands{padding:12px;position:static}.combat-actions{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:8px!important}.combat-actions .btn{text-align:left;min-width:0;min-height:98px;padding:10px}.combat-actions b{display:block;font-size:13px}.combat-actions small{font-size:11px;line-height:1.4;margin-top:5px}.combat-shell>.btn{margin-top:12px}
+.combat-shell :focus-visible{outline:3px solid #a5f3e3;outline-offset:3px}
+@media(max-width:800px){
+ body.first-light-build:has(main>.battle) .app,body.first-light-build:has(.combat-shell) .app{display:block}
+ body.first-light-build:has(main>.battle) .app.soc main,body.first-light-build:has(.combat-shell) .app.soc main{display:block}
+ body.first-light-build:has(main>.battle) .app .social,body.first-light-build:has(.combat-shell) .app .social{display:none}
+ .combat-shell .exp-allies{grid-template-columns:repeat(2,minmax(0,1fr))}.combat-shell .expedition-stage{padding:8px}.combat-shell .exp-target{padding:2px}.combat-shell .exp-enemies{gap:8px}.combat-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.combat-heading h2{font-size:21px}.combat-shell .exp-unit b{font-size:15px}
+}
+.first-light-build .battle .cam .stage{grid-template-columns:minmax(0,1fr);justify-content:stretch}
+.first-light-build .battle .cam .stage>.side-row{width:100%;justify-content:center;min-width:0}

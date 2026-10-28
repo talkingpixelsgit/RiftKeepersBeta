@@ -1,0 +1,41 @@
+/* UI-only composition pass. Load after battle-readability.css. No combat rules. */
+.first-light-build main:has(>.battle)>.battle{gap:6px}
+.first-light-build .battle>.bhead{padding:8px 12px;background:linear-gradient(110deg,#18142c,#0c1628);border-bottom:1px solid #655383}
+.first-light-build .battle>.bhead h2{font-size:20px;line-height:1.2;margin:0}
+.first-light-build .battle>.bhead .hglass{width:28px;height:42px}
+.first-light-build .battle>.binfo{min-height:32px;padding:6px 12px;font-size:14px;line-height:1.4;box-sizing:border-box}
+.first-light-build .battle>.camwrap{overflow:auto!important;min-height:360px;border-color:#6a588b;box-shadow:none;scrollbar-color:#74cfcf #111528}
+.first-light-build .battle .cam .stage{grid-template-rows:auto 1fr;min-height:360px;padding:12px 3% 18px;gap:12px 4%}
+.first-light-build .battle .cam .stage>.side-row{grid-template-rows:none;grid-auto-flow:row;align-content:center;gap:16px 10px}
+.first-light-build .battle .cam .stage>.side-row{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.first-light-build .battle .cam .stage>.side-row:not(:has(>.unit:nth-child(3))){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.first-light-build .battle .cam .stage>.side-row:not(:has(>.unit:nth-child(2))){grid-template-columns:minmax(0,1fr)!important}
+.first-light-build .battle .cam .stage>.side-row>.unit{grid-row:auto!important;grid-column:auto!important}
+.first-light-build .battle .cam .stage>.side-row:first-child{grid-column:2;grid-row:2}
+.first-light-build .battle .cam .stage>.side-row:last-child{grid-column:1;grid-row:2}
+.first-light-build .battle .stage>.vs{grid-row:1;grid-column:1/-1}
+.first-light-build .battle .stage .unit{max-width:220px!important;align-items:center}
+.first-light-build .battle .stage .unit .portrait,.first-light-build .battle .stage .unit.enemy .portrait:has(img.sprite){width:clamp(120px,11vw,170px)!important;height:clamp(120px,11vw,170px)!important;font-size:88px}
+.first-light-build .battle .stage>.side-row:not(:has(>.unit:nth-child(3))) .unit .portrait{width:clamp(160px,15vw,210px)!important;height:clamp(160px,15vw,210px)!important}
+.first-light-build .battle .stage .unit>.plate{background:#111529ed;border:1px solid #5f5477;border-radius:3px;padding:7px 8px}
+.first-light-build .battle .stage .unit .nm{font-size:14px;line-height:1.25;white-space:normal}
+.first-light-build .battle .stage .unit .hpnum{display:block;font-size:12px;line-height:1.4}
+.first-light-build .battle .stage .unit .hp{height:9px}
+.first-light-build .battle .stage .unit.target{outline:2px solid #c6a0fb;outline-offset:2px;background:#52427738}
+.first-light-build .battle .stage .unit.active{border-bottom:3px solid #80e3df}
+.first-light-build .battle .stage .unit:focus-visible{outline:3px solid #80e3df!important;outline-offset:3px!important}
+.first-light-build .battle>.essence{padding:5px 12px;font-size:13px}
+.first-light-build .battle>.actions{position:static!important;background:linear-gradient(100deg,#17142b,#101d30);padding:8px 10px;min-height:64px}
+.first-light-build .battle .act.cmdb{border-radius:3px;min-height:56px}
+.first-light-build .battle>.bfoot{height:auto;min-height:150px;grid-template-rows:auto;overflow:visible;gap:12px;padding:10px 12px;background:#101323;border-top:1px solid #655383}
+.first-light-build .battle>.bfoot .log{height:auto;min-height:128px;max-height:200px;padding:0 10px 0 0;overflow:auto;font-size:14px;line-height:1.6;border:0;scrollbar-color:#74cfcf #111528}
+.first-light-build .battle>.bfoot .log>div{padding:5px 0;border-bottom:1px solid #71648c33}
+.first-light-build .battle>.bfoot .log>div:first-child{color:#eaf9fa;border-left:2px solid #80e3df;padding-left:9px}
+.first-light-build .battle>.bfoot .bchat{min-height:128px;max-height:200px}
+@media(max-width:800px){
+ .first-light-build .battle>.bhead h2{font-size:17px}
+ .first-light-build .battle .stage .unit .portrait,.first-light-build .battle .stage .unit.enemy .portrait:has(img.sprite){width:120px!important;height:140px!important}
+ .first-light-build .battle .stage>.side-row:not(:has(>.unit:nth-child(3))) .unit .portrait{width:140px!important;height:160px!important}
+ .first-light-build .battle>.bfoot{grid-template-columns:minmax(0,1fr);min-height:150px}
+ .first-light-build .battle>.bfoot .bchat{border-left:0;padding-left:0}
+}

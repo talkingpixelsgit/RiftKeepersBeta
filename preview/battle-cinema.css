@@ -1,0 +1,25 @@
+/* A reserved ribbon, never a viewport-covering cutout. */
+.rk-cinema{display:grid;grid-template-columns:minmax(150px,28%) 1fr;position:relative;isolation:isolate;height:148px;min-height:148px;overflow:hidden;pointer-events:none;border-block:1px solid #74609b;background:linear-gradient(112deg,#101b31,#211733 58%,#101626);color:#f3f3ff;--cinema-accent:#84e5e0}
+.rk-cinema::before{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(120deg,transparent 0 65px,#b6a0ef0b 66px 67px);opacity:.8}
+.rk-cinema[hidden]{display:none}.rk-cinema-art{position:relative;min-width:0;overflow:hidden;display:grid;place-items:center;border-right:1px solid #9179b942;background:radial-gradient(ellipse at 50% 90%,#5348885c,transparent 65%)}
+.rk-cinema-art canvas{height:180px;width:270px;max-width:none;object-fit:contain;position:absolute;top:-17px}.rk-cinema-art>.rk-cinema-portrait{height:134px;width:90%;display:grid;place-items:center;position:relative}
+.rk-cinema-portrait .sprite,.rk-cinema-portrait>img,.rk-cinema-portrait>svg,.rk-cinema-portrait .portrait,.rk-cinema-portrait .shared-soul-look,.rk-cinema-portrait .shared-soul-art{width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain;animation:none!important}
+.rk-cinema-portrait .posecell{aspect-ratio:1;width:134px!important;height:134px!important;margin:auto;background-size:calc(var(--pc,3)*100%) calc(var(--pr,2)*100%)}
+.rk-cinema-copy{align-self:center;min-width:0;padding:14px 20px;z-index:1}.rk-cinema-copy small{display:block;font:600 11px/1.5 system-ui;letter-spacing:.12em;text-transform:uppercase;color:#b6c9dd}.rk-cinema-copy strong{display:block;font:600 clamp(19px,2.2vw,28px)/1.15 Georgia,serif;margin:5px 0 7px;text-wrap:balance}.rk-cinema-copy span{display:block;font:13px/1.35 system-ui;color:#b6e4e5}.rk-cinema[data-phase="impact"]{border-color:var(--cinema-accent)}
+.rk-cinema-trace{position:absolute;right:3%;top:0;width:48%;height:100%;opacity:.35;z-index:-1;background:linear-gradient(130deg,transparent 45%,var(--cinema-accent) 49%,transparent 50%);transform:translateX(-30%)}
+.rk-cinema[data-kind="cast"] .rk-cinema-trace,.rk-cinema[data-kind="wave"] .rk-cinema-trace{background:repeating-radial-gradient(ellipse at right,transparent 0 22px,var(--cinema-accent) 23px 24px,transparent 25px 45px)}
+.rk-cinema[data-kind="charge"] .rk-cinema-trace{background:repeating-linear-gradient(100deg,transparent 0 28px,var(--cinema-accent) 30px,transparent 32px 47px)}
+.rk-cinema[data-kind="guard"] .rk-cinema-trace{background:linear-gradient(60deg,transparent 35%,var(--cinema-accent) 36% 37%,transparent 38% 62%,var(--cinema-accent) 63% 64%,transparent 65%)}
+.rk-cinema[data-kind="heal"] .rk-cinema-trace{background:radial-gradient(ellipse at right,var(--cinema-accent),transparent 65%)}
+.rk-cinema:not([data-still="true"]) .rk-cinema-trace{animation:rk-cinema-flow .9s ease-out both}.rk-cinema:not([data-still="true"])[data-kind="charge"] .rk-cinema-trace{animation:rk-cinema-charge .9s ease-out both}
+.rk-cinema[data-element="fire"]{--cinema-accent:#f5a080}.rk-cinema[data-element="storm"]{--cinema-accent:#b1dcff}.rk-cinema[data-element="ice"]{--cinema-accent:#c0efff}.rk-cinema[data-element="void"]{--cinema-accent:#bfa5f5}.rk-cinema[data-voth="true"]{--cinema-accent:#e87b87}
+.first-light-build .combat-shell .exp-commands{background:#101528;border:1px solid #51486c;box-shadow:none}
+.first-light-build .combat-shell .combat-actions button{background:linear-gradient(135deg,#18243a,#151a2c)!important;border:1px solid #455b73!important;border-radius:3px;box-shadow:none!important;color:#e8f3fb;min-height:88px;text-align:left;padding:10px}
+.first-light-build .combat-shell .combat-actions button small{color:#b4c8d8}
+.first-light-build .combat-shell .combat-actions button:not(:disabled):hover{background:#24314b!important;border-color:#809cb7!important}
+.first-light-build .combat-shell .combat-actions button:focus-visible{outline:3px solid #84e5e0!important;outline-offset:2px;border-color:#84e5e0!important}
+.first-light-build .combat-shell .combat-actions button:disabled{opacity:.48}
+@keyframes rk-cinema-flow{from{opacity:0;transform:translateX(-30%)}45%{opacity:.35}to{opacity:.12;transform:translateX(5%)}}
+@keyframes rk-cinema-charge{from{opacity:0;transform:translateY(65%)}to{opacity:.35;transform:translateY(-10%)}}
+@media(max-width:700px){.rk-cinema{height:110px;min-height:110px;grid-template-columns:124px 1fr}.rk-cinema-art canvas{height:136px;width:204px;top:-13px}.rk-cinema-art>.rk-cinema-portrait{height:100px}.rk-cinema-portrait .posecell{height:100px!important;width:100px!important}.rk-cinema-copy{padding:8px 10px}.rk-cinema-copy small{font-size:10px;letter-spacing:.06em}.rk-cinema-copy strong{font-size:18px;margin:3px 0}.rk-cinema-copy span{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.rk-cinema:not([data-still="false"]) *{animation:none!important}}

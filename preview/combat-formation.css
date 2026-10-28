@@ -1,0 +1,37 @@
+/* Facing formations share direction with the existing left-to-right attack sheets. */
+.first-light-build .battle .cam .stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto 1fr;gap:12px 8%;padding:14px 4% 24px;align-items:center}
+.first-light-build .battle .cam .stage>.vs{grid-column:1/-1;grid-row:1;min-width:0}
+.first-light-build .battle .cam .stage>.side-row{grid-row:2;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;width:100%;min-width:0}
+.first-light-build .battle .cam .stage>.side-row:first-child{grid-column:2}
+.first-light-build .battle .cam .stage>.side-row:last-child{grid-column:1}
+.first-light-build .battle .stage .unit.enemy .portrait>img,.first-light-build .battle .stage .unit.enemy .portrait>.posecell{transform:scaleX(-1)}
+.first-light-build .facing-battle .expedition-stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(12px,5vw,64px);padding:14px;align-items:start}
+.first-light-build .facing-battle .exp-allies,.first-light-build .facing-battle .exp-enemies{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;width:100%;max-width:none;margin:0;align-content:start}
+.formation-label{font-size:10px;letter-spacing:.14em;color:#c6e4ed;text-align:center;text-shadow:0 1px 3px #000;grid-column:1/-1}
+.first-light-build .facing-battle .exp-target{width:100%;max-width:none;padding:0;min-height:44px;border-radius:4px}
+.first-light-build .facing-battle .exp-unit{display:grid;grid-template-columns:94px minmax(0,1fr);gap:8px;padding:8px;min-height:128px;border:1px solid #34556b70;border-radius:4px;background:#0b1525cf;align-items:center;text-align:left;overflow:visible}
+.first-light-build .facing-battle .exp-unit.acting{border-color:#66e4ed;box-shadow:inset 3px 0 #66e4ed;background:#12263cdd}
+.first-light-build .facing-battle .exp-portrait{height:110px;position:relative;isolation:isolate}
+.facing-battle .fighter-facing,.facing-battle [data-fighter-art]{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.facing-battle [data-side=enemy] .fighter-facing{transform:scaleX(-1)}
+.facing-battle .exp-portrait .posecell{display:block;width:94px;height:110px;background-size:calc(var(--pc)*100%) calc(var(--pr)*100%);background-repeat:no-repeat}
+.first-light-build .facing-battle .exp-portrait .portrait{width:94px;height:110px;background:none;border:0;box-shadow:none}
+.first-light-build .facing-battle .exp-portrait .keeper-r2{height:110px;width:74px}
+.facing-battle .fighter-readout{min-width:0}.facing-battle .fighter-readout>b{font-size:16px}.facing-battle .fighter-readout>span{font-size:10px;color:#c1d9e4}.facing-battle .combat-status{justify-content:flex-start;min-height:0}.facing-battle .combat-status:empty{display:none}
+.combat-clock{font-variant-numeric:tabular-nums;color:#c7f8fc;font-weight:bold}.combat-clock.urgent{color:#ffc3b7}
+.combat-pouch{border-top:1px solid #294152;margin-top:12px;padding-top:8px}.combat-pouch summary{cursor:pointer;min-height:44px;display:list-item;align-content:center;font-size:13px}.combat-pouch p{font-size:11px}.combat-pouch .combat-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.combat-float{position:absolute;right:5px;top:4px;font:bold 16px Georgia;color:#ffcfbc;text-shadow:0 2px 4px #000;z-index:5;pointer-events:none;white-space:nowrap}.combat-float.restore{color:#9df7ff}
+.combat-shell .exp-log p:last-child{color:#d0f6fb}
+@media(min-width:1100px){.first-light-build .facing-battle.full-party .exp-allies,.first-light-build .facing-battle.full-party .exp-enemies{grid-template-columns:repeat(2,minmax(0,1fr))}.first-light-build .facing-battle.full-party .exp-unit{grid-template-columns:minmax(0,1fr);text-align:center}.facing-battle.full-party .combat-status{justify-content:center}}
+@media(max-width:650px){
+ .first-light-build .facing-battle .expedition-stage{padding:8px;gap:10px}
+ .first-light-build .facing-battle .exp-unit{grid-template-columns:minmax(0,1fr);gap:2px;padding:6px;text-align:center;min-height:178px}
+ .first-light-build .facing-battle .exp-portrait{height:80px}.facing-battle .exp-portrait .posecell{width:76px;height:80px}
+ .first-light-build .facing-battle .exp-portrait .portrait{width:76px;height:80px}.first-light-build .facing-battle .exp-portrait .keeper-r2{width:54px;height:80px}
+ .first-light-build .facing-battle .fighter-readout>b{font-size:13px}.facing-battle .combat-status{justify-content:center}.facing-battle .exp-unit small{font-size:10px}
+ .first-light-build .battle .stage .unit,.first-light-build .battle .stage .unit.enemy{width:100%;max-width:148px;min-width:0}.first-light-build .battle .cam .stage{gap:8px 8%;padding:8px 6px 18px}
+ .first-light-build .battle .stage .unit .portrait{max-width:64px;max-height:70px}
+}
+@media(prefers-reduced-motion:reduce){.combat-shell *{scroll-behavior:auto!important}}
+
+@media(max-width:650px){.first-light-build .facing-battle.full-party .exp-unit{min-height:120px}.first-light-build .facing-battle.full-party .exp-portrait{height:50px}.first-light-build .facing-battle.full-party .exp-portrait .posecell,.first-light-build .facing-battle.full-party .exp-portrait .portrait{height:50px;width:48px}.first-light-build .facing-battle.full-party .exp-portrait .keeper-r2{height:50px;width:34px}}

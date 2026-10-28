@@ -1,0 +1,70 @@
+/* Original target buttons and commands, staggered fighters on one visible floor. */
+.first-light-build main:has(>.battle),.first-light-build main:has(>.combat-shell){overflow-anchor:none;scroll-snap-type:none!important;scroll-behavior:auto}
+@media(min-width:801px){
+ .first-light-build .battle .stage .unit.target{outline:none}
+ .first-light-build .battle .stage .unit:focus-visible{outline:none!important}
+ .first-light-build .battle .stage .unit:focus-visible .gshadow{border:3px solid #80e3df;box-shadow:0 0 10px #80e3df88}
+ .first-light-build .battle .cam .stage{height:clamp(410px,36vw,490px);min-height:410px;box-sizing:border-box;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:1fr;padding:24px 4%;gap:4%}
+ .first-light-build .battle .cam .scene.battle{background-position:center top}
+ .first-light-build .battle .cam .stage>.side-row{display:block!important;position:relative;grid-row:1!important;height:100%;width:100%}
+ .first-light-build .battle .stage>.vs{position:absolute;top:10px;left:25%;right:25%;width:auto;grid-row:auto;text-align:center;pointer-events:none}
+ .first-light-build .battle .stage .unit,.first-light-build .battle .stage .unit.enemy{position:absolute;left:12%;bottom:12%;display:block;width:200px!important;max-width:200px!important;height:200px;padding:0;border:0!important;border-radius:0;background:none!important;box-shadow:none!important}
+ .first-light-build .battle .stage .unit:nth-child(2){left:54%;bottom:32%}
+ .first-light-build .battle .stage>.side-row:first-child>.unit{left:44%;bottom:30%}
+ .first-light-build .battle .stage>.side-row:first-child>.unit:nth-child(2){left:4%;bottom:10%}
+ .first-light-build .battle .stage>.side-row:not(:has(>.unit:nth-child(2)))>.unit{left:30%;bottom:16%}
+ .first-light-build .battle .stage .unit .portrait,.first-light-build .battle .stage .unit.enemy .portrait:has(img.sprite),.first-light-build .battle .stage>.side-row:not(:has(>.unit:nth-child(3))) .unit .portrait{width:200px!important;height:200px!important;max-width:100%;background:none!important;border:0!important;box-shadow:none!important;overflow:visible}
+ .first-light-build .battle .stage .unit .portrait .posecell[style*="voth.png"],.first-light-build .battle .stage .unit .portrait>img[src*="voth-portrait.png"]{position:relative!important;top:18.5%!important}
+ .first-light-build .battle .stage .unit .portrait .keeper-r2{position:relative;top:10%}
+ .first-light-build .battle .stage .unit>.plate{position:absolute;bottom:calc(100% + 4px);left:50%;transform:translateX(-50%);width:170px;box-sizing:border-box;padding:5px 7px;border:0;background:linear-gradient(90deg,transparent,#0c1222bf 12%,#0c1222bf 88%,transparent);box-shadow:none;text-align:center;text-shadow:0 1px 3px #02050b;pointer-events:none}
+ .first-light-build .battle .stage .unit:has(.portrait>img[src*="voth-portrait.png"])>.plate{bottom:calc(100% - 30px)}
+ .first-light-build .battle .stage .unit .nm{font-size:13px;line-height:1.2}.first-light-build .battle .stage .unit .lv,.first-light-build .battle .stage .unit .hpnum{font-size:9px;line-height:1.25}.first-light-build .battle .stage .unit .hp{height:7px}
+ .first-light-build .battle .stage .unit::before,.first-light-build .battle .stage .unit.target::after{content:none!important}
+ .first-light-build .battle .stage .unit .gshadow{display:block;position:absolute;left:22%;bottom:-4px;width:56%;height:14px;margin:0;background:radial-gradient(ellipse,#03051099,transparent 70%);border:0;box-sizing:border-box;pointer-events:none;animation:none}
+ .first-light-build .battle .stage .unit.active .gshadow{border:2px solid #9ef3ef88}.first-light-build .battle .stage .unit.target .gshadow{border:2px solid #d5afff;box-shadow:0 0 8px #bf85ed50}
+ .first-light-build .battle .stage .unit>.tags{position:absolute;top:auto;bottom:-24px;left:0;right:0;justify-content:center}
+ .first-light-build .battle .stage>.side-row:has(>.unit:nth-child(3))>.unit{width:150px!important;height:150px;left:0;bottom:10%}
+ .first-light-build .battle .stage>.side-row:has(>.unit:nth-child(3))>.unit:nth-child(2){left:54%;bottom:10%}
+ .first-light-build .battle .stage>.side-row:has(>.unit:nth-child(3))>.unit:nth-child(3){left:27%;bottom:55%}
+ .first-light-build .battle .stage>.side-row:has(>.unit:nth-child(3))>.unit .portrait{width:150px!important;height:150px!important}
+ .first-light-build .facing-battle .expedition-stage{height:clamp(430px,38vw,520px);min-height:430px;box-sizing:border-box;padding:18px 4%;gap:4%;background-size:cover,112% auto;background-position:center,center top;overflow:visible}
+ .first-light-build .facing-battle .exp-allies,.first-light-build .facing-battle .exp-enemies{display:block;position:relative;width:100%;height:100%;max-width:none;margin:0}
+ .first-light-build .facing-battle .formation-label{position:absolute;inset:0 0 auto;text-align:center;font-size:10px;opacity:.8}
+ .first-light-build .facing-battle .exp-unit,.first-light-build .facing-battle:not(.full-party) .exp-unit{display:block;position:relative;box-sizing:border-box;width:100%;height:190px;min-height:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible;text-align:center}
+ .first-light-build .facing-battle .exp-allies>.exp-unit{position:absolute;width:clamp(150px,16vw,210px);left:12%;bottom:12%;z-index:3}
+ .first-light-build .facing-battle .exp-allies>.exp-unit:nth-child(3){left:54%;bottom:32%;z-index:2}
+ .first-light-build .facing-battle .exp-target{position:absolute;display:block;width:clamp(150px,16vw,210px);height:190px;min-height:0;max-width:none;left:44%;bottom:30%;padding:0;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible;z-index:2}
+ .first-light-build .facing-battle .exp-target:nth-child(3){left:4%;bottom:10%;z-index:3}
+ .first-light-build .facing-battle .exp-target:hover,.first-light-build .facing-battle .exp-target[aria-pressed=true]{background:none;border:0;box-shadow:none}
+ .first-light-build .facing-battle .exp-target:focus-visible{outline:2px solid #91eef0;outline-offset:8px;border-radius:50%}
+ .first-light-build .facing-battle .exp-portrait,.first-light-build .facing-battle:not(.full-party) .exp-portrait{position:absolute;left:0;right:0;bottom:0;width:100%;height:190px;isolation:isolate}
+ .first-light-build .facing-battle .exp-portrait .portrait,.first-light-build .facing-battle .exp-portrait .posecell,.first-light-build .facing-battle:not(.full-party) .exp-portrait .portrait,.first-light-build .facing-battle:not(.full-party) .exp-portrait .posecell{width:170px;height:190px;max-width:100%;max-height:100%}
+ .first-light-build .facing-battle .exp-portrait .keeper-r2,.first-light-build .facing-battle:not(.full-party) .exp-portrait .keeper-r2{width:124px;height:190px;position:relative;top:12%}
+ .first-light-build .facing-battle .exp-portrait .posecell[style*="voth.png"]{top:18.5%;position:relative}
+ .first-light-build .facing-battle .exp-portrait::before,.first-light-build .facing-battle .exp-portrait:has(.posecell[style*="voth.png"])::before{left:24%;right:24%;bottom:0;height:12px;opacity:.85;z-index:0}
+ .first-light-build .facing-battle .acting>.exp-portrait::after,.first-light-build .facing-battle .exp-target[aria-pressed=true] .exp-portrait::after{content:"";position:absolute;left:16%;right:16%;bottom:-4px;height:18px;border:2px solid #9ef3ef88;border-radius:50%;pointer-events:none;z-index:0}
+ .first-light-build .facing-battle .exp-target[aria-pressed=true] .exp-portrait::after{border-color:#d5afff;box-shadow:0 0 9px #bf85ed50}
+ .first-light-build .facing-battle .fighter-readout,.first-light-build .facing-battle:not(.full-party) [data-side=ally]>.fighter-readout{position:absolute;left:50%;bottom:calc(100% + 4px);transform:translateX(-50%);width:175px;max-width:230px;min-width:0;text-align:center;padding:4px 7px;background:linear-gradient(90deg,transparent,#0c1222bf 16%,#0c1222bf 84%,transparent);border:0;pointer-events:none;box-sizing:border-box;text-shadow:0 1px 3px #02050b;z-index:5}
+ .first-light-build .facing-battle .fighter-readout>b{display:block;font-size:13px;line-height:1.2;margin:0 0 3px}
+ .first-light-build .facing-battle .fighter-readout>meter{display:block;width:100%;height:7px;margin:0}
+ .first-light-build .facing-battle .fighter-readout>span{display:block;font-size:9px;line-height:1.25;margin-top:3px}
+ .first-light-build .facing-battle .fighter-readout>small{font-size:9px;line-height:1.2;margin:2px 0}
+ .first-light-build .facing-battle .fighter-readout>.combat-status,.first-light-build .facing-battle:not(.full-party) [data-side=ally] .combat-status{justify-content:center;font-size:9px}
+ .first-light-build .facing-battle .fighter-readout>small:not(.enemy-intent){display:none}
+ .first-light-build .facing-battle .exp-unit:has(.posecell[style*="voth.png"])>.fighter-readout{bottom:calc(100% - 30px)}
+ .first-light-build .facing-battle .exp-allies:not(:has(>.exp-unit:nth-child(3)))>.exp-unit{left:30%;bottom:16%}
+ .first-light-build .facing-battle .exp-enemies:has(>.exp-target:only-of-type)>.exp-target{left:30%;bottom:16%}
+ /* Crowded teams use a shallow stagger, keeping every foot on the clearing. */
+ .first-light-build .facing-battle.full-party .exp-allies>.exp-unit,.first-light-build .facing-battle.full-party .exp-target{width:120px;height:145px;left:0;bottom:10%}
+ .first-light-build .facing-battle.full-party .exp-allies>.exp-unit:nth-child(3){left:25%;bottom:30%}
+ .first-light-build .facing-battle.full-party .exp-allies>.exp-unit:nth-child(4){left:50%;bottom:10%}
+ .first-light-build .facing-battle.full-party .exp-allies>.exp-unit:nth-child(5){left:75%;bottom:30%}
+ .first-light-build .facing-battle.full-party .exp-target{left:70%}
+ .first-light-build .facing-battle.full-party .exp-target:nth-child(3){left:45%;bottom:30%}
+ .first-light-build .facing-battle.full-party .exp-target:nth-child(4){left:20%;bottom:10%}
+ .first-light-build .facing-battle.full-party .exp-target:nth-child(5){left:-5%;bottom:30%}
+ .first-light-build .facing-battle.full-party .exp-unit,.first-light-build .facing-battle.full-party .exp-portrait{height:145px;background:none!important;border:0!important;box-shadow:none!important}
+ .first-light-build .facing-battle.full-party .exp-portrait .posecell,.first-light-build .facing-battle.full-party .exp-portrait .portrait{width:120px;height:145px}
+ .first-light-build .facing-battle.full-party .exp-portrait .keeper-r2{width:95px;height:145px}
+ .first-light-build .facing-battle.full-party .fighter-readout{width:112px;padding-inline:3px}
+}

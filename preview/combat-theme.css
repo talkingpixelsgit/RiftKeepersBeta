@@ -1,0 +1,45 @@
+/* Time Keepers interface palette. Landscape and character colours remain in their artwork. */
+body.first-light-build{
+ --ink:#080d16;--deep:#0b1220;--panel:#101a2a;--raise:#17263a;--line:#294152;--hair:#34556b;
+ --text:#e5f1f5;--muted:#9eb6c3;--gold:#66e4ed;--gold-dim:#2a727e;--blue:#8bd8ed;
+ --good:#78dae5;--tide:#81d8ec;background:#080d16;color:#e5f1f5;
+}
+.first-light-build .app,.first-light-build main{background:#080d16}
+.first-light-build .side,.first-light-build .mobtop,.first-light-build .mobnav,
+.first-light-build .app.soc .social{background:#0b1220;border-color:#294152}
+.first-light-build .brand,.first-light-build .brandtk,.first-light-build .brand small{color:#c3e8f0}
+.first-light-build .nav button[aria-current=page],.first-light-build .mobnav button[aria-current=page]{background:#142a3a;color:#c7f8fc;box-shadow:inset 2px 0 #66e4ed}
+.first-light-build .btn,.first-light-build .battle .act,.first-light-build .begin-journey{background:#142437;border-color:#34556b;color:#e5f1f5}
+.first-light-build .btn:hover:enabled,.first-light-build .battle .act:hover:enabled{background:#20374c;border-color:#66e4ed}
+.first-light-build .btn.gold,.first-light-build button[aria-pressed=true]{background:#153446;border-color:#66e4ed;color:#d4fbff}
+.first-light-build button:focus-visible,.first-light-build input:focus-visible,.first-light-build select:focus-visible,.first-light-build summary:focus-visible{outline:3px solid #66e4ed;outline-offset:3px}
+.first-light-build .fellowship,.first-light-build #local-world{color:#e5f1f5}
+.first-light-build .fellowship p,.first-light-build .local-note,.first-light-build .party-pad-help,
+.first-light-build .party-empty,.first-light-build .combat-actions small{color:#a9bfcd}
+.first-light-build .party-create,.first-light-build .party-kit,.first-light-build .exp-commands,
+.first-light-build .exp-result{background:#101b2c;border-color:#34556b;color:#e5f1f5}
+.first-light-build .exp-result{border-left:3px solid #66e4ed}
+.first-light-build .exp-result h3{color:#d4fbff}
+.first-light-build .party-section-title,.first-light-build .party-member,.first-light-build .party-post,
+.first-light-build .party-ledger,.first-light-build .party-pad-help{border-color:#294152}
+.first-light-build .fellowship .btn{background:#142437;border-color:#34556b;color:#e5f1f5}
+.first-light-build .fellowship button[aria-pressed=true]{background:#153446;border-color:#66e4ed;color:#e5f1f5}
+.first-light-build .party-create input,.first-light-build .world-compose input{background:#080f1c;color:#e5f1f5;border-color:#34556b}
+.first-light-build .ready-seal.lit,.first-light-build .party-connection .connected,
+.first-light-build .post-number,.first-light-build .quiet-camp>span{color:#66e4ed}
+.first-light-build .exp-commands{box-shadow:0 -8px 20px #03081266}
+.first-light-build .combat-order{background:#0b1525;color:#a9bfcd}
+.first-light-build .combat-order span[aria-current]{color:#66e4ed}
+.first-light-build .combat-status span{background:#152b40;color:#b9f5fc;border-color:#345c75}
+.first-light-build .combat-shell .exp-target{background:#0c182bce;border-color:#34556b}
+.first-light-build .combat-shell .exp-target[aria-pressed=true]{background:#122e42df;border-color:#66e4ed;box-shadow:0 0 0 2px #07101f}
+.first-light-build .exp-unit.acting{background:#173a514d;border-bottom-color:#66e4ed}
+.first-light-build .exp-unit small,.first-light-build .exp-unit>span{color:#c1d9e4}
+.first-light-build .exp-unit meter{accent-color:#66e4ed}
+.first-light-build .exp-unit meter::-webkit-meter-optimum-value{background:#66e4ed}
+.first-light-build .exp-unit meter::-moz-meter-bar{background:#66e4ed}
+.first-light-build .combat-shell .enemy-intent{color:#bce9f6}
+.first-light-build #world-notice{background:#101e32;border-color:#66e4ed}
+.first-light-build .world-invite{border-color:#66e4ed;background:#101e32}
+.first-light-build .battle .bhead,.first-light-build .battle .camwrap{border-color:#34556b}
+.first-light-build .expedition-stage{border-color:#34556b;background-image:linear-gradient(#080f2040,#080f2077),url('../rift-play/visuals/meadow-battle.png')}

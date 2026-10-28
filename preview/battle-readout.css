@@ -1,0 +1,5 @@
+.rk-battle-readout{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;padding:9px 12px;border-left:2px solid #7edbd7;background:linear-gradient(110deg,#17162b,#101a2a);font-size:14px;line-height:1.4;pointer-events:none}
+.rk-battle-readout>div{min-width:0}.rk-battle-readout small{display:block;color:#bcb5d2;font-size:11px;letter-spacing:.06em;text-transform:uppercase}.rk-battle-readout strong{font-weight:600;color:#eef4ff;overflow-wrap:anywhere}
+.rk-battle-readout .rk-target strong{color:#cbb3f4}.rk-battle-readout .rk-result{grid-column:1/-1;border-top:1px solid #5d507b66;padding-top:6px}.rk-battle-readout .rk-outcome{grid-column:1/-1;margin:0;color:#a8e3de;overflow-wrap:anywhere;font-size:13px}
+@media(max-width:480px){.rk-battle-readout{font-size:13px;gap:5px 10px;padding:8px}.rk-battle-readout small{font-size:10px}}
+@media(min-width:900px){.rk-battle-readout{grid-template-columns:1fr 1fr 2fr;gap:2px 18px}.rk-battle-readout .rk-turn,.rk-battle-readout .rk-target{grid-row:1/3}.rk-battle-readout .rk-result{grid-column:3;grid-row:1;border:0;padding:0}.rk-battle-readout .rk-outcome{grid-column:3;grid-row:2}}

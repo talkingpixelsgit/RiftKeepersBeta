@@ -1,0 +1,30 @@
+/* Recorded solo battlefield fix: disable size-containment shrink rules. */
+.first-light-build main:has(>.battle)>.battle{height:auto;min-height:100%;max-height:none;display:flex;flex-direction:column;gap:8px;flex-shrink:0}
+.first-light-build .battle>.camwrap{flex:1 0 auto;min-height:340px;overflow:auto}
+.first-light-build .battle .cam,.first-light-build .battle .cam>.scene{height:auto;min-height:340px;flex:1 0 auto;display:block}
+.first-light-build .battle .cam .scene>.inner{container-type:normal;display:block;height:auto;min-height:340px}
+.first-light-build .battle .cam .stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto 1fr;gap:16px 5%;padding:16px 3% 26px;min-height:340px;box-sizing:border-box;align-items:center}
+.first-light-build .battle .cam .stage>.side-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 8px;align-items:end;justify-items:center;align-content:center;grid-row:2}
+.first-light-build .battle .cam .stage>.side-row:not(:has(>.unit:nth-child(3))){grid-template-columns:repeat(2,minmax(0,1fr))}
+.first-light-build .battle .cam .stage>.side-row:not(:has(>.unit:nth-child(2))){grid-template-columns:minmax(0,1fr)}
+.first-light-build .battle .stage .unit,.first-light-build .battle .stage .unit.enemy{display:flex;flex-direction:column;width:100%;min-width:0;max-width:190px;padding:6px;gap:4px;text-align:center;border-radius:3px;background:linear-gradient(0deg,#101426d9,transparent 70%);box-sizing:border-box}
+.first-light-build .battle .stage .unit .portrait,.first-light-build .battle .stage .unit.enemy .portrait,.first-light-build .battle .stage .unit.enemy .portrait:has(img.sprite){width:clamp(108px,10vw,160px);height:clamp(108px,10vw,160px);max-width:none;max-height:none;flex-shrink:0;font-size:72px;border-radius:0}
+.first-light-build .battle .stage .unit .portrait>.sprite,.first-light-build .battle .stage .unit .portrait>.polished-portrait{width:100%;height:100%;object-fit:contain}
+.first-light-build .battle .stage .unit .plate{width:100%;box-sizing:border-box;padding:7px 8px;min-width:0}.first-light-build .battle .stage .unit .plate b{font-size:14px;line-height:1.2;overflow-wrap:anywhere}.first-light-build .battle .stage .unit .hpnum{font-size:12px}.first-light-build .battle .stage .unit .hp{height:8px}.first-light-build .battle .stage .unit .tags{flex-wrap:wrap}.first-light-build .battle .stage .unit .gshadow{display:none}
+.first-light-build .battle>.bfoot{flex:0 0 auto;height:90px;min-height:70px}.first-light-build .battle>.actions{flex:0 0 auto;min-height:64px}.first-light-build .battle>.actions .waiting{padding:14px;min-height:44px}
+/* Shared portraits must fit their own grid column rather than overflow a94px track. */
+.first-light-build .facing-battle .exp-unit{grid-template-columns:minmax(120px,145px) minmax(0,1fr)}
+.first-light-build .facing-battle .exp-portrait{height:155px}.first-light-build .facing-battle .exp-portrait .portrait,.first-light-build .facing-battle .exp-portrait .posecell{width:145px;height:155px;max-width:100%}
+@media(max-width:800px){.first-light-build .battle .cam .stage{gap:12px 4%;padding:12px 8px 20px}.first-light-build .battle .stage .unit,.first-light-build .battle .stage .unit.enemy{padding:4px}.first-light-build .battle .stage .unit .portrait,.first-light-build .battle .stage .unit.enemy .portrait,.first-light-build .battle .stage .unit.enemy .portrait:has(img.sprite){width:110px;height:120px;font-size:64px}.first-light-build .battle .cam .stage:has(.side-row>.unit:nth-child(2)){min-width:640px}.first-light-build .battle .cam .stage:has(.side-row>.unit:nth-child(3)){min-width:900px}.first-light-build .facing-battle .exp-unit,.first-light-build .facing-battle.full-party .exp-unit{grid-template-columns:minmax(0,1fr);min-height:200px}.first-light-build .facing-battle .exp-portrait,.first-light-build .facing-battle.full-party .exp-portrait{height:120px}.first-light-build .facing-battle .exp-portrait .portrait,.first-light-build .facing-battle .exp-portrait .posecell,.first-light-build .facing-battle.full-party .exp-portrait .portrait,.first-light-build .facing-battle.full-party .exp-portrait .posecell{width:110px;height:120px}.first-light-build .facing-battle .exp-portrait .keeper-r2,.first-light-build .facing-battle.full-party .exp-portrait .keeper-r2{height:120px;width:88px}}
+@media(min-width:1100px){.first-light-build .facing-battle.full-party .exp-unit{grid-template-columns:minmax(0,1fr)}}
+.first-light-build main:has(>.battle){overflow:auto!important;scroll-snap-type:none}
+.first-light-build .battle>.camwrap{height:auto;flex:0 0 auto}
+.first-light-build .battle .cam .stage,.first-light-build .battle .cam .stage>.side-row{height:auto}
+.first-light-build .battle .stage .unit .portrait>img.sprite{display:block;position:static;inset:auto;margin:0;max-width:100%;max-height:100%;object-fit:contain}
+.first-light-build .battle .stage .unit .portrait>img.sprite{min-height:0;min-width:0;height:100%!important;width:100%!important;align-self:stretch;justify-self:stretch}
+.first-light-build .battle .stage .unit .nm{font-size:14px;line-height:1.25;white-space:normal;overflow-wrap:anywhere}.first-light-build .battle .stage .unit .hpnum{display:block}
+.first-light-build main:has(>.battle)>.battle{max-width:none}
+/* The camera, not just its inner grid, must overflow the scroll container. */
+@media(max-width:800px){.first-light-build .battle .cam:has(.stage>.side-row>.unit:nth-child(2)){min-width:640px}.first-light-build .battle .cam:has(.stage>.side-row>.unit:nth-child(3)){min-width:900px}}
+.first-light-build .battle .stage .unit .portrait>.keeper-r2{display:block;position:static;width:100%!important;height:100%!important;max-height:100%;transform:none;overflow:hidden}
+.first-light-build .battle>.actions{position:static;bottom:auto;box-shadow:none}

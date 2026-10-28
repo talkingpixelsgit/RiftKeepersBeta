@@ -1,0 +1,34 @@
+/* Quiet book magic: decorative CSS only, beneath text, no input surfaces. */
+.first-light-build .codex::after {
+ content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+ padding:2px;border-radius:inherit;
+ background:linear-gradient(120deg,#a375e800 12%,#a375e85c 30%,#80e5dc55 45%,#a375e800 65%);
+ background-size:250% 250%;
+ mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+ mask-composite:exclude;
+ animation:rk-book-edge 14s ease-in-out infinite alternate;
+}
+.first-light-build main:has(.codextabs) .detail::after {
+ animation:rk-book-ink 10s ease-in-out infinite alternate;
+}
+.first-light-build .codex .cxpage[key="place:meadow"]::after {
+ background-image:radial-gradient(ellipse,#91eee510,transparent 68%),radial-gradient(ellipse,#b299ed0d,transparent 70%),linear-gradient(90deg,#242139f5 0%,#242139e8 40%,#242139d9 100%),url('../art/bg/hall.png');
+ background-size:26% 58%,18% 44%,100% 100%,cover;
+ background-position:82% 68%,96% 48%,center,76% center;
+ background-repeat:no-repeat;
+ animation:rk-book-souls 12s ease-in-out infinite alternate;
+}
+@keyframes rk-book-edge {from{background-position:0% 20%;opacity:.5}to{background-position:100% 80%;opacity:.85}}
+@keyframes rk-book-ink {from{opacity:.5}to{opacity:.9}}
+@keyframes rk-book-souls {from{background-position:82% 68%,96% 48%,center,76% center}to{background-position:78% 38%,90% 22%,center,76% center}}
+@media(max-width:800px){
+ .first-light-build .codex .cxpage[key="place:meadow"]::after{animation-name:rk-book-souls-phone;background-position:82% 68%,96% 48%,center,65% center}
+ @keyframes rk-book-souls-phone {from{background-position:82% 68%,96% 48%,center,65% center}to{background-position:78% 38%,90% 22%,center,65% center}}
+}
+/* Reuse the game's motion choice; follow the device unless Full is explicit. */
+.rk-reduced .codex::after,.rk-reduced .codex .cxpage::after,.rk-reduced main:has(.codextabs) .detail::after{animation:none!important}
+@media(prefers-reduced-motion:reduce){
+ body:not(.rk-full-motion) .codex::after,body:not(.rk-full-motion) .codex .cxpage::after,body:not(.rk-full-motion) main:has(.codextabs) .detail::after{animation:none!important}
+}
+.rk-page-hidden .codex::after,.rk-page-hidden .codex .cxpage::after,.rk-page-hidden main:has(.codextabs) .detail::after,
+body:has(.overlay,.ask,.sheet) .codex::after,body:has(.overlay,.ask,.sheet) .codex .cxpage::after,body:has(.overlay,.ask,.sheet) main:has(.codextabs) .detail::after{animation-play-state:paused!important}

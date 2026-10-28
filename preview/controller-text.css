@@ -1,0 +1,16 @@
+/* A quiet writing panel; fixed key positions keep controller travel predictable. */
+.overlay.rk-text-entry{z-index:12000;display:grid;place-items:center;padding:12px;background:rgba(2,5,12,.94);overflow:auto;overscroll-behavior:contain}
+.rk-text-entry .rk-text-card{width:min(100%,540px);max-height:calc(100dvh - 24px);overflow:auto;background:#080e1b;border:1px solid #43677a;border-radius:8px;padding:18px;color:#e9f3f6;box-shadow:0 12px 60px #0009;scrollbar-gutter:stable}
+.rk-text-card h2{font-size:1.5rem;overflow-wrap:anywhere;margin:2px 0 12px}
+.rk-text-card label{display:block;color:#b4d1dc}
+.rk-text-card #rk-text-draft{width:100%;min-height:44px;background:#030913;color:#f1f8fc;border:1px solid #63818c;border-radius:4px;padding:8px;font-size:16px}
+.rk-text-info{display:flex;gap:12px;margin:8px 0 12px;font-size:.9rem;color:#bbccd8}
+.rk-text-info [data-text-count]{flex-shrink:0;font-variant-numeric:tabular-nums}
+.rk-text-keys{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}
+.rk-text-entry .rk-text-keys .btn{min-width:0;width:100%;min-height:44px;padding:6px 2px;margin:0;line-height:1.1;border:1px solid #304459;border-radius:4px;background:#0e1929;color:#e9f5fa;font-size:1rem;box-shadow:none}
+.rk-text-entry .rk-text-keys [data-text-action]{font-size:.85rem;background:#172035}
+.rk-text-entry .rk-text-keys [data-text-action="apply"]{border-color:#69c8cf;color:#acffff}
+.rk-text-entry .rk-text-keys [aria-pressed="true"]{border-color:#ad90dc;color:#ddc8ff}
+.rk-text-entry .btn:focus,.rk-text-entry input:focus{outline:2px solid #9cf4ee;outline-offset:1px;background:#20334a}
+.rk-text-card #rk-text-help{margin:12px 0 0;color:#b4c9d5;font-size:.9rem}
+@media(max-width:440px){.rk-text-entry .rk-text-card{padding:10px}.rk-text-info{display:block}.rk-text-info [data-text-count]{display:block;margin-bottom:3px}}

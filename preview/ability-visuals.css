@@ -1,0 +1,24 @@
+/* Brief portrait-bound effects; readouts and commands are never covered. */
+.exp-portrait:has(>.rk-ability-vfx),.portrait:has(>.rk-ability-vfx){position:relative}
+.rk-ability-vfx{position:absolute;inset:3%;z-index:5;pointer-events:none!important;overflow:hidden;contain:paint;opacity:0;animation:rk-magic-life .85s ease-out both}
+.rk-ability-vfx i{position:absolute;display:block;pointer-events:none;border-color:var(--magic);color:var(--magic)}
+.rk-magic-seal{inset:18% 8%;border:2px solid;border-radius:50%;transform:scaleY(.5);opacity:.7;animation:rk-magic-seal .8s ease-out both}
+.rk-magic-trace{inset:3% 33%;background:var(--magic);opacity:.6;clip-path:polygon(45% 0,74% 0,53% 39%,85% 37%,20% 100%,41% 52%,12% 54%);animation:rk-magic-fall .7s ease-out both}
+.rk-magic-motes{inset:12%;background:radial-gradient(circle at 15% 35%,var(--magic) 0 2px,transparent 3px),radial-gradient(circle at 83% 18%,var(--magic) 0 2px,transparent 3px),radial-gradient(circle at 70% 85%,var(--magic) 0 2px,transparent 3px);animation:rk-magic-rise .85s ease-out both}
+.rk-ability-vfx[data-path=forward] .rk-magic-trace{inset:38% 0;clip-path:polygon(0 25%,62% 35%,65% 0,100% 50%,64% 100%,62% 65%,0 75%);animation-name:rk-magic-cross}
+.rk-ability-vfx[data-path=branch] .rk-magic-trace{inset:14%;clip-path:polygon(48% 0,56% 38%,90% 12%,66% 47%,100% 58%,64% 62%,80% 100%,50% 69%,19% 95%,36% 60%,0 40%,39% 40%)}
+.rk-ability-vfx[data-element=fire] .rk-magic-trace{inset:20% 22%;clip-path:polygon(5% 100%,0 57%,25% 72%,40% 0,58% 40%,74% 17%,100% 100%);background:linear-gradient(0deg,var(--magic),#d16dba66,transparent);animation-name:rk-magic-rise}
+.rk-ability-vfx[data-element=ice] .rk-magic-trace{inset:12% 20%;clip-path:polygon(50% 0,64% 39%,100% 50%,64% 61%,50% 100%,36% 61%,0 50%,36% 39%);background:linear-gradient(45deg,transparent,var(--magic),transparent)}
+.rk-ability-vfx[data-element=water] .rk-magic-trace,.rk-ability-vfx[data-element=spirit] .rk-magic-trace,.rk-ability-vfx[data-element=void] .rk-magic-trace{inset:16%;background:none;border:3px solid;border-radius:50%;clip-path:none;transform:scaleX(.55) rotate(35deg);animation-name:rk-magic-rise}
+.rk-ability-vfx[data-element=earth] .rk-magic-trace{inset:48% 8% 12%;clip-path:polygon(0 100%,10% 45%,22% 67%,35% 0,48% 56%,65% 14%,79% 70%,89% 40%,100% 100%);animation-name:rk-magic-rise}
+.rk-ability-vfx[data-strong=true] .rk-magic-seal{border-width:3px;border-style:double;inset:8% 2%}
+.rk-ability-vfx[data-mode=charge]{animation-duration:1s}.rk-ability-vfx[data-mode=charge] .rk-magic-trace{inset:0 8%;border:0;border-radius:0;background:linear-gradient(0deg,#9cf5e72b,#a98aff77,transparent);clip-path:polygon(0 100%,8% 44%,20% 67%,30% 13%,43% 36%,51% 0,65% 45%,79% 20%,88% 65%,100% 100%);transform:none}.rk-ability-vfx[data-mode=charge] .rk-magic-seal{inset:65% 2% 0;animation-duration:1s}
+.rk-ability-vfx[data-mode=ward] .rk-magic-trace,.rk-ability-vfx[data-mode=restore] .rk-magic-trace{display:none}.rk-ability-vfx[data-mode=ward] .rk-magic-seal{border-radius:40% 40% 50% 50%;transform:none}
+@keyframes rk-magic-life{0%{opacity:0}20%,55%{opacity:.65}100%{opacity:0}}
+@keyframes rk-magic-fall{from{translate:0 -24%;scale:.7}to{translate:0 16%;scale:1}}
+@keyframes rk-magic-cross{from{translate:-25% 0;scale:.7}to{translate:15% 0;scale:1}}
+@keyframes rk-magic-rise{from{translate:0 15%;opacity:.2}50%{opacity:.7}to{translate:0 -15%;opacity:0}}
+@keyframes rk-magic-seal{from{scale:.45;opacity:.8}to{scale:1.2;opacity:0}}
+.rk-ability-vfx[data-still=true]{animation:none;opacity:.35}.rk-ability-vfx[data-still=true] i{animation:none}.rk-ability-vfx[data-still=true] .rk-magic-trace,.rk-ability-vfx[data-still=true] .rk-magic-motes{display:none}
+.rk-reduced .rk-ability-vfx,.rk-reduced .rk-ability-vfx i{animation:none!important}.rk-reduced .rk-ability-vfx{opacity:.3}.rk-reduced .rk-magic-trace,.rk-reduced .rk-magic-motes{display:none}
+@media(prefers-reduced-motion:reduce){body:not(.rk-full-motion) .rk-ability-vfx,body:not(.rk-full-motion) .rk-ability-vfx i{animation:none!important}body:not(.rk-full-motion) .rk-ability-vfx{opacity:.3}body:not(.rk-full-motion) .rk-magic-trace,body:not(.rk-full-motion) .rk-magic-motes{display:none}}

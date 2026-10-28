@@ -1,0 +1,44 @@
+/* Gold light, violet depth, cyan reflections. All decoration stays behind controls. */
+.first-light-build .first-light-art.rk-portal-title{isolation:isolate;min-height:800px;background:#151027;position:relative;border-right:1px solid #b58df34d}
+.rk-door-scene,.rk-door-scene *{pointer-events:none!important}
+.rk-door-scene{position:absolute;inset:0;overflow:hidden;z-index:-1;background:radial-gradient(ellipse at 50% 28%,#7852a5,#152638 67%,#080d25)}
+.rk-door-landscape{position:absolute;inset:0;background:linear-gradient(180deg,#140c3590,transparent 30%,#070c2670 85%),url('assets/forest.png') 49% center/cover;filter:saturate(1.3);opacity:.85}
+.rk-door-halo{position:absolute;inset:10% -15% 15%;background:radial-gradient(ellipse at 50% 30%,#ffe9ac75,transparent 38%),radial-gradient(ellipse at 80% 70%,#a844ea70,transparent 45%),radial-gradient(ellipse at 15% 75%,#00e2ef50,transparent 40%);mix-blend-mode:screen}
+.rk-door-frame{position:absolute;width:39%;height:44%;left:31%;top:29%;border:7px solid #fbd38a;border-radius:46% 46% 3px 3px;box-shadow:0 0 0 4px #6e3f57,0 0 0 9px #c9965750,0 0 30px #ffb24c,0 0 85px #c96cff,inset 0 0 25px #92e7ff;background:#321a65;transform:perspective(700px) rotateY(-8deg);overflow:hidden}
+.rk-door-depth{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 85%,#e1ffec,transparent 17%),radial-gradient(ellipse at 50% 68%,#78dced,transparent 36%),radial-gradient(ellipse at 22% 40%,#de80ff,transparent 50%),linear-gradient(150deg,#29125f,#6943a4 55%,#203d80);animation:rk-door-breathe 7s ease-in-out infinite alternate}
+.rk-door-frame>i{position:absolute;width:120%;height:60%;left:-10%;top:22%;border:1px solid #f7c6ff70;border-radius:50%;transform:rotate(-35deg);box-shadow:0 0 18px #fcb9ff55;animation:rk-door-drift 14s ease-in-out infinite alternate}
+.rk-door-frame>i:nth-of-type(2){top:37%;transform:rotate(32deg);border-color:#8cfff399;animation-delay:-5s}.rk-door-frame>i:nth-of-type(3){top:50%;transform:rotate(-20deg);border-color:#ffdb91;animation-delay:-9s}
+.rk-door-floor{position:absolute;left:13%;right:13%;top:68%;height:11%;border:2px solid #fac57f;border-radius:50%;box-shadow:0 0 28px #ffb86b,inset 0 0 34px #3ad7f9;background:radial-gradient(ellipse,#7bfaff66,transparent 65%);transform:rotate(-3deg)}
+.rk-door-motes i{position:absolute;width:3px;height:3px;border-radius:50%;background:#ffdc88;box-shadow:0 0 8px 2px #ffd777;animation:rk-door-mote 7s calc(var(--i)*-.6s) ease-in-out infinite}.rk-door-motes i:nth-child(3n){background:#70f4ed;box-shadow:0 0 9px 2px #55c7ff}.rk-door-motes i:nth-child(3n+1){background:#f6a1ff}
+.rk-portal-title .title-wordmark{top:5%;left:8%;right:8%;text-shadow:0 2px 14px #140922}
+.rk-portal-title .title-wordmark small{color:#b5fff4}.rk-portal-title .title-wordmark h1{font-size:clamp(54px,6vw,86px);color:#fff3d4!important;letter-spacing:.02em;line-height:.91;margin:16px 0}.rk-portal-title .title-wordmark h1 span{color:#ffdd8f;letter-spacing:.4em}
+.rk-portal-title .welcome-keeper.rk-door-keeper{bottom:24%;right:7%;height:31%;width:30%;filter:drop-shadow(-4px 0 8px #7ef9ff70) drop-shadow(3px 3px 10px #100720);z-index:1}
+.rk-portal-controls{position:absolute;bottom:3%;left:7%;right:7%;z-index:5;text-align:center;display:grid;justify-items:center;gap:10px}
+.rk-portal-caption{font:600 10px system-ui;letter-spacing:.24em;color:#fff2c8;text-shadow:0 2px 5px #000}
+.rk-portal-controls [data-portal-check]{min-height:56px;width:min(100%,370px);border:1px solid #ffe3a2;border-radius:4px;background:linear-gradient(135deg,#54316cf2,#1b3e58f2);box-shadow:0 0 0 3px #0c193cc9,0 0 22px #44dce650,inset 0 0 18px #a671e13a;color:#fff4d9;font:700 17px var(--display);padding:12px 16px;cursor:pointer}
+.rk-portal-controls [data-portal-check] span{color:#74ffee;margin-left:9px}.rk-portal-controls [aria-busy=true]{border-color:#81ffec}
+.rk-portal-controls [data-portal-result]{font:13px/1.4 system-ui;margin:0;max-width:350px;min-height:37px;color:#e3eafd;text-shadow:0 2px 4px #07081a;background:#10132ac9;border-radius:5px;padding:6px 9px}
+.rk-portal-controls [data-portal-motion]{min-height:44px;background:#10182acf;border:1px solid #adc7f055;border-radius:3px;color:#cbdcfa;font:12px system-ui;padding:7px 14px;cursor:pointer}
+.rk-portal-controls button:is(:focus-visible,.padfocus){outline:3px solid #b3fff0!important;outline-offset:5px!important}
+.first-light-build .first-light-form{background:radial-gradient(ellipse at 100% 0,#42235e66,transparent 48%),linear-gradient(155deg,#16152d,#0b1827)!important}
+.first-light-build .first-light-form h2{color:#fff0d5}.first-light-build .first-light-form .eyebrow{color:#8cfff1}.first-light-build .first-light-form .begin-journey{background:linear-gradient(110deg,#84f4df,#8ebdff)!important;border:1px solid #befff3;color:#102036;box-shadow:0 0 20px #33c3c61a}
+.first-light-build .first-light-form :is(.calling-choices,.companion-picks) button[aria-pressed=true]{background:linear-gradient(145deg,#59376c,#193f51)!important;border-color:#afffed!important;box-shadow:inset 0 0 20px #9560bc35}
+.rk-portal-event{position:absolute;inset:0;z-index:4;overflow:hidden;pointer-events:none!important}
+.rk-portal-visitor{position:absolute;width:80px;height:100px;object-fit:contain;left:45%;top:47%;animation:rk-door-arrival 3.5s ease-in forwards;filter:drop-shadow(0 0 14px #5df5e3)}
+.rk-portal-scroll{position:absolute;width:64px;height:74px;left:45%;top:48%;filter:sepia(1) saturate(4) drop-shadow(0 0 12px #ff6c17);animation:rk-door-scroll 3.8s ease-in forwards}
+.rk-portal-scorch{position:absolute;inset:0;border:15px solid #b5491620;box-shadow:inset 0 0 55px #ff8428a0;animation:rk-door-fade 4.2s both}
+.rk-portal-blood{position:absolute;width:110px;height:93px;background-image:url('assets/void-polish/blood-rows.png');background-position:0 calc(-1*var(--blood-row));animation:rk-door-blood .6s steps(10) forwards,rk-door-fade 4.2s both;filter:drop-shadow(0 2px 2px #260818)}
+@keyframes rk-door-breathe{to{opacity:.78;transform:scale(1.08)}}@keyframes rk-door-drift{to{translate:0 10%;opacity:.45}}@keyframes rk-door-mote{50%{translate:5px -15px;opacity:.3}}
+@keyframes rk-door-arrival{0%{scale:.05;opacity:0}15%{opacity:1}70%{opacity:1}100%{translate:220px -70px;scale:4;rotate:12deg;opacity:0}}
+@keyframes rk-door-scroll{0%{scale:.05;opacity:0}20%{opacity:1}75%{opacity:1}100%{translate:-180px 90px;scale:3;rotate:70deg;opacity:0}}
+@keyframes rk-door-blood{to{background-position-x:-1100px}}@keyframes rk-door-fade{0%,100%{opacity:0}20%,65%{opacity:.8}}
+.rk-portal-still .rk-door-scene *{animation:none!important}
+@media(prefers-reduced-motion:reduce){.rk-door-scene *{animation:none!important}}
+@media(max-width:800px){.first-light-build .first-light-art.rk-portal-title{min-height:540px}.rk-portal-title .title-wordmark{top:5%;left:7%}.rk-portal-title .title-wordmark h1{font-size:53px}.rk-door-frame{top:26%;height:42%;left:45%;width:31%}.rk-door-floor{top:64%;left:29%;right:7%;height:7%}.rk-portal-title .welcome-keeper.rk-door-keeper{left:11%;right:auto;bottom:34%;width:30%;height:28%}.rk-portal-controls{bottom:2%;gap:6px}.rk-portal-controls [data-portal-check]{font-size:16px;min-height:50px}.rk-portal-title .title-wordmark h1 span{margin-top:15px}.rk-portal-caption{font-size:9px}.rk-portal-controls [data-portal-result]{font-size:12px}}
+
+@media(min-width:801px){.first-light-build .first-light-art.rk-portal-title{height:calc(100dvh - 46px);min-height:730px;align-self:start;position:sticky;top:0}.rk-portal-title .title-wordmark h1{font-size:68px}.rk-door-frame{top:28%;height:43%}.rk-portal-title .welcome-keeper.rk-door-keeper{bottom:20%;height:29%}.rk-portal-controls{bottom:2%;gap:6px}}
+
+.rk-portal-still .welcome-keeper *{animation:none!important}
+.first-light-build .first-light>*{min-width:0;box-sizing:border-box}
+.first-light-build .first-light-form :is(input,select){min-width:0;box-sizing:border-box}
+@media(max-width:800px){.first-light-build .first-light{grid-template-columns:minmax(0,1fr)!important}.first-light-build .first-light-form{max-width:100%;width:100%}.first-light-build .welcome-intro{max-width:100%}}

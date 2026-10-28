@@ -1,0 +1,41 @@
+/* Rift Keepers: obsidian, worn brass and soul-light. Presentation only. */
+:root{--ink:#080b10;--deep:#0d131b;--panel:#111b25;--raise:#192936;--line:#344550;--hair:#57748166;--text:#e8edf0;--muted:#a7b6bf;--gold:#a8d9e8;--gold-dim:#547e90;--treasure:#d5b879;--r-md:10px;--r-sm:5px}
+body{background:radial-gradient(ellipse at 55% 0,#1a2935 0,transparent 60%),var(--ink)}
+.side,.social{background:linear-gradient(180deg,#131e28,#080d13 72%);border-color:#56647155}
+.brand{text-shadow:0 0 24px #8fd8ee33;letter-spacing:.1em}.brandtk{color:var(--treasure)}
+main{background:radial-gradient(ellipse at 75% 0,#23425222,transparent 55%)}
+.nav{gap:5px}.nav button{min-height:44px;border:1px solid transparent}.nav button:hover{background:#afdae90a;border-color:#78929e33}
+.nav button[aria-current=page]{background:linear-gradient(90deg,#83d0ed20,#83d0ed04);border-color:#9bd8e62e;box-shadow:inset 2px 0 var(--treasure)}
+.nav .ico{width:28px;height:28px;border-radius:6px;border-color:#62788766;background:#090f17;flex:none}
+.nav button[aria-current=page] .ico{border-color:#c4aa70;box-shadow:0 0 12px #97deec22}
+.rk-sigil{display:inline-block;width:1.35em;height:1.35em;vertical-align:-.27em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none;pointer-events:none}
+.hubico .rk-sigil{width:38px;height:38px}.hubico{background:radial-gradient(circle at 50% 30%,#25404c,#0b131c 75%);border-color:#7f8a77;box-shadow:0 0 0 4px #0a1017,0 0 0 5px #7f8a7744,inset 0 1px 12px #b0dce911;color:#c7dce2}
+.hubn{letter-spacing:.03em}.view-h h2{color:#f0eade}.view-h h2::after{opacity:.6}
+.btn{border-color:#526779;background:linear-gradient(#21313f,#101b26);border-radius:5px}.btn.gold{color:#06121b;background:linear-gradient(#bfe5eb,#82b9cf);border-color:#caedf0;box-shadow:0 2px 14px #88cede20}
+.btn:hover,.act:hover{border-color:#b4dce4}.btn:disabled,.act:disabled{filter:saturate(.35);opacity:.5}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:3px solid #f0d69d;outline-offset:3px;box-shadow:0 0 0 6px #080b10!important}
+.zone,.moncard,.tamer,.detail,.admin-sec,.slot.filled{background:linear-gradient(135deg,#22344244,transparent 50%),var(--panel);border-color:#50647380;box-shadow:inset 0 1px #d7e5ec0b,0 8px 20px #0002}
+.chip{border-radius:4px;padding:2px 7px}.r-legendary{color:#e7c87f}.r-common{color:#b5c1ca}
+.tabs button[aria-selected=true],.cxitem.on{border-color:var(--treasure);color:#f1e5c8}
+.act.tile{background:linear-gradient(135deg,#1e303e,#0d1721);border-color:#4d6575}.act.tile .n{color:#eff4f5}.act.tile .d{color:#b5c5ce}.act .k{color:#e6cf9a}
+.hp,.ebar,.bar{background:#060a10;box-shadow:inset 0 1px 3px #0008}.log{color:#b3c2ca;background:#090f17;border:1px solid #334852;border-radius:6px}
+.stage .unit .portrait{animation:none!important}.stage .unit.active:not(.enemy) .gshadow{animation:none}
+.rk-fullscreen{position:fixed;right:12px;bottom:12px;z-index:45;min-height:40px;padding:6px 12px;font-size:13px;background:#101b26ed}.rk-fullscreen:focus-visible{outline-offset:2px}
+@media(min-width:761px){body:has(.battle) main{padding:12px 16px;overflow:hidden}body:has(.battle) .battle{height:100%;max-width:1100px;gap:6px;display:grid;grid-template-rows:auto auto minmax(100px,1fr) auto auto auto minmax(24px,44px)}
+.battle .camwrap,.battle .cam,.battle .scene{min-height:0;height:100%;overflow:hidden}.battle .stage{height:100%;padding:8px;gap:4px;justify-content:space-evenly}.battle .stage .side-row{flex-wrap:nowrap;gap:10px;min-height:0}.battle .stage .unit{padding:4px;gap:2px;width:clamp(98px,12vw,150px)}
+.battle .stage .unit .portrait,.battle .stage .unit.enemy .portrait:has(img.sprite){width:clamp(42px,8vh,76px);height:clamp(42px,8vh,76px);font-size:36px}.battle .stage .unit .gshadow{display:none}.battle .stage .unit .plate{padding:3px 5px}.battle .stage .unit .nm{font-size:.88rem}.battle .stage .unit .lv{font-size:.72rem}.battle .vs{margin:0;padding:0}.battle .actions{position:static;margin:0;padding:8px;gap:6px}.battle .skillbar{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.battle .act.tile{min-height:58px;padding:7px 9px}.battle .utilbar{gap:6px}.battle .act.util{min-height:40px}.battle .log{max-height:44px;overflow:auto;margin:0;padding:4px 8px}.battle .padhint{font-size:11px;margin:0}.battle .binfo{min-height:24px;padding:3px 8px}.battle .hglass{height:46px}.battle .bhead h2{font-size:1.1rem}.battle .order .tk{width:26px;height:26px}.battle .order .tk:first-of-type{width:30px;height:30px}}
+@media(min-width:761px) and (max-height:650px){.battle .stage .unit .portrait,.battle .stage .unit.enemy .portrait:has(img.sprite){width:38px;height:38px}.battle .stage .unit .lv{display:none}.battle .act.tile{min-height:48px;padding:4px 8px}.battle .bhead .order{padding:0}.battle .hglass{height:36px}.battle .stage .unit .hpnum{font-size:10px}}
+@media(max-width:760px){.rk-fullscreen{bottom:76px;right:8px;font-size:11px;min-height:36px}.mobnav{background:#0b141df5;backdrop-filter:blur(12px)}.mobnav .ico .rk-sigil{width:23px;height:23px}.nav .ico{width:28px}.battle .actions{position:sticky;bottom:0;z-index:8;background:#101b26f5;box-shadow:0 -8px 20px #0008}.battle .skillbar{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important}.hubico,.btn,.act,.bar>i,.hp>i{transition:none!important}}
+@media(min-width:761px){.battle .scene>.inner{height:100%;min-height:0}.battle .stage{display:grid;grid-template-rows:minmax(0,1fr) auto minmax(0,1fr)}.battle .stage .side-row{align-items:center}.battle .stage .unit{max-height:100%;}.battle .stage .unit .portrait{flex-shrink:1;min-height:24px}.battle .stage .unit .plate{flex-shrink:0}.side .nav{overflow-y:auto;min-height:0}.side .brand{flex-shrink:0}}
+@media(min-width:761px) and (max-height:780px){.battle .stage .unit .portrait,.battle .stage .unit.enemy .portrait:has(img.sprite){width:40px;height:40px}.battle .stage .unit .lv{font-size:10px}.battle .stage .unit .hpnum{font-size:10px}.battle .stage .unit .plate{gap:1px}.battle .stage .unit.enemy::before{inset:2px}}
+@media(min-width:761px) and (max-height:650px){.battle .stage .unit .portrait,.battle .stage .unit.enemy .portrait:has(img.sprite){width:28px;height:28px}.battle .stage .unit .hpnum{display:none}.battle .stage .unit .nm{font-size:12px}.battle .stage .unit .hp{height:6px}.battle .stage .unit{padding:2px}.battle .stage .vs{font-size:11px}.battle .turnpill{padding:1px 8px}}
+/* The native scene also carries .battle; only the outer battle is the HUD grid. */
+@media(min-width:761px){body:has(.battle) .scene.battle{display:block;grid-template-rows:none;max-width:none;margin:0;height:100%;gap:0}.battle .stage .unit{max-height:none}.battle .stage .side-row{height:100%}}
+@media(min-width:761px) and (max-height:650px){.battle .stage .unit .hpnum{display:block;font-size:10px;line-height:1.1}}
+body:has(.battle) .rk-fullscreen{opacity:.85}
+.wmap .rk-map-sigil{color:#d7e6e7;width:unset;height:unset;filter:drop-shadow(0 1px 3px #000);pointer-events:none}.wmap .disc{fill:#101c26;stroke:#a69573;stroke-width:2}.wmap .disc.danger{stroke:#d88278}.wmap .mnode.here .disc{fill:#233e48;stroke:#b3e4e9}.wmap .mnode.sel .disc{stroke:#e3ce95;stroke-width:3}.wmap .mnode:hover .disc,.wmap .mnode:focus .disc{stroke:#f0d69d;stroke-width:4}.wmap .road{stroke:#b5a581;opacity:.7}.wmap .land{fill:#172832;stroke:#47616a}.wmap .nlbl{fill:#e4e9df;stroke:#0a121b}.maptabs .rk-sigil{margin-right:6px}.wmap .rk-map-sigil path{vector-effect:non-scaling-stroke}
+/* V.028 merge tweaks: keep the wordmark on one line; no fullscreen button on phones (installed apps are already fullscreen and it sat on the battle actions). */
+.side .brand{font-size:1.25rem;letter-spacing:.06em;line-height:1.1}
+@media(max-width:760px){.rk-fullscreen{display:none}}
+@media(max-width:760px){body:has(.battle) .rk-coop-btn{display:none}}

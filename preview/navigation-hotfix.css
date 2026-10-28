@@ -1,0 +1,36 @@
+/* Content owns its height. Introductory cards must never compress the atlas. */
+.first-light-build main:has(> .mapview){display:block;overflow:auto;scroll-snap-type:none}
+.first-light-build main:has(> .mapview) .mapview{display:grid;grid-template-rows:auto auto;gap:18px;flex:none;min-height:auto}
+.first-light-build main:has(> .mapview) .mapcol,.first-light-build main:has(> .mapview) .mapwrap{display:block;flex:none;min-height:auto}
+.first-light-build main:has(> .mapview) .mapwrap .wmap{display:block;flex:none;width:100%;height:auto;aspect-ratio:5/3;min-height:360px;max-height:none}
+.first-light-build main:has(> .mapview) .mappanel{overflow:visible;min-height:auto}
+.first-light-build #main>.drew-invite-link,.first-light-build #main>.journey-invite{display:none!important}
+.rk-menu-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:22px}
+.rk-menu-group{padding:18px;border:1px solid #655785;background:#111327}
+.rk-menu-group h2{font-size:22px;margin:0 0 14px}.rk-menu-group .hubgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.rk-menu-group .hubbtn{min-height:85px;padding:12px;font:inherit;color:inherit;background:#1b1e35;border:1px solid #6c6683;white-space:normal}
+.rk-menu-group .hubico{display:none}.rk-menu-group .hubn{display:block}
+.rk-menu-help{font-size:14px;line-height:1.6;color:#b9cbd6}
+#nav button{min-height:48px;flex-shrink:0}#nav button:focus-visible,.rk-menu-group button:focus-visible{outline:3px solid #95f2ff;outline-offset:-3px}
+.mnode.rk-locked .area-landmark{opacity:.28}.mnode.rk-locked .disc{stroke:#676378;fill:#10121a}.mnode.rk-locked .nlbl{fill:#b1acbf}
+#rk-pad-pointer{position:fixed;left:0;top:0;width:28px;height:36px;z-index:100000;pointer-events:none;filter:drop-shadow(0 1px 1px #000);transition:none!important;animation:none!important;contain:layout style}
+#rk-pad-pointer[hidden]{display:none!important}
+#rk-pad-pointer svg{display:block;width:28px;height:36px}
+[data-rk-cursor-target]{outline:2px dashed #bca3f3!important;outline-offset:2px}
+body.pad #main :is(button,input,select,summary,[tabindex="0"]):focus{outline:3px solid #91f4ee!important;outline-offset:-3px;transition:none!important;animation:none!important;scroll-behavior:auto!important}
+body.pad #main,body.pad #main *{scroll-behavior:auto!important}
+body.pad #main [data-rk-focus-panel]{box-shadow:inset 2px 0 #8c78bb60}
+#rk-hotfix-banner{position:fixed;right:18px;bottom:75px;z-index:9500;max-width:min(390px,calc(100vw - 36px));padding:12px 16px;background:#101a2af5;border:1px solid #8fd9ef;box-shadow:0 5px 24px #0008;font-size:14px}
+#rk-hotfix-banner p{margin:4px 0 10px}.rk-hotfix-hidden{display:none!important}
+@media(max-width:800px){.first-light-build main:has(> .mapview) .mapwrap .wmap{min-height:240px}.rk-menu-groups{grid-template-columns:1fr}}
+
+/* The image's aspect ratio must never enlarge a grid track to satisfy min-height. */
+.first-light-build .journey-layout{grid-template-columns:minmax(0,1fr) minmax(0,270px);max-width:100%;min-width:0}
+.first-light-build .journey-layout>.location-column,.first-light-build .journey-layout>.route-book{min-width:0;max-width:100%;box-sizing:border-box}
+.first-light-build .journey-layout .location-art{width:100%;max-width:100%;min-width:0;min-height:0;aspect-ratio:1.64;box-sizing:border-box}
+.first-light-build .route-stop{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.first-light-build .rk-location-unknown{background:radial-gradient(ellipse at center,#303344,#10121e 75%)}
+.first-light-build .rk-location-unknown::before{content:'?';position:absolute;inset:30% 0;text-align:center;font-size:80px;color:#b6b8cc40;pointer-events:none}
+.rk-unexplored-detail{padding:22px;border:1px solid #5b586d;background:#161727}
+@media(max-width:1100px){.first-light-build .journey-layout{grid-template-columns:minmax(0,1fr) minmax(0,210px)}}
+@media(max-width:800px){.first-light-build .journey-layout{display:flex;flex-direction:column}.first-light-build .journey-layout .location-art{aspect-ratio:auto;height:330px}}

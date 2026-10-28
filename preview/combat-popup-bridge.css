@@ -1,0 +1,10 @@
+.rk-popup-slot{position:absolute;inset:0;pointer-events:none!important;overflow:hidden;z-index:3}
+.rk-popup-slot .cp-words{display:none}.rk-popup-slot .cp-sprite{width:100%;left:0}.rk-popup-slot .cp-energy{width:85%;left:7%}
+.rk-popup-slot .cp-sprite canvas{position:static;top:auto;width:100%;height:100%;max-width:100%;object-fit:contain}
+.rk-cinema:has(.rk-popup-slot .cp-popup){grid-template-columns:minmax(200px,48%) 1fr;height:190px;min-height:190px;flex-shrink:0}
+.first-light-build .battle:has(>.rk-action-dock.rk-qte-charge)>.rk-cinema:has(.cp-popup[data-cue=red-charge]){display:grid!important}
+.rk-cinema-art:has(.rk-popup-slot .cp-popup)>:not(.rk-popup-slot){visibility:hidden}
+.rk-popup-slot .cp-popup{min-height:0}.rk-popup-slot .cp-popup[data-sparks=false] :is(.cp-energy,.cp-accent){display:none}
+.soul-cinema>.rk-popup-slot{left:auto;right:2%;top:12%;bottom:22%;width:45%;max-width:640px}
+.soul-cinema>.rk-popup-slot .cp-ink{opacity:.7}
+@media(max-width:700px){.rk-cinema:has(.rk-popup-slot .cp-popup){grid-template-columns:48% 1fr;height:150px;min-height:150px}.rk-cinema:has(.rk-popup-slot .cp-popup) .rk-cinema-copy{padding:10px}.soul-cinema>.rk-popup-slot{right:0;top:12%;width:56%;bottom:30%}}

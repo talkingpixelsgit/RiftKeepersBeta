@@ -1,0 +1,56 @@
+/* Phase 2: preserve target buttons and authored fighter animations.
+   Scenery is a separate, non-interactive layer; it never owns actor transforms. */
+.rk-living-stage{isolation:isolate}
+.rk-living-scenery{position:absolute;inset:0;overflow:hidden;pointer-events:none!important;user-select:none;z-index:1;border-radius:inherit;contain:paint}
+.rk-living-scenery>*{position:absolute;pointer-events:none!important}
+.rk-living-canopy{width:340px;height:365px;left:-224px;top:-231px;background:url('assets/phase2-scenery/ancient-oak.png') center/contain no-repeat;transform-origin:20% 100%;filter:brightness(.72);animation:rk-canopy-drift 11s ease-in-out infinite alternate}
+.rk-living-shrub{width:235px;height:120px;right:-99px;bottom:-61px;background:url('assets/phase2-scenery/coastal-shrub.png') center/contain no-repeat;filter:brightness(.68);transform-origin:50% 100%;animation:rk-shrub-drift 8s ease-in-out -3s infinite alternate}
+.rk-living-air{width:60%;height:30%;left:22%;top:25%;background:url('assets/weather/smoke.png') center/100% 100% no-repeat;opacity:.055;animation:rk-air-drift 25s ease-in-out -8s infinite alternate}
+.rk-living-stage[data-living-motion="still"] .rk-living-scenery>*{animation:none!important}
+.rk-living-stage[data-living-weather="off"] .rk-living-air{display:none}
+.rk-living-stage.rk-wet .rk-living-scenery{filter:saturate(.72) brightness(.86)}
+.rk-living-stage.rk-burnt .rk-living-scenery{filter:sepia(.25) brightness(.78)}
+.rk-living-stage.rk-frost .rk-living-scenery{filter:saturate(.45)}
+.first-light-build .facing-battle .expedition-stage.rk-living-stage{position:relative}
+.first-light-build .facing-battle .rk-living-stage>.exp-allies,
+.first-light-build .facing-battle .rk-living-stage>.exp-enemies{z-index:2}
+.first-light-build .battle .rk-living-stage>.side-row{z-index:2}
+@media(min-width:801px){
+ .first-light-build .battle>.bhead{padding:6px 12px;background:none;border:0;min-height:0}
+ .first-light-build .battle>.bhead h2{font-size:18px}
+ .first-light-build .battle>.binfo{min-height:22px;padding:2px 12px;background:none;border:0;border-radius:0;font-size:12px}
+ .first-light-build .battle>.rk-battle-readout{padding:5px 12px;background:none;border:0;font-size:12px;gap:2px 16px}
+ .first-light-build .battle>.rk-battle-readout small{font-size:10px}
+ .first-light-build .battle>.rk-cinema:not([data-phase]),
+ .first-light-build .battle>.rk-cinema[data-phase="settled"],
+ .first-light-build .combat-shell>.rk-cinema:not([data-phase]),
+ .first-light-build .combat-shell>.rk-cinema[data-phase="settled"]{display:none}
+ .first-light-build .combat-shell.facing-battle>.combat-heading{padding:8px 12px 5px;background:none;border:0;box-shadow:none}
+ .first-light-build .combat-shell.facing-battle>.combat-heading h2{font-size:22px;margin:5px 0}
+ .first-light-build .combat-shell.facing-battle>.combat-heading p{margin:5px 0;font-size:13px}
+ .first-light-build .facing-battle .fighter-readout{background:linear-gradient(90deg,transparent,#06121b66 30%,#06121b66 70%,transparent);text-shadow:0 1px 3px #000,0 1px 6px #000;padding:3px 5px}
+ .first-light-build .facing-battle .fighter-readout>span,
+ .first-light-build .facing-battle .fighter-readout>small{font-size:11px;line-height:1.25}
+ .first-light-build .combat-shell .exp-commands{border:0;border-top:1px solid #87c5ca55;background:linear-gradient(180deg,#111c2caa,#0b1320);padding:12px 8px}
+ .first-light-build .combat-shell .combat-actions button{min-height:72px}
+ .first-light-build .combat-shell .combat-order{background:none;border-block:1px solid #6b9ca329;padding:9px 4px}
+}
+/* At laptop height keep the scene and choices closer together. Target hit areas
+   stay unchanged and the existing controller scroll/target logic still owns focus. */
+@media(min-width:801px) and (max-height:850px){
+ .first-light-build .facing-battle:not(.full-party) .expedition-stage{height:365px;min-height:365px;background-position:center,center 52%}
+ .first-light-build .facing-battle:not(.full-party) .exp-allies>.exp-unit,
+ .first-light-build .facing-battle:not(.full-party) .exp-target{height:160px}
+ .first-light-build .facing-battle:not(.full-party) .exp-portrait{height:160px}
+ .first-light-build .facing-battle:not(.full-party) .exp-portrait :is(.posecell,.portrait){height:160px;width:150px}
+ .first-light-build .facing-battle:not(.full-party) .exp-portrait .keeper-r2{height:160px;width:105px}
+ .first-light-build .combat-shell .combat-actions{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+ .first-light-build .combat-shell .combat-actions button{padding:7px;min-height:64px}
+ .first-light-build .combat-shell .combat-actions button small{font-size:11px;line-height:1.25}
+}
+@media(max-width:800px){.rk-living-canopy{left:-275px;top:-254px}.rk-living-shrub{width:150px;right:-90px;bottom:-68px}.rk-living-air{opacity:.035}}
+@keyframes rk-canopy-drift{from{transform:rotate(-.35deg)}to{transform:rotate(.6deg)}}
+@keyframes rk-shrub-drift{from{transform:skewX(-.5deg)}to{transform:skewX(.8deg)}}
+@keyframes rk-air-drift{from{transform:translateX(-4%);opacity:.035}to{transform:translateX(8%);opacity:.065}}
+@media(prefers-reduced-motion:reduce){.rk-living-stage:not([data-living-motion="full"]) .rk-living-scenery>*{animation:none!important}}
+

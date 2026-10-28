@@ -1,0 +1,7 @@
+/* No input surface, no typography changes, no glow over commands or actor faces. */
+.rk-void-sparkles{position:fixed;inset:0;width:100%;height:100%;z-index:90;pointer-events:none!important}
+.location-art,.scene.battle,.expedition-stage{transition:box-shadow .55s ease-out}
+.rk-screen-weather{transition:opacity .5s ease-out}
+.rk-screen-weather.rain i{border-color:#b6e8fba6;box-shadow:inset 1px 2px 3px #d8f2ff30,0 2px 3px #03142030}
+.rk-reduced .location-art,.rk-reduced .scene.battle,.rk-reduced .expedition-stage{transition:none}
+@media(prefers-reduced-motion:reduce){.location-art,.scene.battle,.expedition-stage{transition:none}}

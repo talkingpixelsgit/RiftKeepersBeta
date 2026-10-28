@@ -1,0 +1,43 @@
+/* A single command rail replaces both the desktop sidebar and mobile nav strip. */
+body.rk-command-navigation #app{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:58px minmax(0,1fr)!important;height:100dvh!important;min-height:0}
+body.rk-command-navigation #app>.side,body.rk-command-navigation #app>.mobnav,body.rk-command-navigation #app>.mobtop{display:none!important}
+body.rk-command-navigation #main{grid-column:1;grid-row:2;height:auto!important;min-height:0;padding-bottom:24px}
+body.rk-command-navigation #app.soc{grid-template-columns:minmax(0,1fr) 300px!important}
+body.rk-command-navigation #app>.social{grid-column:2;grid-row:2}
+body.rk-command-navigation .codextabs>.pk.sh{display:none}
+#rk-commandbar{grid-row:1;grid-column:1/-1;display:flex;align-items:center;gap:20px;padding:5px 20px;background:#111325;border-bottom:1px solid #535072;min-width:0;z-index:60}
+#rk-commandbar[hidden]{display:none}
+.rk-command-trigger{display:flex;gap:10px;align-items:center;min-height:46px;padding:6px 15px;background:#1a2036;border:1px solid #77dbe8;color:#edf9ff;font-size:17px;border-radius:2px;flex:none}
+.rk-command-trigger kbd{font:12px var(--body);border:1px solid #777490;padding:2px 5px;background:#29283f;color:#b8f2fa}
+.rk-command-status{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#bfc6de;font-size:14px}
+.rk-command-resources{font-size:12px;white-space:nowrap;color:#9cdae0;margin-left:auto}
+.rk-panel-trigger{display:flex;align-items:center;gap:5px;min-height:44px;max-width:230px;padding:6px 10px;font:13px var(--body);color:#d9e7fa;background:#191c32;border:1px solid #82749e;border-radius:2px}
+.rk-panel-trigger kbd{font:11px var(--body);color:#a3f2ee;white-space:nowrap}
+.rk-panel-trigger [data-rk-panel-name]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rk-panel-trigger:focus-visible{outline:3px solid #92f1f0;outline-offset:-3px}.rk-panel-trigger:disabled{opacity:.5}
+.rk-command-trigger:disabled{opacity:.5;cursor:default}
+.rk-command-overlay.overlay{position:fixed;inset:0;z-index:12000;display:grid;place-items:center;padding:16px;background:#050817bd;backdrop-filter:blur(3px)}
+.rk-command-panel{width:min(760px,100%);max-height:calc(100dvh - 32px);background:linear-gradient(120deg,#1b1b35,#101727);border:1px solid #82759f;border-top:2px solid #8cceee;box-shadow:0 16px 65px #000b;color:#e9edf8;padding:22px;overflow:visible;box-sizing:border-box}
+.rk-command-panel header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.rk-command-eyebrow{color:#8fd7e5;font:11px var(--body);letter-spacing:.14em;margin:0 0 7px}
+.rk-command-panel h2{font:28px Georgia,serif;line-height:1.2;margin:0}
+.rk-command-panel button{font:15px var(--body);border-radius:2px;min-height:44px;color:#e9edf8;border:1px solid #66627f;background:#171d32;padding:9px 12px}
+.rk-command-panel button:focus,.rk-command-trigger:focus-visible{outline:3px solid #92f1f0;outline-offset:-3px;background-color:#243549;color:#fff}
+.rk-command-panel button:hover{border-color:#8edcde}
+.rk-command-panel button[aria-current=page]{border-left:3px solid #92f1f0}
+.rk-command-panel button:disabled{opacity:.35;cursor:default}
+.rk-command-path{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0;border-bottom:1px solid #4c4768;padding-bottom:12px;color:#b7b4cc;font-size:12px}
+.rk-command-path>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rk-command-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;min-height:144px;align-content:start}
+.rk-command-grid button{position:relative;text-align:left;min-height:67px;padding-right:24px;overflow-wrap:anywhere;line-height:1.3}
+.rk-command-grid small{display:block;color:#a2adc6;font-size:11px;margin-top:4px}
+.rk-command-grid i{position:absolute;right:10px;top:calc(50% - 12px);font:22px Georgia;color:#8ad9e6}
+.rk-command-pages{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font-size:12px;color:#b5bdd3}
+#rk-command-help{font-size:12px;line-height:1.5;color:#bcc8df;margin:12px 0 0}
+@media(max-width:800px){body.rk-command-navigation #app.soc{grid-template-columns:minmax(0,1fr)!important}body.rk-command-navigation #app.soc>.social{position:fixed;inset:58px 0 0;grid-column:auto;grid-row:auto;z-index:55}#rk-commandbar{padding:5px 12px;gap:12px}.rk-command-trigger{font-size:15px;padding:6px 10px}.rk-command-status{font-size:12px}.rk-command-trigger kbd{font-size:10px}}
+@media(max-width:600px){.rk-command-panel{padding:16px}.rk-command-panel h2{font-size:23px}.rk-command-grid{grid-template-columns:repeat(2,minmax(0,1fr));min-height:221px}.rk-command-path>span{display:none}.rk-command-overlay.overlay{padding:10px}.rk-command-panel{max-height:calc(100dvh - 20px)}.rk-command-panel header{gap:8px}.rk-command-panel header>button{padding:6px 9px}.rk-command-eyebrow{font-size:10px;letter-spacing:.1em}}
+@media(max-width:600px){#rk-commandbar{gap:10px}.rk-command-status{white-space:normal;max-height:40px;font-size:11px;line-height:1.4}.rk-command-resources{display:none}}
+@media(max-width:800px){body.rk-command-navigation #app{grid-template-rows:82px minmax(0,1fr)!important}#rk-commandbar{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:46px 18px;gap:2px 10px}.rk-panel-trigger{width:100%;max-width:none}.rk-command-status{grid-column:1/-1;max-height:18px;white-space:nowrap;font-size:11px}.rk-command-resources{display:none}body.rk-command-navigation #app.soc>.social{inset:82px 0 0}}
+@media(max-height:620px){.rk-command-panel{padding:12px}.rk-command-panel h2{font-size:21px}.rk-command-eyebrow{margin-bottom:4px}.rk-command-path{margin:6px 0;padding-bottom:6px}.rk-command-grid{min-height:0;gap:6px}.rk-command-grid button{min-height:48px;padding-top:5px;padding-bottom:5px;font-size:14px}.rk-command-grid small{font-size:10px;margin-top:1px}.rk-command-pages{margin-top:8px}#rk-command-help{font-size:11px;line-height:1.3;margin-top:6px}}
+@media(max-height:360px) and (min-width:500px){.rk-command-overlay.overlay{padding:6px}.rk-command-panel{padding:8px 12px;max-height:calc(100dvh - 12px)}.rk-command-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.rk-command-panel header{min-height:44px}.rk-command-eyebrow{display:none}.rk-command-panel h2{font-size:19px}.rk-command-path{margin:4px 0;padding-bottom:4px}.rk-command-grid button{min-height:44px;font-size:13px}.rk-command-pages{margin-top:4px}.rk-command-pages button{padding-top:5px;padding-bottom:5px}#rk-command-help{font-size:10px;line-height:1.2;margin-top:4px}}
+@media(prefers-reduced-motion:reduce){.rk-command-panel,.rk-command-trigger{animation:none!important;transition:none!important}}

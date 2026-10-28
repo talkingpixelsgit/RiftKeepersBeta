@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "canvas": [
+    600,
+    340
+  ],
+  "anchor": [
+    300,
+    334
+  ],
+  "note": "Artwork only. Anchor is bottom-centre of visible crop. Left derived from right; text and SVG accents are never mirrored. Optional front concepts are neutral studies, not action facings.",
+  "actors": {
+    "keeper": {
+      "facings": {
+        "right": {
+          "file": "assets/keeper-capture-right.png",
+          "crop": [
+            7,
+            4,
+            1529,
+            1020
+          ],
+          "mirror": false,
+          "status": "generated-action-review",
+          "source_sha256": "aafc2ec39375722bd130b270065058a5d967285fe38b35af92fa595c70d2fcf0"
+        },
+        "left": {
+          "file": "assets/keeper-capture-right.png",
+          "crop": [
+            7,
+            4,
+            1529,
+            1020
+          ],
+          "mirror": true,
+          "status": "generated-action-review",
+          "source_sha256": "aafc2ec39375722bd130b270065058a5d967285fe38b35af92fa595c70d2fcf0"
+        }
+      },
+      "primary_action": "keeper-capture",
+      "variants": {
+        "capture-break": {
+          "right": {
+            "file": "assets/keeper-recoil-right.png",
+            "crop": [
+              12,
+              90,
+              1509,
+              934
+            ],
+            "mirror": false,
+            "status": "generated-action-review",
+            "source_sha256": "e978c58159a7b4b4a30206f36c3d6cdb9ccf2a5d81483c5a769f8282bf0cde36"
+          },
+          "left": {
+            "file": "assets/keeper-recoil-right.png",
+            "crop": [
+              12,
+              90,
+              1509,
+              934
+            ],
+            "mirror": true,
+            "status": "generated-action-review",
+            "source_sha256": "e978c58159a7b4b4a30206f36c3d6cdb9ccf2a5d81483c5a769f8282bf0cde36"
+          }
+        }
+      }
+    },
+    "voth": {
+      "facings": {
+        "right": {
+          "file": "assets/voth-charge-right.png",
+          "crop": [
+            17,
+            0,
+            1421,
+            1086
+          ],
+          "mirror": false,
+          "status": "generated-action-review",
+          "source_sha256": "64b0a0f2a309cf81883bf3f332fdf96ed208418d3f19b68734f4deacb210ccbc"
+        },
+        "left": {
+          "file": "assets/voth-charge-right.png",
+          "crop": [
+            17,
+            0,
+            1421,
+            1086
+          ],
+          "mirror": true,
+          "status": "generated-action-review",
+          "source_sha256": "64b0a0f2a309cf81883bf3f332fdf96ed208418d3f19b68734f4deacb210ccbc"
+        }
+      },
+      "primary_action": "voth-charge",
+      "variants": {
+        "spirit-release": {
+          "right": {
+            "file": "assets/voth-blast-right.png",
+            "crop": [
+              9,
+              6,
+              1515,
+              1018
+            ],
+            "mirror": false,
+            "status": "generated-action-review",
+            "source_sha256": "1a5c78f709170d8144271583977b27e367a1e22ca4f10df8d6d9feac124210a8"
+          },
+          "left": {
+            "file": "assets/voth-blast-right.png",
+            "crop": [
+              9,
+              6,
+              1515,
+              1018
+            ],
+            "mirror": true,
+            "status": "generated-action-review",
+            "source_sha256": "1a5c78f709170d8144271583977b27e367a1e22ca4f10df8d6d9feac124210a8"
+          }
+        }
+      },
+      "identity_contract": {
+        "display_name": "Voth",
+        "pronouns": "she/her",
+        "age_progression": false,
+        "design": "Preserve established youthful appearance across transformations; never age her up.",
+        "tail_required_in_transformation_forms": [
+          3,
+          4
+        ],
+        "tail_composition": "Tail must remain visible in third and fourth transformation/evolution artwork, including cut-ins.",
+        "delivered_forms": "Base form charge and blast only; third and fourth forms are not delivered in this set."
+      }
+    },
+    "beast": {
+      "facings": {
+        "right": {
+          "file": "assets/beast-guard-right.png",
+          "crop": [
+            11,
+            5,
+            1511,
+            1019
+          ],
+          "mirror": false,
+          "status": "generated-action-review",
+          "source_sha256": "c2046e6fa20fd1db52216c127620071e93e98346c5153ed96b5f99c206758aa1"
+        },
+        "left": {
+          "file": "assets/beast-guard-right.png",
+          "crop": [
+            11,
+            5,
+            1511,
+            1019
+          ],
+          "mirror": true,
+          "status": "generated-action-review",
+          "source_sha256": "c2046e6fa20fd1db52216c127620071e93e98346c5153ed96b5f99c206758aa1"
+        }
+      },
+      "primary_action": "beast-guard",
+      "variants": {}
+    },
+    "ticktail": {
+      "facings": {
+        "right": {
+          "file": "assets/ticktail-tell-right.png",
+          "crop": [
+            12,
+            10,
+            1519,
+            988
+          ],
+          "mirror": false,
+          "status": "generated-action-review",
+          "source_sha256": "4d82a66547c82f6bc518f29f55cea32b07100cc1e8d80d54195ce55cb58a67bb"
+        },
+        "left": {
+          "file": "assets/ticktail-tell-right.png",
+          "crop": [
+            12,
+            10,
+            1519,
+            988
+          ],
+          "mirror": true,
+          "status": "generated-action-review",
+          "source_sha256": "4d82a66547c82f6bc518f29f55cea32b07100cc1e8d80d54195ce55cb58a67bb"
+        }
+      },
+      "primary_action": "ticktail-tell",
+      "variants": {}
+    }
+  }
+}

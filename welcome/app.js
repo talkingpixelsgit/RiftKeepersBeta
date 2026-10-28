@@ -1,0 +1,16 @@
+'use strict';
+const form=document.getElementById('join'),result=document.getElementById('result'),button=form.querySelector('button');
+form.addEventListener('submit',async event=>{event.preventDefault();if(!form.reportValidity())return;button.disabled=true;result.textContent='Saving your signup…';try{const data=new FormData(form),response=await fetch('/waitlist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:data.get('email'),website:data.get('website'),consent:data.get('consent')==='on'})}),body=await response.json();if(!response.ok)throw Error(body.error||'Could not save your signup. Try again.');result.textContent='You’re signed up for playtest news. See you beyond the doorway.';form.reset();}catch(error){result.textContent=error.message||'Connection lost. Please try again.';}finally{button.disabled=false;}});
+
+const media=matchMedia('(prefers-reduced-motion: reduce)'),motion=document.getElementById('motion');
+let stopped=false;try{stopped=localStorage.getItem('rk-welcome-still')==='true';}catch{}
+function syncMotion(){document.body.classList.toggle('still',stopped||media.matches);motion.setAttribute('aria-pressed',String(stopped||media.matches));motion.textContent=media.matches?'Reduced motion':stopped?'Resume motion':'Pause motion';}
+motion.onclick=()=>{stopped=!stopped;try{localStorage.setItem('rk-welcome-still',String(stopped));}catch{}syncMotion();};media.addEventListener('change',syncMotion);syncMotion();document.addEventListener('visibilitychange',()=>document.body.classList.toggle('hidden-page',document.hidden));
+async function gate(){try{const r=await fetch('/launch-status',{cache:'no-store'});if(!r.ok)throw Error();const s=await r.json();document.getElementById('enter').hidden=!s.open;document.getElementById('availability').textContent=s.open?'Playtest is open · No invitation needed':'The doorway is resting. Check back soon.';}catch{document.getElementById('availability').textContent='Could not check server availability. Try the Keeper entrance again shortly.';}}
+gate();setInterval(()=>{if(!document.hidden)gate();},60000);
+// Landing navigation only. Game controls remain owned by the game itself.
+let previous=[],nextMove=0;
+function controls(){return [...document.querySelectorAll('a[href],button,input')].filter(n=>!n.disabled&&n.tabIndex!==-1&&n.getClientRects().length&&!n.closest('.trap')&&!n.classList.contains('skip'));}
+function move(d){const list=controls();if(!list.length)return;const i=list.indexOf(document.activeElement),n=list[(i+d+list.length)%list.length];n.focus({preventScroll:true});n.scrollIntoView({block:'center',behavior:'instant'});}
+function pad(t){if(!document.hidden){const p=[...(navigator.getGamepads?.()||[])].find(p=>p?.mapping==='standard');if(p){const b=p.buttons.map(x=>x.pressed);const y=p.axes[1]||0,x=p.axes[0]||0;const d=b[12]||b[14]||y<-.6||x<-.6?-1:b[13]||b[15]||y>.6||x>.6?1:0;if(d&&t>=nextMove){move(d);nextMove=t+220;}if(!d)nextMove=0;if(b[0]&&!previous[0]){const n=document.activeElement;if(controls().includes(n))n.click();else controls()[0]?.focus();}if(b[1]&&!previous[1]){document.activeElement?.blur();document.querySelector('header a').focus();}previous=b;}else previous=[];}requestAnimationFrame(pad);}
+requestAnimationFrame(pad);

@@ -1,0 +1,6 @@
+.rk-keeper-028{overflow:visible!important}
+.rk-capture-028{display:block;width:240px;max-width:100%;height:140px;object-fit:contain;margin:0 auto;pointer-events:none!important}
+.soul-bust.rk-has-capture-028>:not(.rk-capture-028){display:none!important}
+.soul-bust.rk-has-capture-028{left:5%;bottom:16%;width:min(30vw,360px);height:min(64vh,430px)}
+.soul-bust.rk-has-capture-028 .rk-capture-028{width:100%;height:100%;max-width:none;object-fit:contain}
+@media(max-height:700px){.capcharge .rk-capture-028{height:90px}}

@@ -1,0 +1,26 @@
+/* Grounded creatures use their inspected support row; flyers retain their composition. */
+.first-light-build .battle .unit .portrait>img.rk-reviewed-creature[data-rk-stance=ground],
+.first-light-build .facing-battle .exp-portrait [data-fighter-art] img.rk-reviewed-creature[data-rk-stance=ground]{
+ display:block;width:100%!important;height:100%!important;max-width:100%;max-height:100%;
+ object-fit:contain;object-position:center bottom;transform-origin:50% 100%;
+}
+@media(min-width:801px){
+ .first-light-build .battle .stage .unit:has(.rk-reviewed-creature[data-rk-stance=ground])>.plate,
+ .first-light-build .facing-battle .exp-unit:has(.rk-reviewed-creature[data-rk-stance=ground])>.fighter-readout{
+  bottom:calc(var(--rk-art-height, 190px) + 10px);
+ }
+}
+/* The nested static pose wrapper also needs the enemy-facing rule. Attack overlays
+   already own their direction; this selector never reaches those overlays. */
+.first-light-build .battle .stage .unit.enemy .portrait>.polished-portrait{transform:scaleX(-1)}
+@media(min-width:801px){
+ /* Rear rank was above the visible clearing. Keep its contact point on the field. */
+ .first-light-build .battle .stage>.side-row:has(>.unit:nth-child(3))>.unit:nth-child(3):has([data-rk-stance=ground]){bottom:38%}
+}
+
+@media(min-width:801px){
+ .first-light-build .battle .stage .unit:has([data-rk-contact=ground])>.gshadow,
+ .first-light-build .facing-battle .exp-portrait:has([data-rk-contact=ground])::before{
+  opacity:.9;background:radial-gradient(ellipse,#071019b8 10%,#07101955 50%,transparent 72%);
+ }
+}

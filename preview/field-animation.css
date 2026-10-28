@@ -1,0 +1,25 @@
+/* One art treatment across neutral, cloth idle and authored weapon frames. */
+:root{--rk-keeper-ink:drop-shadow(1.25px 0 0 #02040a) drop-shadow(-1.25px 0 0 #02040a) drop-shadow(0 1px 0 #02040a)}
+.rk-ink-definitions{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+.keeper-r2,.rk-keeper-ink{filter:var(--rk-keeper-ink)}
+.keeper-r2.rk-tattered{overflow:visible!important}
+/* A combat HUD refresh can replace the idle child without replacing its host. */
+[data-field-animating]>:not(.rk-field-action){visibility:hidden!important}
+.rk-field-action .rk-field-weapon[data-tattered]{width:385px!important;height:209px!important;margin-left:-192.5px;margin-top:-122px}
+.battle .rk-field-action .rk-field-weapon[data-tattered]{width:467.5px!important;height:253.786px!important;margin-left:-233.75px;margin-top:-152.786px}
+.full-party .rk-field-action .rk-field-weapon[data-tattered]{width:332.5px!important;height:180.5px!important;margin-left:-166.25px;margin-top:-106.5px}
+.rk-cinema-art canvas[data-tattered]{width:450px;height:244.286px;top:-81.286px}
+.keeper-r2[data-motion-slot="keeper-cloth-idle"]{overflow:hidden!important}
+.rk-field-action{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none!important;z-index:3}
+.rk-field-action>*{pointer-events:none!important}
+[data-fighter-art]{position:relative}
+.rk-field-action .rk-field-weapon{position:absolute;width:230px!important;height:154px!important;max-width:none!important;left:50%;top:50%;margin-left:-115px;margin-top:-67px;object-fit:contain}
+.battle .rk-field-action .rk-field-weapon{width:280px!important;height:187px!important;margin-left:-140px;margin-top:-86px}
+.full-party .rk-field-action .rk-field-weapon{width:200px!important;height:133px!important;margin-left:-100px;margin-top:-59px}
+.battle .unit.enemy .rk-field-action>:not(.rk-field-fallback){scale:-1 1}
+.rk-field-action .posecell{position:relative;top:0!important;width:100%!important;height:100%!important}
+[data-field-state] .shared-soul-art{animation:none!important}
+.rk-field-action .shared-soul-art{animation:none!important}
+@media(max-width:800px){.rk-field-action .rk-field-weapon{width:160px!important;height:107px!important;margin-left:-80px;margin-top:-48px}.battle .rk-field-action .rk-field-weapon{width:200px!important;height:133px!important;margin-left:-100px;margin-top:-60px}}
+@media(max-width:800px){.rk-field-action .rk-field-weapon[data-tattered]{width:267.5px!important;height:145.214px!important;margin-left:-133.75px;margin-top:-86.214px}.battle .rk-field-action .rk-field-weapon[data-tattered]{width:332.5px!important;height:180.5px!important;margin-left:-166.25px;margin-top:-107.5px}}
+@media(max-width:700px){.rk-cinema-art canvas[data-tattered]{width:340px;height:184.571px;top:-61.571px}}

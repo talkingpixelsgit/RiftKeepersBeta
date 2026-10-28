@@ -1,0 +1,29 @@
+/* Opening journey: the same navy, cyan and restrained gold as portrait combat. */
+.first-light-form .local-note,.rk-opening-fine,.rk-opening-entry{color:#b7cbd7;font-size:.82rem;line-height:1.5}
+.rk-opening-fine{margin:5px 0 16px}.rk-opening-entry{border-left:2px solid #80dce5;padding:10px 12px;background:#101b2b}
+.first-light-form .companion-picks small{display:block;color:#b9c9d7;font:12px/1.4 var(--body);padding:0 8px 8px;white-space:normal}
+.rk-opening-card{min-width:0;padding:16px;background:linear-gradient(120deg,#142638,#101525);border:1px solid #50667a;border-left:3px solid #7ce5e8;color:#e3ecf4;box-sizing:border-box}
+.rk-opening-kicker,.rk-story-count{display:block;color:#89dce5;font:600 10px/1.5 var(--body);letter-spacing:.12em}
+.rk-opening-card h2{font:600 21px/1.2 var(--display,var(--body));margin:6px 0 8px}.rk-opening-card p{font:14px/1.5 var(--body);margin:0 0 12px;color:#bccfdd}
+.rk-opening-actions{display:flex;flex-wrap:wrap;gap:8px}.rk-opening-card .btn{white-space:normal;min-height:44px;line-height:1.35;font-size:14px;max-width:100%}.rk-opening-card .rk-opening-quiet{background:transparent;border-color:#48516b;color:#aebfd0;font-size:12px}
+.rk-opening-help{margin:0 0 10px}.rk-opening-help summary{cursor:pointer;color:#b4c8d7;font-size:12px;min-height:32px;display:flex;align-items:center;gap:6px}.rk-opening-help summary:before{content:'+';color:#8beaf0}.rk-opening-help[open] summary:before{content:'−'}.rk-opening-help p{margin-top:6px}
+.rk-opening-card .btn:focus-visible,.rk-opening-island [role=button]:focus-visible{outline:3px solid #8beaf0;outline-offset:3px}
+.rk-opening-island .rk-opening-card{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:12px}.rk-opening-island .rk-opening-card p{margin-bottom:0}.rk-opening-island .rk-opening-actions{flex-shrink:0;max-width:42%}
+.rk-opening-title h2{font-size:24px}.rk-opening-island .islemap{border:1px solid #475571;border-radius:4px;background:#080c1a;overflow:hidden;min-height:180px}.rk-opening-island .islemap svg{display:block;width:100%;height:auto;min-height:190px;max-height:360px}
+.rk-discovery-mist{pointer-events:none!important}.rk-opening-island .ilabel{font-size:19px!important;paint-order:stroke;stroke:#0b1020;stroke-width:4px}
+.rk-opening-island .zsec{margin-top:14px}.rk-opening-island .zhead{min-height:130px!important}.rk-opening-island .arow{gap:8px}
+.tutov .tutbox,.hallreveal .hrin,.rk-opening-rewards{border:1px solid #64718a;background:linear-gradient(155deg,#152334,#0e1222);color:#e4ebf5;max-height:calc(100dvh - 36px);overflow:auto;box-sizing:border-box}
+.tutov .tutbox{max-width:560px;padding:25px}.tutov .tuttext{font-size:16px;line-height:1.65}.tutov .tutart{max-height:140px;font-size:46px;margin:14px auto}.tutov .tutart .portrait{max-height:140px}.tutov h2{font-size:27px;margin:12px 0}.tutov .btn{min-height:46px}
+.rk-opening-result,.rk-opening-combat{padding:10px 13px;border-left:2px solid #85dce5;color:#c8dce7;background:#101c2a;font:13px/1.5 var(--body)}
+.rk-opening-combat{margin:8px 0;grid-column:1/-1}.rk-opening-active .journey-invite{display:none!important}
+.rk-opening-active .route-book>.rk-opening-card{margin-bottom:22px}.rk-opening-active .route-heading h2{font-size:22px}.rk-opening-active .travel-note{display:none}
+.rk-opening-active .route-book{min-width:0}
+@media(max-width:700px){
+ .rk-opening-card{padding:12px}.rk-opening-card h2{font-size:19px}.rk-opening-card p{font-size:13px}
+ .rk-opening-island .rk-opening-card{display:block}.rk-opening-island .rk-opening-actions{max-width:none;margin-top:10px}
+ .rk-opening-island .islemap svg{min-height:190px}.rk-opening-island .zhead{min-height:110px!important}
+ .tutov .tutbox{padding:18px;max-width:calc(100vw - 24px)}.tutov .tuttext{font-size:14px}.tutov .tutart{max-height:95px;font-size:34px}.tutov .tutart .portrait{max-height:95px}
+ .rk-opening-combat{font-size:12px;padding:8px;line-height:1.4}.rk-opening-active .route-book>.rk-opening-card{margin-bottom:12px}
+ .rk-opening-active .journey-head+.rk-opening-card{margin:0 0 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}.rk-opening-active .journey-head+.rk-opening-card .rk-opening-actions{flex-direction:column;align-self:center}.rk-opening-active .journey-head+.rk-opening-card h2{font-size:17px}.rk-opening-active .journey-head+.rk-opening-card .btn{font-size:12px;padding:8px;max-width:150px}.rk-opening-active .journey-head+.rk-opening-card .rk-opening-help{margin-bottom:0}
+}
+@media(prefers-reduced-motion:reduce){.rk-discovery-mist *{animation:none!important}}

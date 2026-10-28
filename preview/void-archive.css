@@ -1,0 +1,65 @@
+/* Hypnobius Dark Ages ornaments, recoloured to Rift Keepers Void ink. */
+.first-light-build main.rk-archive{--archive-ink:#0b0e20;--archive-page:#14182d;--archive-line:#625b86;--archive-aqua:#91e6df;--archive-lilac:#c6b3ee}
+.first-light-build main.rk-archive>.view-h{position:relative;display:block;margin:4px 0 22px;padding:8px 110px 20px 0;border-bottom:1px solid #494567}
+.first-light-build main.rk-archive>.view-h::after{content:'';position:absolute;left:0;bottom:-8px;width:144px;height:24px;background:url('assets/void-archive/divider-aqua.svg') center/144px 24px no-repeat;pointer-events:none}
+.first-light-build main.rk-archive>.view-h h2{font:500 clamp(32px,3.5vw,46px)/1.1 Georgia,'Times New Roman',serif;letter-spacing:-.025em;color:#eee9ff;margin-bottom:10px}
+.first-light-build main.rk-archive>.view-h p{color:#aabbd1;max-width:60ch;font-size:14px;line-height:1.5}
+.first-light-build main.rk-archive .rk-archive-return{position:absolute;right:0;top:8px;min-height:46px;min-width:88px;padding:10px 14px;border:1px solid #5b708b;border-radius:0;background:#121c32;color:#a7e9e4;font:600 14px var(--body)}
+.first-light-build main.rk-archive .codextabs{border:0;gap:4px;padding:4px 0 10px;scroll-padding-inline:8px}
+.first-light-build main.rk-archive .codextabs button{position:relative;min-height:46px;padding:11px 14px;border:0;border-bottom:2px solid transparent;border-radius:0;background:transparent;color:#b5bfd6;box-shadow:none}
+.first-light-build main.rk-archive .codextabs button[aria-selected=true]{color:#effbff;background:#1b2039;border-bottom-color:var(--archive-aqua);box-shadow:none}
+.first-light-build main.rk-archive .codextabs button:hover{background:#21223b;color:#f0eaff}
+.first-light-build main.rk-archive .codextabs button small{margin-left:4px;color:#8eaac2;font-variant-numeric:tabular-nums}
+.first-light-build main.rk-archive .codex{position:relative;isolation:isolate;padding:22px 18px;background:var(--archive-ink);border:1px solid #423d61;border-radius:0;box-shadow:none;grid-template-columns:minmax(210px,.64fr) minmax(0,1.36fr)!important}
+.first-light-build main.rk-archive .codex::before{content:'';position:absolute;inset:0;border:24px solid transparent;border-image:url('assets/void-archive/frame-void.svg') 24 / 24px stretch;pointer-events:none;z-index:2}
+.first-light-build main.rk-archive .codex>.cxlist{padding:12px 18px 12px 10px;background:linear-gradient(90deg,#0c1023,#12162b);border-right:3px double #524969;gap:0}
+.first-light-build main.rk-archive .codex .cxitem{position:relative;min-height:66px;padding:13px 26px 13px 10px!important;border-bottom:1px solid #34374f!important;color:#c4cfe3;box-shadow:none!important}
+.first-light-build main.rk-archive .codex .cxitem.on{background:linear-gradient(90deg,#252039,#18293a)!important;box-shadow:inset 2px 0 var(--archive-aqua)!important;color:#fff}
+.first-light-build main.rk-archive .cxitem.on::after{content:'';position:absolute;right:0;top:50%;width:28px;height:28px;transform:translateY(-50%);background:url('assets/void-archive/selection-aqua.svg') center/28px 28px no-repeat;pointer-events:none}
+.first-light-build main.rk-archive .cxitem .cxchev,.first-light-build main.rk-archive .cxitem .cxthumb{display:none}
+.first-light-build main.rk-archive .cxitem .cxtxt b{font-size:15px;line-height:1.35;font-weight:600}
+.first-light-build main.rk-archive .cxitem small{display:block;font-size:12px;line-height:1.4;color:#97a8c3;margin-top:4px;white-space:normal}
+.first-light-build main.rk-archive .cxitem .cxnew{color:#93d8cf}
+.first-light-build main.rk-archive .codex .cxpage{padding:30px 36px 36px;min-width:0;min-height:450px;background:var(--archive-page)!important;color:#dce5f4}
+.first-light-build main.rk-archive .codex .cxpage::before{border-image:none;border:0;background:none;filter:none;opacity:1}
+.first-light-build main.rk-archive .codex .cxpage::after{inset:0;background:linear-gradient(110deg,#12172f,#181831 80%);border:0}
+.first-light-build main.rk-archive .codex .cxpage h3{font:500 clamp(27px,2.7vw,37px)/1.2 Georgia,'Times New Roman',serif!important;color:#eee9ff!important;border-bottom:1px solid #524964;padding-bottom:18px;margin:10px 0 24px;max-width:30ch}
+.first-light-build main.rk-archive .cxpage .cxsub{font:600 11px/1.5 var(--body);text-transform:uppercase;letter-spacing:.11em;color:#90c8d5!important;overflow-wrap:anywhere}
+.first-light-build main.rk-archive .cxpage p{font-size:15px;line-height:1.75;max-width:58ch;color:#cad7e9;text-shadow:none;margin:0 0 20px}
+.first-light-build main.rk-archive .cxpage .cxfacts{padding:0 0 20px;margin:0 0 24px;background:none;border:0;border-bottom:1px solid #393e5a;gap:10px 22px;font-size:13px;line-height:1.5}
+.first-light-build main.rk-archive .cxpage .cxfacts span:nth-child(odd){color:#93c5d0!important}
+.first-light-build main.rk-archive .rk-archive-scroll{position:relative;isolation:isolate;margin:30px -8px 34px;padding:30px 30px 26px;overflow-wrap:anywhere}
+.first-light-build main.rk-archive .rk-archive-scroll::before{content:'';position:absolute;inset:0;z-index:-1;border:20px solid transparent;border-image:url('assets/void-archive/scroll-void.svg') 12 fill / 20px stretch;pointer-events:none}
+.first-light-build main.rk-archive .rk-archive-scroll::after{content:'';position:absolute;inset:-3px -2px;pointer-events:none;z-index:-1;background:
+ radial-gradient(ellipse,#9b97ba 0 17%,#46516f 25% 45%,#152038 55% 70%,transparent 75%) left 3px top 0/12px 12px no-repeat,
+ radial-gradient(ellipse,#9b97ba 0 17%,#46516f 25% 45%,#152038 55% 70%,transparent 75%) right 3px top 0/12px 12px no-repeat,
+ linear-gradient(180deg,#8c8daf,#33435e 35%,#131d32 65%,#636580) center top 2px/calc(100% - 22px) 8px no-repeat,
+ radial-gradient(ellipse,#9b97ba 0 17%,#46516f 25% 45%,#152038 55% 70%,transparent 75%) left 3px bottom 0/12px 12px no-repeat,
+ radial-gradient(ellipse,#9b97ba 0 17%,#46516f 25% 45%,#152038 55% 70%,transparent 75%) right 3px bottom 0/12px 12px no-repeat,
+ linear-gradient(180deg,#636580,#131d32 35%,#33435e 65%,#8c8daf) center bottom 2px/calc(100% - 22px) 8px no-repeat}
+.first-light-build main.rk-archive .rk-archive-scroll .readtext{padding:0;background:none!important;border:0!important;font:400 17px/1.85 Georgia,'Times New Roman',serif;color:#e2e4f4!important;white-space:pre-wrap;margin:0 0 20px}
+.first-light-build main.rk-archive .rk-archive-scroll>:last-child{margin-bottom:0}
+.first-light-build main.rk-archive .rk-archive-scroll .cxnotes-h{font:600 11px/1.4 var(--body);text-transform:uppercase;letter-spacing:.13em;color:#a4e8dc;margin:0 0 14px}
+.first-light-build main.rk-archive .rk-archive-scroll .cxnotes{padding:0 0 0 18px;margin:0;color:#d3dcf0;font:400 15px/1.75 var(--body)}
+.first-light-build main.rk-archive .rk-archive-scroll .cxnotes li{padding-left:4px;margin-bottom:12px}
+.first-light-build main.rk-archive .rk-archive-scroll .cxnotes li::marker{color:#a68bc9}
+.first-light-build main.rk-archive .cxpage .btn{border:1px solid #637993;border-radius:0;background:#17243a;color:#dceaf9;min-height:46px;padding:10px 16px}
+.first-light-build main.rk-archive .detail{border:1px solid #53486f;border-top:2px solid #a38cc4;background:#11162b;box-shadow:none}
+.first-light-build main.rk-archive .dexcell{min-height:110px;background:#11162b;border-color:#3e4361}
+.first-light-build main.rk-archive .dexcell .portrait{background:radial-gradient(ellipse,#30345966,#10162a 72%)!important;border-color:#575879}
+.first-light-build main.rk-archive :is(button,a):focus-visible{outline:3px solid #93ede3!important;outline-offset:3px;box-shadow:none!important}
+@media(max-width:800px){
+ .first-light-build main.rk-archive>.view-h{margin-bottom:16px;padding-top:8px;padding-right:96px}
+ .first-light-build main.rk-archive>.view-h p{font-size:13px}
+ .first-light-build main.rk-archive .codextabs{margin-inline:-2px;padding-inline:2px}
+ .first-light-build main.rk-archive .codextabs button{font-size:13px;padding:11px 12px}
+ .first-light-build main.rk-archive .codex{grid-template-columns:1fr!important;padding:18px 8px}
+ .first-light-build main.rk-archive .codex>.cxlist{display:flex;flex-direction:column;align-items:stretch;max-height:210px;padding:0 10px 14px;border-right:0;border-bottom:3px double #514965;scroll-padding-block:6px;overflow-x:hidden;overflow-y:auto}
+ .first-light-build main.rk-archive .codex .cxitem{flex:0 0 auto;width:100%;min-width:0;min-height:62px}
+ .first-light-build main.rk-archive .codex .cxpage{padding:24px 18px 20px;min-height:320px}
+ .first-light-build main.rk-archive .codex .cxpage h3{font-size:28px!important;padding-bottom:14px}
+ .first-light-build main.rk-archive .cxpage .cxfacts{font-size:12px;gap:10px 14px}
+ .first-light-build main.rk-archive .rk-archive-scroll{margin:22px -7px;padding:26px 22px}
+ .first-light-build main.rk-archive .rk-archive-scroll .readtext{font-size:16px;line-height:1.8}
+}
+@media(prefers-reduced-motion:reduce){.first-light-build main.rk-archive *{scroll-behavior:auto}}

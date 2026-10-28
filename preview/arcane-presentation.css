@@ -1,0 +1,37 @@
+/* All decoration is outside layout flow and excluded from hit testing. */
+body.rk-arcane-ui #main{background:radial-gradient(ellipse at 5% 8%,#2d706541,transparent 45%),radial-gradient(ellipse at 100% 70%,#7225aa42,transparent 55%),linear-gradient(110deg,#081621dc,#15132ce6),url('../art/bg/hall.png') center/cover!important}
+#rk-arcane{position:fixed;inset:58px 0 0;z-index:65;pointer-events:none!important;overflow:hidden;contain:layout paint style}
+#rk-arcane[hidden],#rk-arcane [hidden]{display:none!important}#rk-arcane *{pointer-events:none!important}
+.rk-a-haze{position:absolute;inset:0;background:radial-gradient(ellipse at 0 40%,#1df8ff16,transparent 22%),radial-gradient(ellipse at 100% 60%,#c65dff1f,transparent 23%);animation:rk-a-breathe 11s ease-in-out infinite alternate}
+.rk-a-streams{position:absolute;inset:0;width:100%;height:100%;opacity:.65}.rk-a-flow-bed{stroke-width:12;opacity:.10}.rk-a-flow{stroke-width:2;stroke-dasharray:7 19 80 240;animation:rk-a-pour 9s linear infinite;filter:drop-shadow(0 0 4px #74dfff)}
+.rk-a-seal{position:absolute;width:280px;height:280px;right:-188px;top:20%;border:1px solid #bd86f65c;border-radius:50%;box-shadow:0 0 0 9px #92e4ec0d,0 0 0 12px #c0a2ff24,0 0 48px #7d53eb2e;animation:rk-a-turn 70s linear infinite}
+.rk-a-seal:before,.rk-a-seal:after{content:'';position:absolute;inset:30px;border:1px solid #a7eaff70;transform:rotate(45deg)}.rk-a-seal:after{inset:55px;transform:rotate(15deg)}
+.rk-a-motes i{position:absolute;width:3px;height:3px;border-radius:50%;background:#abfdff;box-shadow:0 0 9px 2px #45dfffc0;animation:rk-a-rise 9s calc(var(--i)*-.7s) ease-in-out infinite}
+body.rk-arcane-ui .rk-command-panel{background:radial-gradient(ellipse at 100% 0,#81329d46,transparent 60%),linear-gradient(115deg,#091f2af0,#141a35e8),url('../art/bg/hall.png') center/cover;border:1px solid #a587c9;border-top:2px solid #d5b16b;box-shadow:0 0 0 5px #0a1023,0 0 0 6px #78629e,0 20px 80px #000d,inset 0 0 55px #384f7d22}
+body.rk-arcane-ui .rk-command-panel .rk-command-grid button{background:linear-gradient(120deg,#143e4fda,#292043e8);border-color:#8473a5;border-bottom-color:#57c5ca;box-shadow:inset 0 1px #b7deed18,0 2px 10px #02071a55}
+body.rk-arcane-ui .rk-command-panel .rk-command-grid button:focus{background:linear-gradient(120deg,#245f6e,#453266);box-shadow:0 0 20px #56d6ef44}
+body.rk-arcane-ui :is(.rk-void-heading,.journey-head,.view-h){background:linear-gradient(100deg,#22495754,#7137892c,transparent);border-bottom:1px solid #bb9b62!important;padding:12px 14px!important;box-shadow:inset 3px 0 #6ee1d7}
+body.rk-arcane-ui :is(.rk-account,.rk-cloud-choice,.admin-sec,.bag-aside,.inventory-detail,.keeperhead,.portalbox){background:linear-gradient(130deg,#12323ce8,#201d38ef)!important;border-color:#756797!important;box-shadow:inset 0 1px #d8b77e44,0 8px 25px #0003!important}
+body.rk-arcane-ui .rk-a-settings [aria-pressed=true]{border-color:#e7c888;box-shadow:inset 0 -2px #72e1d9}
+.rk-a-event{position:absolute;perspective:550px;isolation:isolate;animation:rk-a-event 4.8s ease both}
+.rk-a-rift,.rk-a-rift-lip{position:absolute;width:70%;height:48%;left:15%;top:32%;border:3px solid #b9fdff;border-radius:50%;background:radial-gradient(ellipse,#070b18 30%,#3d2272 64%,#9272ef 72%,transparent 74%);box-shadow:0 0 12px #73f9ff,0 0 32px #a86df6,inset 0 0 20px #826cff;transform:rotate(-25deg) rotateX(25deg)}
+.rk-a-rift-lip{background:none;clip-path:inset(65% 0 0);z-index:3;opacity:.7}
+.rk-a-hand{position:absolute;width:94%;height:100%;object-fit:contain;left:3%;top:0;transform-origin:50% 75%;animation:rk-a-reach 4.8s cubic-bezier(.25,.65,.3,1) both;filter:drop-shadow(10px 18px 7px #000b) drop-shadow(0 0 5px #51a4ff85)}
+.rk-a-reach-shadow{position:absolute;inset:30% 0 0;background:radial-gradient(ellipse,#010616aa,transparent 68%);animation:rk-a-reach 4.8s ease both}
+.rk-a-bolt{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#cbf4ff;stroke-width:2;filter:drop-shadow(0 0 7px #987aff);stroke-dasharray:500;animation:rk-a-lightning 4.8s ease both}
+.rk-a-cloud{position:absolute;inset:0;background:radial-gradient(ellipse,#9b8cfb36,transparent 66%)}
+.rk-a-drop{position:absolute;top:-10%;width:3px;height:40px;border-radius:80%;background:linear-gradient(transparent,#bcf4ff99);box-shadow:0 0 4px #71c6ff66;animation:rk-a-rain 1.8s calc(var(--i)*-.24s) linear infinite}
+.rk-a-flame{position:absolute;inset:30% 8% -15%;background:radial-gradient(ellipse at 50% 95%,#ffce7866,#f2622740 36%,transparent 65%);animation:rk-a-breathe 1.8s ease-in-out infinite alternate}
+.rk-a-ember{position:absolute;top:90%;width:4px;height:7px;background:#ffd484;border-radius:50%;box-shadow:0 0 8px #f96727;animation:rk-a-embers 2.8s calc(var(--i)*-.31s) ease-out infinite}
+.rk-a-still *{animation-play-state:paused!important}.rk-a-still .rk-a-motes{opacity:.25}
+@keyframes rk-a-pour{to{stroke-dashoffset:-692}}
+@keyframes rk-a-turn{to{transform:rotate(360deg)}}
+@keyframes rk-a-breathe{to{opacity:.48;transform:translateY(-8px)}}
+@keyframes rk-a-rise{0%,100%{opacity:.15;transform:translateY(14px) scale(.7)}50%{opacity:.85;transform:translateY(-22px) scale(1.15)}}
+@keyframes rk-a-event{0%,100%{opacity:0}15%,82%{opacity:1}}
+@keyframes rk-a-reach{0%,10%{opacity:0;transform:translateY(55px) scale(.18) rotate(-15deg)}28%{opacity:1}52%,69%{opacity:1;transform:translateY(-13px) scale(1.02) rotate(6deg)}100%{opacity:0;transform:translateY(55px) scale(.18) rotate(-15deg)}}
+@keyframes rk-a-lightning{0%{opacity:0;stroke-dashoffset:500}25%{opacity:.9;stroke-dashoffset:0}70%{opacity:.55}100%{opacity:0;stroke-dashoffset:0}}
+@keyframes rk-a-rain{to{transform:translate(15px,290px)}}
+@keyframes rk-a-embers{to{transform:translate(15px,-180px) scale(.2);opacity:0}}
+@media(max-width:600px){#rk-arcane{inset:104px 0 0}.rk-a-motes i:nth-child(n+7){display:none}.rk-a-flow-bed{display:none}.rk-a-streams{opacity:.38}.rk-a-flow{filter:none;animation-duration:14s}.rk-a-seal{width:180px;height:180px;right:-150px}.rk-a-haze{animation:none}}
+@media(prefers-reduced-motion:reduce){#rk-arcane *{animation:none!important}.rk-a-event{display:none!important}}

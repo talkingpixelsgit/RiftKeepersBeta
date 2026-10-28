@@ -1,0 +1,12 @@
+.rk-transform-scene{z-index:1500;background:rgba(5,5,18,.8);display:grid;place-items:center;padding:16px;backdrop-filter:blur(3px)}
+.rk-transform-panel{width:min(560px,100%);max-height:95dvh;overflow:auto;text-align:center;background:radial-gradient(ellipse at 50% 45%,#2c2453,#0e1022 70%);border:1px solid #797199;padding:24px;color:#e4e1f7;box-sizing:border-box}
+.rk-transform-panel h2{font-size:clamp(23px,5vw,34px);margin:8px 0}.rk-transform-panel small{display:block;margin:12px;color:#adb4ca}.rk-transform-panel button{min-height:44px;max-width:100%;white-space:normal}.rk-transform-panel button:focus-visible{outline:2px solid #8be6dc;outline-offset:4px}
+.rk-transform-stage{position:relative;width:min(340px,100%);height:clamp(210px,40vh,340px);margin:auto;isolation:isolate;border-radius:50%;background:radial-gradient(ellipse,transparent 60%,#8b80b533 61%,transparent 63%);overflow:hidden}
+.rk-transform-before,.rk-transform-after{position:absolute;inset:0;display:grid;place-items:center}.rk-transform-stage .portrait{width:90%;height:95%;border:none;background:transparent}.rk-transform-stage .portrait img,.rk-transform-stage .portrait svg{width:100%;height:100%;object-fit:contain}.rk-transform-before{animation:rk-form-before 2.3s steps(1,end) both}.rk-transform-after{animation:rk-form-after 2.3s ease-out both}
+.rk-transform-pulse{position:absolute;inset:12%;pointer-events:none;border-radius:50%;border:1px solid #a9e7e0;background:radial-gradient(ellipse,#b4a2f744,transparent 70%);animation:rk-form-pulse .9s ease-out 2;opacity:0}
+@keyframes rk-form-before{0%,30%{opacity:1;filter:brightness(0) invert(.85)}31%,57%{opacity:0}58%,71%{opacity:1;filter:brightness(0) invert(.85)}72%,100%{opacity:0}}
+@keyframes rk-form-after{0%,29%{opacity:0;filter:brightness(0) invert(.85)}32%,55%{opacity:.8;filter:brightness(0) invert(.85)}58%,69%{opacity:0;filter:brightness(0) invert(.85)}74%{opacity:.8;filter:brightness(0) invert(.85)}100%{opacity:1;filter:none}}
+@keyframes rk-form-pulse{0%{opacity:0;transform:scale(.65)}40%{opacity:.35}100%{opacity:0;transform:scale(1.1)}}
+.rk-transform-scene.reduced .rk-transform-before{display:none}.rk-transform-scene.reduced .rk-transform-after{animation:rk-form-fade .5s ease-out both}.rk-transform-scene.reduced .rk-transform-pulse{display:none}
+@keyframes rk-form-fade{from{opacity:.3}to{opacity:1}}
+@media(max-width:420px){.rk-transform-panel{padding:14px}.rk-transform-panel small{font-size:11px}}

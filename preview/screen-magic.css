@@ -1,0 +1,3 @@
+#rk-screen-magic{position:fixed;left:0;top:0;width:100vw;height:100dvh;z-index:66;pointer-events:none!important;contain:strict}
+#rk-screen-magic[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){#rk-screen-magic{display:none!important}}
