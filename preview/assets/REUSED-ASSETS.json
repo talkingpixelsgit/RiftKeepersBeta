@@ -1,0 +1,57 @@
+{
+  "selected": [
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-Full-Set-030\\world\\right\\idle\\composite.png",
+      "staged": "Rift-Keepers-Phase2\\review\\first-20-minutes\\source\\assets\\keeper-030\\world\\right\\idle\\composite.png",
+      "sha256": "0f137af5e6d6236917f5f430f382118905ef0e2c44ca6ff0fdad460252f11f3d",
+      "purpose": "030 approved idle/walk, exact 028 runtime cell/timing compatibility"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-Full-Set-030\\world\\left\\idle\\composite.png",
+      "staged": "Rift-Keepers-Phase2\\review\\first-20-minutes\\source\\assets\\keeper-030\\world\\left\\idle\\composite.png",
+      "sha256": "3df9c04ce026678e1b7e6c0800cc13e916af59a6e666aaac0093e1644ff075a8",
+      "purpose": "030 approved idle/walk, exact 028 runtime cell/timing compatibility"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-Full-Set-030\\world\\right\\walk\\composite.png",
+      "staged": "Rift-Keepers-Phase2\\review\\first-20-minutes\\source\\assets\\keeper-030\\world\\right\\walk\\composite.png",
+      "sha256": "164d25b0b00be066fd186db75ae181892c1658a15211f8ea245a8e5c4bc2a026",
+      "purpose": "030 approved idle/walk, exact 028 runtime cell/timing compatibility"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-Full-Set-030\\world\\left\\walk\\composite.png",
+      "staged": "Rift-Keepers-Phase2\\review\\first-20-minutes\\source\\assets\\keeper-030\\world\\left\\walk\\composite.png",
+      "sha256": "aa7b8c2cc68c049f5b9e043d181c7290f35a0863e2d196566713a00ccd964bd7",
+      "purpose": "030 approved idle/walk, exact 028 runtime cell/timing compatibility"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\battle\\registered\\thornhog.png",
+      "staged": "Rift-Keepers-Phase2\\review\\first-20-minutes\\source\\assets\\early-enemies\\thornhog.png",
+      "sha256": "91e230930a677971b2a0a82bb0dd4c7adbe2639ae742e796828315e5d85ba659",
+      "purpose": "Same Thornhog identity, cleaner natural silhouette from registered runtime art"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-Full-Set-030\\world\\down_right\\idle\\composite.png",
+      "staged": "Rift-Keepers-Phase2\\review\\first-20-minutes\\source\\assets\\keeper-030\\world\\down_right\\idle\\composite.png",
+      "sha256": "5b2a1f892b4d6eb58f91f96482f4d1409ee12a5ea590159cb7e55e7fa37110f1",
+      "purpose": "Three-quarter idle so hood and eyes face the viewer in portrait combat."
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Characters\\Keeper\\Keeper-Full-Set-030\\world\\down_left\\idle\\composite.png",
+      "staged": "Rift-Keepers-Phase2\\review\\first-20-minutes\\source\\assets\\keeper-030\\world\\down_left\\idle\\composite.png",
+      "sha256": "9451a76f0380877c779bc024348d6104b4d20514e857fded96f35d24bc4c1c4f",
+      "purpose": "Three-quarter idle so hood and eyes face the viewer in portrait combat."
+    }
+  ],
+  "retained": [
+    "Leafgrub and Puddlewog are pixel-identical to canonical registered art.",
+    "Zapbee registered art is visually the same; retain shipped facing and hover.",
+    "Existing weapon attack and capture timings retained.",
+    "forest.png, pipwisp.webp, blood-rows.png, weather CSS and scroll.svg reused without changing originals."
+  ],
+  "excluded": [
+    "031 Keeper proof folders lack current approval; retain approved 030.",
+    "Arch cutout is not a complete backdrop; use the existing forest landscape.",
+    "Other game embedded assets and promo sheets are not suitable same-species runtime replacements."
+  ]
+}

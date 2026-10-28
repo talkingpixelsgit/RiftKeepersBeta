@@ -1,0 +1,485 @@
+{
+  "note": "Copied existing Talking Pixels authored exports; no new artwork. Standard body only. Older exports are healthy appearance, not health indicators. greatsword004 uses first strike only. Original files and game contracts untouched.",
+  "files": [
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\sword\\attack\\healthy\\body.webp",
+      "destination": "sword/body.webp",
+      "sha256": "1d8751a4290ffe1eed32b2111eec8e1cb8f63c14c086395d99c664434c2ecec1"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\sword\\attack\\healthy\\mask.webp",
+      "destination": "sword/mask.webp",
+      "sha256": "ff6945b561178373b16c87b4269f586404e96992ab1f2ba989ff29b9090d43c4"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\sword\\attack\\healthy\\eyes.webp",
+      "destination": "sword/eyes.webp",
+      "sha256": "01280a23e01daea5a266aef18bfd849faa20c67544839825ff85b4b9a00c23d0"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\sword_shield\\attack\\healthy\\body.webp",
+      "destination": "sword_shield/body.webp",
+      "sha256": "f5f262ff183934aa6c37a5c2eb689e0515fcaa95b0349dfeb233caea13151f2a"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\sword_shield\\attack\\healthy\\mask.webp",
+      "destination": "sword_shield/mask.webp",
+      "sha256": "d8710f4936ec31a669a8c7b8e1a9e65b91b7e4bab237ade625eff19c17734eba"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\sword_shield\\attack\\healthy\\eyes.webp",
+      "destination": "sword_shield/eyes.webp",
+      "sha256": "4a67a371b33dda576893b19e83ac7292dcc3fe4232f4a60eeda3c5cafd1d5ff8"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\daggers\\attack\\healthy\\body.webp",
+      "destination": "daggers/body.webp",
+      "sha256": "2b7ef0e303348a0d07779abfc04f120345ea7e07054ceff02ecb136f9523442d"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\daggers\\attack\\healthy\\mask.webp",
+      "destination": "daggers/mask.webp",
+      "sha256": "1b08dd08528edabd0d7a2ae98741ed4a8afdda2b3839ab2f944daf0e4749dab9"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\daggers\\attack\\healthy\\eyes.webp",
+      "destination": "daggers/eyes.webp",
+      "sha256": "70ac11ed082be668841d08fc7292320d470eb9d1b5aa466eb5c9ab7253f96542"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\bow\\attack\\healthy\\body.webp",
+      "destination": "bow/body.webp",
+      "sha256": "d465d76b5a21d8889c5cbe7d46c8c82ac985d705e34715e472e7945153dd2400"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\bow\\attack\\healthy\\mask.webp",
+      "destination": "bow/mask.webp",
+      "sha256": "8d3178586982a361fa5d8c3914b5a5abd56ae73b8c6d2c3581e99877e99c214e"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\bow\\attack\\healthy\\eyes.webp",
+      "destination": "bow/eyes.webp",
+      "sha256": "23e22c285fac85993e426ba70992a8c2f0296a8a704748c62f0795fff682a971"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\energy_blasters\\attack\\healthy\\body.webp",
+      "destination": "energy_blasters/body.webp",
+      "sha256": "a97d345a9f7da22e0edef0365c284d956f3802969c22953b55d342bbc9df4a06"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\energy_blasters\\attack\\healthy\\mask.webp",
+      "destination": "energy_blasters/mask.webp",
+      "sha256": "7dfce805b74fc9a34d7d567391d9a7b967f0feeec89e6ac12cdc080ab0a10eb1"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\energy_blasters\\attack\\healthy\\eyes.webp",
+      "destination": "energy_blasters/eyes.webp",
+      "sha256": "f3b3cd2e4e735f6ed8193428feff23ba9e638521414ed827e4107ea9c4f21d45"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\staff\\attack\\healthy\\body.webp",
+      "destination": "staff/body.webp",
+      "sha256": "de4a2d9a23640beabb8ba0ba298633841136b6a6d69a541f964c96e64202d2ac"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\staff\\attack\\healthy\\mask.webp",
+      "destination": "staff/mask.webp",
+      "sha256": "b80199c626fffefc4d3b84b91baa9cc059eae3d9e5e8922ca87c51a3316e62cb"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\staff\\attack\\healthy\\eyes.webp",
+      "destination": "staff/eyes.webp",
+      "sha256": "c6291734ed601e354fc3a59d172bf9ca0baf6615ba51dd7640e3bdd2c0abea03"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\book\\attack\\healthy\\body.webp",
+      "destination": "book/body.webp",
+      "sha256": "7bd55ce3402b380b0cd97d551b5b06204ad768379a16b96b4a9c5046d29a7c64"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\book\\attack\\healthy\\mask.webp",
+      "destination": "book/mask.webp",
+      "sha256": "f9ad31603fe502ae907632bda886068c3fa6eef8147e2f26a5df8d08136268bb"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\book\\attack\\healthy\\eyes.webp",
+      "destination": "book/eyes.webp",
+      "sha256": "9ee7756688c26824cf6e3936cdd6663ad293f0d0e480959e9927243184f75c49"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\kusarigama\\attack\\healthy\\body.webp",
+      "destination": "kusarigama/body.webp",
+      "sha256": "31012d1b5746700acfe349828e517984dec112e3c9e659adabc1ee573b41b8ab"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\kusarigama\\attack\\healthy\\mask.webp",
+      "destination": "kusarigama/mask.webp",
+      "sha256": "f005c7e347b807a20fe3e977e5a576b3b3991fa032f6419dfd8ae245aa573196"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\battle\\review-exports\\kusarigama\\attack\\healthy\\eyes.webp",
+      "destination": "kusarigama/eyes.webp",
+      "sha256": "d73ba8700f5ef58a37da9752596bde1533a54b394bf9af1904648ef8d3e5f551"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\feet-2.png",
+      "destination": "greatsword/feet-2.png",
+      "sha256": "22ee09037ea2bc97e630e4df7d90a04c0867f871b112ead5051adf248751295b"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-far-2.png",
+      "destination": "greatsword/sleeve-far-2.png",
+      "sha256": "f4424d4b7a8a831ad3e0d65e696d2bd8b88333ac91552294e257478b337de7a4"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-far-mask-2.png",
+      "destination": "greatsword/sleeve-far-mask-2.png",
+      "sha256": "505d9858d826b3e349a7b856ae3cceb7d46678d216bf8f3e4fb5e220dce937d0"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\body-2.png",
+      "destination": "greatsword/body-2.png",
+      "sha256": "2ec28f4ee3682b7dcfde1bb57740be857d7650b2eedcf0fd1ba059f7b5961e31"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cloak-2.png",
+      "destination": "greatsword/cloak-2.png",
+      "sha256": "06810bd3af5a2c94e2a617ca8b54f62320cc668b2747ce039a2229fba8534477"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cloak-mask-2.png",
+      "destination": "greatsword/cloak-mask-2.png",
+      "sha256": "747250b4ca79d1b0aa39032d1946a153af03f4554320e1004c4b2fff100248d9"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-near-2.png",
+      "destination": "greatsword/sleeve-near-2.png",
+      "sha256": "10de6005db959da083f8f03e3830b6ff3d2cb7a47976779b0131d2c01330fdbf"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-near-mask-2.png",
+      "destination": "greatsword/sleeve-near-mask-2.png",
+      "sha256": "c22ddca8bef12b81822aba5158c507fa4b0a8c8fef2a7404e6f94be5398926c7"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cowl-front-2.png",
+      "destination": "greatsword/cowl-front-2.png",
+      "sha256": "22c22e9d62592cf70ac4875688b253dfab9a4349e755476f54d12ed8ff8e41fe"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cowl-front-mask-2.png",
+      "destination": "greatsword/cowl-front-mask-2.png",
+      "sha256": "0e1b2d6800f0d503d54121cde72d8f45fd25e4d9c8a82c76b2ae9222ed808ddb"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-far-2.png",
+      "destination": "greatsword/forearm-far-2.png",
+      "sha256": "4c9b50ec03a0930921aae2007a3278be746db284ac27f853012ec084a38dcaee"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-far-mask-2.png",
+      "destination": "greatsword/forearm-far-mask-2.png",
+      "sha256": "a0ee6836c53af2738c7fbc35bd7b927a504790e22bcf8dc3a5318d029e6c4734"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-near-2.png",
+      "destination": "greatsword/forearm-near-2.png",
+      "sha256": "40da573e81bbc2e3b03577201d18a7f9366a7dc10baf2d19667dbc3e643abe34"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-near-mask-2.png",
+      "destination": "greatsword/forearm-near-mask-2.png",
+      "sha256": "84c82bd39860b4c4e2c5e5c8b0a5fa99ae0bf41a85513e6a26ebeef00486a644"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\weapon-2.png",
+      "destination": "greatsword/weapon-2.png",
+      "sha256": "104d478102e2254d18c9d9b2c07fc45011d36454e06f5e8ea9e3512b46a020fc"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\hands-front-2.png",
+      "destination": "greatsword/hands-front-2.png",
+      "sha256": "d9470f7d7ff2cafff0bae34e1cef901487ac9c31cf68f9b903fe06c82371aba0"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\eye-left-2.png",
+      "destination": "greatsword/eye-left-2.png",
+      "sha256": "7804088163a5b2c9cbe799e39c5e65e2d25ff16b70734daf4a7ec9bb467b169b"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\eye-right-2.png",
+      "destination": "greatsword/eye-right-2.png",
+      "sha256": "149c453378bea2cef39f9a88f222002fdd0467994ce1349258476a224cf4aaad"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\feet-3.png",
+      "destination": "greatsword/feet-3.png",
+      "sha256": "57475701c914c0374524981ea251197253db247d0ab252ffb4baed75f618df97"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-far-3.png",
+      "destination": "greatsword/sleeve-far-3.png",
+      "sha256": "f4424d4b7a8a831ad3e0d65e696d2bd8b88333ac91552294e257478b337de7a4"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-far-mask-3.png",
+      "destination": "greatsword/sleeve-far-mask-3.png",
+      "sha256": "8a914e6640b926a3c34721338ad70716838f471859a6e682f20e09d460a03c9e"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\body-3.png",
+      "destination": "greatsword/body-3.png",
+      "sha256": "c03bf91732ec8442bbfc29d70ea247590e9715b08701a9c718f50bff932f3997"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cloak-3.png",
+      "destination": "greatsword/cloak-3.png",
+      "sha256": "ddbffca4998dccc7eef90b6cd50664e19571699221ea9284cad649d22098c034"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cloak-mask-3.png",
+      "destination": "greatsword/cloak-mask-3.png",
+      "sha256": "26d7d536efd8bcceb3cf8e195c09f9da85d924cc29567d0b2d59037cb0b6dd90"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-near-3.png",
+      "destination": "greatsword/sleeve-near-3.png",
+      "sha256": "10de6005db959da083f8f03e3830b6ff3d2cb7a47976779b0131d2c01330fdbf"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-near-mask-3.png",
+      "destination": "greatsword/sleeve-near-mask-3.png",
+      "sha256": "c9254d9aae69f1b4171078c8cab03871981d155ca19b40a88a74e43e596269ec"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cowl-front-3.png",
+      "destination": "greatsword/cowl-front-3.png",
+      "sha256": "22c22e9d62592cf70ac4875688b253dfab9a4349e755476f54d12ed8ff8e41fe"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cowl-front-mask-3.png",
+      "destination": "greatsword/cowl-front-mask-3.png",
+      "sha256": "79bbf2379589daaa42adcd155b1751373e9d3511a5bc26d070d7f24bb25a43fa"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-far-3.png",
+      "destination": "greatsword/forearm-far-3.png",
+      "sha256": "4c9b50ec03a0930921aae2007a3278be746db284ac27f853012ec084a38dcaee"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-far-mask-3.png",
+      "destination": "greatsword/forearm-far-mask-3.png",
+      "sha256": "cd44f5ab440b7bca20d9712e7b3cdbe1e38c0de3e579a13f095d08c1dcad94ed"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-near-3.png",
+      "destination": "greatsword/forearm-near-3.png",
+      "sha256": "40da573e81bbc2e3b03577201d18a7f9366a7dc10baf2d19667dbc3e643abe34"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-near-mask-3.png",
+      "destination": "greatsword/forearm-near-mask-3.png",
+      "sha256": "06b0f8627fe8d6f21bbfa7c8fb6fdf2aa3237c62c3ba2c092e85a48db217d858"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\weapon-3.png",
+      "destination": "greatsword/weapon-3.png",
+      "sha256": "71602b5a6893a71cf6f7ab4fb553f5620028df8d5a7a07159db9d32d202892ac"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\hands-front-3.png",
+      "destination": "greatsword/hands-front-3.png",
+      "sha256": "a660b7647b719d8f1c57fcb8dac6ffd5807f3f1239fc411baa0b8ed1f845f226"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\eye-left-3.png",
+      "destination": "greatsword/eye-left-3.png",
+      "sha256": "b5f36762194256d90e56660be999295769196f9b240cecf186603d4e4c61a716"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\eye-right-3.png",
+      "destination": "greatsword/eye-right-3.png",
+      "sha256": "2ca4b81dd5a8b1519c2ae1fc0f9a0151a5f4119c1c5d8a603d69cfd26fc6eeef"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\feet-0.png",
+      "destination": "greatsword/feet-0.png",
+      "sha256": "23b9ac76461fcf3a96d79fbe11546bb6f2db80cfe28e815852c78571e47d16c3"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-far-0.png",
+      "destination": "greatsword/sleeve-far-0.png",
+      "sha256": "00ade6491c277e3bcc634dfb31d20dcedf8ad1f1c92f09495117788523bc15ba"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-far-mask-0.png",
+      "destination": "greatsword/sleeve-far-mask-0.png",
+      "sha256": "eec2c5b2258041dbc4cfa0ec58d5d65f78ed276f95405a287078bbdfaa3b2897"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\body-0.png",
+      "destination": "greatsword/body-0.png",
+      "sha256": "20025bf4a04e828aaa682d0cc826d68a057792a0ce9c4852306b0f79d8fc6c1b"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cloak-0.png",
+      "destination": "greatsword/cloak-0.png",
+      "sha256": "cc482be7971b9dc520701b23f3e190265af5f27b89356ce8ed1a5c7e20b0f4fe"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cloak-mask-0.png",
+      "destination": "greatsword/cloak-mask-0.png",
+      "sha256": "82508d7fa8e854edfbe3f9051c50f57033b32615f159cf3906830eb24fe7f953"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-near-0.png",
+      "destination": "greatsword/sleeve-near-0.png",
+      "sha256": "39ee1b6727201ec3c93c22e59281c41c8a575f6c0d0ad5e7d997377e110d7d3c"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-near-mask-0.png",
+      "destination": "greatsword/sleeve-near-mask-0.png",
+      "sha256": "865b83fc8660e56bc6c067c6ec1aca0a5a1699bf31e6247ffd086470fc6b9729"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cowl-front-0.png",
+      "destination": "greatsword/cowl-front-0.png",
+      "sha256": "655c0c676f67cf200aa58c9217c2bf24e7481afcd4c1c5d3a73c077ea8b21b63"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cowl-front-mask-0.png",
+      "destination": "greatsword/cowl-front-mask-0.png",
+      "sha256": "966d39fe5e929dca18eee0790a0779956b5a7ac2e09b4c588a5dcbba78032b5d"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-far-0.png",
+      "destination": "greatsword/forearm-far-0.png",
+      "sha256": "7e6a473bdea9365a79db1cd33149d10d140df78e0d24d222cb6f3a81fd8ca270"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-far-mask-0.png",
+      "destination": "greatsword/forearm-far-mask-0.png",
+      "sha256": "54ff89e8d182e2dc931eca6355883f5ac9f6f9b3f45f917d2145f9004be596c5"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-near-0.png",
+      "destination": "greatsword/forearm-near-0.png",
+      "sha256": "8370a3ad3edf1da7d14019bbc4332120ac86acf30cd8cb120ddcfda3e0b4dcc5"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-near-mask-0.png",
+      "destination": "greatsword/forearm-near-mask-0.png",
+      "sha256": "e7c94e5283c62805546c7f3a724beff01b5050e8b276bc9df7eb6c36f1b154f9"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\weapon-0.png",
+      "destination": "greatsword/weapon-0.png",
+      "sha256": "77779eec420027875dc9533c95ddb0bde07fec897988d3df4ee28787c76f7616"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\hands-front-0.png",
+      "destination": "greatsword/hands-front-0.png",
+      "sha256": "04b4b9fa2cec2b969a0f62e0171a87428b2bf0623b1bcd42d7163b6e5b4a77cc"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\eye-left-0.png",
+      "destination": "greatsword/eye-left-0.png",
+      "sha256": "132790ec323d05e9f1196a11bcbc543ba5cd360c40572d011000acaf9c4b5c4c"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\eye-right-0.png",
+      "destination": "greatsword/eye-right-0.png",
+      "sha256": "ebf0016e727e6eb0851cf956209ffef195b1a31ab549986f8c4d5d041022fee0"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\feet-1.png",
+      "destination": "greatsword/feet-1.png",
+      "sha256": "a59355ab5eb4d62c4ef698fcf33d2314e02e4b94810933571fe7b22ab9aaf877"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-far-1.png",
+      "destination": "greatsword/sleeve-far-1.png",
+      "sha256": "f4424d4b7a8a831ad3e0d65e696d2bd8b88333ac91552294e257478b337de7a4"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-far-mask-1.png",
+      "destination": "greatsword/sleeve-far-mask-1.png",
+      "sha256": "505d9858d826b3e349a7b856ae3cceb7d46678d216bf8f3e4fb5e220dce937d0"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\body-1.png",
+      "destination": "greatsword/body-1.png",
+      "sha256": "bb6fab9eb8fd6516f6269e8b90707c6754829f76449b6fb8b874126a88869bb7"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cloak-1.png",
+      "destination": "greatsword/cloak-1.png",
+      "sha256": "e3fde22aeaaa100ec61ffa12a916fe4c2c74caba59e8c020b4352982398185bc"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cloak-mask-1.png",
+      "destination": "greatsword/cloak-mask-1.png",
+      "sha256": "7390a73c41549b6b0b0706f3a8ec9f1c664b63b2ddc51d9150f71892bdd01f0d"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-near-1.png",
+      "destination": "greatsword/sleeve-near-1.png",
+      "sha256": "10de6005db959da083f8f03e3830b6ff3d2cb7a47976779b0131d2c01330fdbf"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\sleeve-near-mask-1.png",
+      "destination": "greatsword/sleeve-near-mask-1.png",
+      "sha256": "c22ddca8bef12b81822aba5158c507fa4b0a8c8fef2a7404e6f94be5398926c7"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cowl-front-1.png",
+      "destination": "greatsword/cowl-front-1.png",
+      "sha256": "22c22e9d62592cf70ac4875688b253dfab9a4349e755476f54d12ed8ff8e41fe"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\cowl-front-mask-1.png",
+      "destination": "greatsword/cowl-front-mask-1.png",
+      "sha256": "0e1b2d6800f0d503d54121cde72d8f45fd25e4d9c8a82c76b2ae9222ed808ddb"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-far-1.png",
+      "destination": "greatsword/forearm-far-1.png",
+      "sha256": "4c9b50ec03a0930921aae2007a3278be746db284ac27f853012ec084a38dcaee"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-far-mask-1.png",
+      "destination": "greatsword/forearm-far-mask-1.png",
+      "sha256": "a0ee6836c53af2738c7fbc35bd7b927a504790e22bcf8dc3a5318d029e6c4734"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-near-1.png",
+      "destination": "greatsword/forearm-near-1.png",
+      "sha256": "40da573e81bbc2e3b03577201d18a7f9366a7dc10baf2d19667dbc3e643abe34"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\forearm-near-mask-1.png",
+      "destination": "greatsword/forearm-near-mask-1.png",
+      "sha256": "84c82bd39860b4c4e2c5e5c8b0a5fa99ae0bf41a85513e6a26ebeef00486a644"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\weapon-1.png",
+      "destination": "greatsword/weapon-1.png",
+      "sha256": "332b25acb9fbf99314488385f9966e86dd3b2e77d500210c68ad60860719afdf"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\hands-front-1.png",
+      "destination": "greatsword/hands-front-1.png",
+      "sha256": "84a58a5182e3ef42a770396975a967288d920bb66246ed7bf2f9a3fa29a4b639"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\eye-left-1.png",
+      "destination": "greatsword/eye-left-1.png",
+      "sha256": "ef0fddd7b2c5d5b88fc928a03af65cff48ca8e85f7f275de948615c4da4b4890"
+    },
+    {
+      "source": "C:\\Talking Pixels\\Time Keepers\\TimeKeepersOnline\\assets\\keepers\\standard\\greatsword004\\eye-right-1.png",
+      "destination": "greatsword/eye-right-1.png",
+      "sha256": "22500fc6b6ddd906b9407f981a1fe055a28c947d9089255d1eca54ed3f5c734b"
+    }
+  ]
+}

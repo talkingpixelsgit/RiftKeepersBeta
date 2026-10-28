@@ -1,0 +1,19 @@
+WENREXA - FREE UI HOLOGRAM INTERFACE (PART 2)
+Supplied source: C:/Users/talki/Downloads/2. More UI Hologram Interface Wenrexa.zip
+SHA256: 671B4A3003A1119FF9959C6A518DCE827020D7F2964A618CCA4E2E8733B0AC6D
+Creator/product: https://wenrexa.itch.io/holoui
+Verified 2026-10-16: this exact free product page lists Part2 archive and CC0 1.0.
+https://creativecommons.org/publicdomain/zero/1.0/
+The similarly named paid UI Hologram Interface product has separate CC BY-SA
+terms; do not generalize these CC0 terms to other Wenrexa products.
+The supplied archive contains no licence text. Product-page listing is recorded
+as the source of the CC0 declaration. Credit: Wenrexa, Free UI Hologram Interface.
+Six PNG originals copied unchanged. No raster edits. CSS can tint/de-emphasize
+background layers; HTML text and controls remain separate and editable.
+Source mapping:
+Button 3/Normal.png -> button-normal.png
+Button 3/Hover.png -> button-hover.png
+Button 3/Active.png -> button-active.png
+Button 3/Disabled.png -> button-disabled.png
+Card X5/Cell.png -> inventory-cell.png
+Card X8/Card X100.png -> hologram-panel.png

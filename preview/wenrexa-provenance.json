@@ -1,0 +1,31 @@
+{
+  "source": "https://wenrexa.itch.io/holoui",
+  "license": "CC0 1.0 as listed on source product page 2026-10-16",
+  "integration": "Six unchanged files copied from UI-03 and verified against its supplied manifest. Recorded source archive path was unavailable during this integration.",
+  "assets": [
+    {
+      "file": "assets/wenrexa/button-active.png",
+      "sha256": "a035bb55e68b0385c1243f96e4394293ff8ad7396c5fe605033913b140168679"
+    },
+    {
+      "file": "assets/wenrexa/button-disabled.png",
+      "sha256": "5d84bd0a408490c9245b51f2d93f29a61922c300bd3a047f6e113a6a851da19e"
+    },
+    {
+      "file": "assets/wenrexa/button-hover.png",
+      "sha256": "8e5375d51eef54b5acf34ad6d8c8e39d07fb01df19af63e313fc94099451455b"
+    },
+    {
+      "file": "assets/wenrexa/button-normal.png",
+      "sha256": "ba2c327ac6f44f71cdf2fc7eb8ebd9f77f79a0b3e96e428db9cd8d04ed1fd3ad"
+    },
+    {
+      "file": "assets/wenrexa/hologram-panel.png",
+      "sha256": "72d569ed8cf2b5725c9db408223210cd5cb45696b1c37c3017469010288c493f"
+    },
+    {
+      "file": "assets/wenrexa/inventory-cell.png",
+      "sha256": "379bbdb27a6521ed24efafaba1d762f3997b4b695d065c9cdc7e7e5ec605690a"
+    }
+  ]
+}

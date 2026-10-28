@@ -1,0 +1,16 @@
+[
+  {
+    "credit": "Talking Pixels",
+    "destination": "ancient-oak.png",
+    "use": "Decorative meadow edge; original unchanged",
+    "sha256": "9F303675D0565B28A495DABBF35000C7C23E1F66D7BD6DC518A5722908D974A3",
+    "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Environments\\Tutorial Scenery 024\\exports\\ancient-oak.png"
+  },
+  {
+    "credit": "Talking Pixels",
+    "destination": "coastal-shrub.png",
+    "use": "Decorative meadow edge; original unchanged",
+    "sha256": "44DFFDAA47398722A768AEED5B1A67CA74F8A09D69CB3EA626182E3B0630EB44",
+    "source": "C:\\Talking Pixels\\Time Keepers\\Assets\\Environments\\Tutorial Scenery 024\\exports\\coastal-shrub.png"
+  }
+]

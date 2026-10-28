@@ -1,0 +1,132 @@
+{
+  "note": "Original sheets copied unchanged. Rates chosen for runtime, not asserted as authored. User handles licenses. Source archive hashes in review provenance files.",
+  "assets": {
+    "portalVoid": {
+      "file": "portalVoid.png",
+      "columns": 5,
+      "rows": 3,
+      "frames": 15,
+      "fps": 12,
+      "review_source": "pipoya-portals-objects/warp/pipo-gate01e192.png",
+      "sha256": "931ae475cd32e812e0455d2c6ffa124746f7c16b8bbfaae9c47aa55289e8dd58"
+    },
+    "portalAqua": {
+      "file": "portalAqua.png",
+      "columns": 5,
+      "rows": 3,
+      "frames": 15,
+      "fps": 12,
+      "review_source": "pipoya-portals-objects/warp/pipo-gate01b192.png",
+      "sha256": "5ae4787749b2e879c0935cb6980b986f9b19b43245bc1ea2715468e9c580bfc2"
+    },
+    "mysteryVoid": {
+      "file": "mysteryVoid.png",
+      "columns": 5,
+      "rows": 4,
+      "frames": 20,
+      "fps": 10,
+      "review_source": "pipoya-portals-objects/objects/pipo-mapeffect023_192.png",
+      "sha256": "b65b690120e75999b39677114b35bbdbbab475c60c7b4be34459b4448b0ce253"
+    },
+    "soulAqua": {
+      "file": "soulAqua.png",
+      "columns": 5,
+      "rows": 6,
+      "frames": 30,
+      "fps": 12,
+      "review_source": "pipoya-portals-objects/objects/pipo-nazoobj04b_192.png",
+      "sha256": "67baee059e2e2ef6ef34263c6988f47bffa7c2d058a4751958083538bf7f50bd"
+    },
+    "pillarBack": {
+      "file": "pillarBack.png",
+      "columns": 5,
+      "rows": 2,
+      "frames": 10,
+      "fps": 12,
+      "review_source": "pipoya-lightpillar/192x192/pipo-mapeffect013c-back.png",
+      "sha256": "a01cacdd9093ef8412a35f5695f805b73056df705ff05bed599cbbbfe9e252a8"
+    },
+    "pillarFront": {
+      "file": "pillarFront.png",
+      "columns": 5,
+      "rows": 2,
+      "frames": 10,
+      "fps": 12,
+      "review_source": "pipoya-lightpillar/192x192/pipo-mapeffect013c-front.png",
+      "sha256": "ed940db8709c70606195f51e09f51ee497c5b94f156320fa4686ad9c6e2c3a8d"
+    },
+    "lightningForward": {
+      "file": "lightningForward.png",
+      "columns": 4,
+      "rows": 1,
+      "frames": 4,
+      "fps": 12,
+      "review_source": "lightning-skills/VFX1/Sprite-sheet/Sprite-sheet.png",
+      "sha256": "ff47cb8644894af0de6897baacef5ce37eaa4d3b221bd06970e542e1c37f8cb4"
+    },
+    "lightningHeavy": {
+      "file": "lightningHeavy.png",
+      "columns": 4,
+      "rows": 1,
+      "frames": 4,
+      "fps": 12,
+      "review_source": "lightning-skills/VFX2/Sprite-sheet/Sprite-sheet.png",
+      "sha256": "2e2511b05ec236fdcfda0465ec75e24151bfb8ae9d04f4d075b1fd506c2dc834"
+    },
+    "lightningAbove": {
+      "file": "lightningAbove.png",
+      "columns": 5,
+      "rows": 1,
+      "frames": 5,
+      "fps": 12,
+      "review_source": "lightning-skills/VFX3/Sprite-sheet/Sprite-sheet.png",
+      "sha256": "a977141f70245800a1301f441029d8f6a65cb82cf5461d685044f57529643eb4"
+    },
+    "lightningStrike": {
+      "file": "lightningStrike.png",
+      "columns": 5,
+      "rows": 1,
+      "frames": 5,
+      "fps": 12,
+      "review_source": "lightning-skills/VFX4/Sprite-sheet/Sprite-sheet.png",
+      "sha256": "194e5731f071dd7c22c5dc0427c238061f8996230405fd327c852aff932da996"
+    },
+    "chargeArcs": {
+      "file": "chargeArcs.png",
+      "columns": 4,
+      "rows": 1,
+      "frames": 4,
+      "fps": 12,
+      "review_source": "lightning-skills/VFX5/Sprite-sheet/Sprite-sheet.png",
+      "sha256": "56f67235a939045ed34181896d7d0f94f6d4b2f2cfbd3a994c2d91c631f9e470"
+    },
+    "chargeSparks": {
+      "file": "chargeSparks.png",
+      "columns": 5,
+      "rows": 2,
+      "frames": 8,
+      "fps": 12,
+      "review_source": "lightning-skills/VFX6/Sprite-sheet/Sprite-sheet.png",
+      "sha256": "e053e996213d0b267aedf314af08a71e585f27f0701734ec15d2dd22a334fc19"
+    },
+    "meleeSmear": {
+      "file": "meleeSmear.png",
+      "fps": 24,
+      "review_source": "incoming-motion-assets/Smear VFX 01/Smear VFX 01/Smear 01 Horizontal 1.png",
+      "rows": 1,
+      "frames": 5,
+      "columns": 5,
+      "sha256": "A1E28B8951857D94F474B88B9BBD3BC6565B213A3CC7C0AEEECCC17D1FAC9768"
+    },
+    "soulCoil": {
+      "file": "soulCoil.png",
+      "rows": 9,
+      "review_source": "incoming-motion-assets/Effect and FX Pixel All Free/Free/Part 1/03.png",
+      "fps": 24,
+      "frames": 13,
+      "sha256": "3108A73C7F0CB8C6226F95BA248063EA08CC6CAD9196030758C06C87A14277F6",
+      "columns": 13,
+      "rowOffset": 2
+    }
+  }
+}

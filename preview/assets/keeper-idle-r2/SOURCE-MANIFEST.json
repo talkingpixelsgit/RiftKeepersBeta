@@ -1,0 +1,124 @@
+{
+  "credit": "Talking Pixels",
+  "revision": "028 R2 idle",
+  "status": "R2 neutral direction approved by coordinator; this motion awaits review; not runtime integrated",
+  "coverage": {
+    "build": "Standard average",
+    "health": "healthy",
+    "facing": "down-right",
+    "equipment": "unarmed",
+    "action": "neutral idle",
+    "new_drawn_poses": 0,
+    "new_builds": 0,
+    "new_facings": 0,
+    "new_combat_actions": 0
+  },
+  "method": "Reuse approved R2 neutral, continuous low-amplitude cloth rig. Six parameter keys sampled from the existing continuous rig; 24 baked samples. No new image generation, redraw, walk-frame reuse or weapon artwork. Original R1 idle and R2 neutral preserved.",
+  "canvas": [
+    384,
+    576
+  ],
+  "ground_pivot": [
+    192,
+    516
+  ],
+  "nominal_height": 478,
+  "clip": {
+    "name": "keeper_standard_healthy_down_right_idle_r2",
+    "loop": true,
+    "duration_ms": 2400,
+    "playback_samples": 24,
+    "durations_ms": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "playback_grid": [
+      6,
+      4
+    ],
+    "six_key_grid": [
+      6,
+      1
+    ],
+    "six_key_times_ms": [
+      0,
+      400,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "six_key_note": "Six sampled keys describe the periodic rig. Use 24-sample sheets for smooth baked playback; do not apply extra body bob.",
+    "markers": [
+      {
+        "id": "keeper.idle.begin",
+        "ms": 0
+      },
+      {
+        "id": "keeper.idle.breath_crest",
+        "ms": 1200
+      },
+      {
+        "id": "keeper.idle.loop",
+        "ms": 2400
+      }
+    ],
+    "contact": "both feet fixed throughout; no release/attack marker"
+  },
+  "layers": [
+    "body",
+    "lining",
+    "boots",
+    "hands",
+    "eyes-left",
+    "eyes-right",
+    "cloak-mask"
+  ],
+  "anchors": {
+    "screen_left_hand": [
+      170,
+      318
+    ],
+    "screen_right_hand": [
+      294,
+      285
+    ],
+    "effect_origin": [
+      232,
+      302
+    ],
+    "weapon_grip": null
+  },
+  "health_wear": "Healthy baseline only; progressively tattered tiers remain a separate planned cosmetic layer contract. No gameplay stat changes.",
+  "palette": "Same R2 colour selectors. Retain independent eyes and cloak. No 2.6 multiplier.",
+  "reduced_motion": "Hold neutral.png / sample 0.",
+  "cleanup": "Stop loop on state exit; no emitters, sound, vibration or weapon state to clear. Blend toward next approved action without gameplay delay.",
+  "limits": [
+    "Only one existing design and facing.",
+    "Subtle cloth deformation, not six independently drawn new poses.",
+    "No live runtime or equipped grip validation.",
+    "No expansion into nine builds or other animations."
+  ]
+}

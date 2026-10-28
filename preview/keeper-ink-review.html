@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Keeper — Rift Color 05 review</title>
+<link rel="stylesheet" href="field-animation.css">
+<style>body{margin:0;background:#101724;color:#d9eaff;font:16px system-ui}main{max-width:1000px;margin:30px auto}h1{font-size:25px;margin:0}p{color:#a4b2c7}section{display:flex;gap:30px}figure{margin:0;flex:1;text-align:center;background:#182235;border-bottom:2px solid #3a6d99}figure svg,figure img{height:510px;width:340px;object-fit:contain}figcaption{padding:16px}small{display:block;margin-top:8px;color:#a4b2c7}a{color:#91ceff}</style>
+<main><h1>Keeper / Rift Color 05</h1><p>Phase 2 color treatment · Original animation artwork preserved</p><section>
+<figure><img src="assets/keeper.png" alt="Original gray Keeper"><figcaption>Original cloth<small>Fine gray texture and soft shading</small></figcaption></figure>
+<figure id="ink"><figcaption>Cobalt, violet & soul aqua<small>Rich blue cloth, violet shadows, icy aqua highlights</small></figcaption></figure></section><p><a href="/">Open the Phase 2 game</a> · Same cloth palette is used by idle and weapon playback.</p></main>
+<script src="keeper-ink.js"></script><script>
+document.querySelector('#ink').insertAdjacentHTML('afterbegin',`<svg class="keeper-r2" viewBox="0 0 384 576" role="img" aria-label="Keeper with the new blue ink treatment"><defs><filter id="cloth" color-interpolation-filters="sRGB">${RKKeeperInk.svg('#418dc9')}</filter><mask id="clothmask"><image href="assets/cloak.png" width="384" height="576"/></mask></defs><image href="assets/keeper.png" width="384" height="576"/><image href="assets/keeper.png" width="384" height="576" filter="url(#cloth)" mask="url(#clothmask)"/><image href="assets/eye-left.png" width="384" height="576"/><image href="assets/eye-right.png" width="384" height="576"/></svg>`);
+</script></html>
