@@ -8,7 +8,7 @@ Milestone 1: **a less crowded interface and a better design overall.** Do not ad
 
 The target feel is a calm, readable, persistent browser MMO with a city hub. Picture a game you keep open in a tab: a clear top bar, a handful of top-level sections, one focused main panel, and chat that stays out of the way until you want it. Use other persistent browser MMOs as genre references for that *feel*. Don't copy any other game's names, art, layout or text.
 
-The game is **free to play**. There is no subscription. A cosmetic-only cash shop will come later; you may reserve a quiet place for it in the navigation, but don't design it. Remove or hide subscription and "Patron" upsell surfaces, and record what you hid (see section 8).
+The game is **free to play**. There is no subscription and no monetization code today. A cosmetic-only cash shop will come later; you may reserve a quiet place for it in the navigation, but don't design it. Note: "Patron" in the code (`preview/patron.js`, view `patron`) is **not** a subscription. It's a story quest at Honest Drew's ("The Guest Who Never Left"), so keep it reachable.
 
 ## 2. Repo and how to run it
 
@@ -121,7 +121,7 @@ If a design change needs a logic change (new state, a new stat on the top bar th
 
 Keep `docs/DESIGN-LOG.md` up to date as you go:
 - **What changed and why**, per screen, with screenshot links.
-- **What you hid or removed** from the UI (including Patron/subscription surfaces) and where it was.
+- **What you hid or removed** from the UI and where it was.
 - **Dead CSS candidates** you didn't delete.
 - **Open questions** for the owner.
 - **Requests for systems** (also in `docs/requests-for-systems.md`).
