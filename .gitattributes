@@ -1,0 +1,3 @@
+# Server files run on Linux; keep LF so shell scripts and configs work in containers.
+server/** text eol=lf
+*.sh text eol=lf
