@@ -51,10 +51,10 @@ window.RKNavigation=(()=>{
  function pointed(){const n=document.elementFromPoint(px,py)?.closest('button:not(:disabled),a[href],input:not(:disabled),textarea:not(:disabled),select:not(:disabled),summary,[tabindex="0"]'),scope=padScope();return n&&!n.closest('[inert]')&&shown(n)&&(!scope||scope.contains(n))?n:null;}
  function pointerConfirm(){if(!isPointer())return false;const target=pointed();useFocus();if(target){target.focus({preventScroll:true});oldPress(0);}return true;}
  function frame(gp,t){
-  const left=Math.max(Math.abs(gp.axes[0]||0),Math.abs(gp.axes[1]||0))>.65||[12,13,14,15].some(i=>gp.buttons?.[i]?.pressed||gp.buttons?.[i]?.value>.5),rx=gp.axes[2]||0,ry=gp.axes[3]||0,moving=Math.hypot(rx,ry)>.25;
+  const left=Math.max(Math.abs(gp.axes[0]||0),Math.abs(gp.axes[1]||0))>.65||[12,13,14,15].some(i=>gp.buttons?.[i]?.pressed||gp.buttons?.[i]?.value>.5),rx=gp.axes[2]||0,ry=gp.axes[3]||0,moving=Math.hypot(rx,ry)>.35;
   const dt=Math.min(32,Math.max(0,t-lastFrame||16))/1000;lastFrame=t;
   if(left||!cursorEnabled()||!cursorAllowed()){useFocus();return false;}
-  if(moving){if(!cursorMode){const r=document.activeElement?.getBoundingClientRect();if(r?.width&&r?.height){px=r.left+Math.min(20,r.width/2);py=r.top+Math.min(20,r.height/2);}}cursorMode=true;setPad(true);awayActive();const len=Math.hypot(rx,ry),gain=Math.min(1,(len-.25)/.75)**1.6;px=Math.max(1,Math.min(innerWidth-2,px+rx/len*gain*720*dt));py=Math.max(1,Math.min(innerHeight-2,py+ry/len*gain*720*dt));}
+  if(moving){if(!cursorMode){const r=document.activeElement?.getBoundingClientRect();if(r?.width&&r?.height){px=r.left+Math.min(20,r.width/2);py=r.top+Math.min(20,r.height/2);}}cursorMode=true;setPad(true);awayActive();const len=Math.hypot(rx,ry),gain=Math.min(1,(len-.35)/.65)**1.6;px=Math.max(1,Math.min(innerWidth-2,px+rx/len*gain*720*dt));py=Math.max(1,Math.min(innerHeight-2,py+ry/len*gain*720*dt));}
   if(!pointer){pointer=document.createElement('div');pointer.id='rk-pad-pointer';pointer.setAttribute('aria-hidden','true');pointer.innerHTML='<svg viewBox="0 0 28 36" fill="none"><path d="M2 2L24 21L14 22L10 32Z" fill="#15152e" stroke="#92f3ef" stroke-width="1.5"/><path d="M4 5L13 16L11 25M13 16L21 20" stroke="#b19af8" stroke-width="1.2"/><path d="M9 13L13 16L11 20L8 17Z" fill="#89eff4"/></svg>';document.body.append(pointer);}
   pointer.hidden=!isPointer();if(!pointer.hidden){pointer.style.transform=`translate(${px}px,${py}px)`;const target=pointed();if(target!==hovered){clearHover();hovered=target;hovered?.setAttribute('data-rk-cursor-target','');}}return false;
  }
