@@ -5,7 +5,8 @@
 
 var SYSTEM = "00000000-0000-0000-0000-000000000000";
 var STAFF_ROLES = ["owner", "gm", "mod", "builder"];
-var RESERVED = /^(gm|admin|administrator|mod|moderator|staff|owner|creator|system|unknown|support|talking ?pixels|the ?creator|the ?hall)$/i;
+// Compared with spaces and punctuation removed, so "G M" and "Ad-min" are caught too.
+var RESERVED = /^(gm|gamemaster|admin|administrator|mod|moderator|staff|owner|creator|thecreator|system|unknown|support|talkingpixels|thehall|worldbuilder|builder)$/;
 var LOOKALIKE = { "0": "o", "1": "i", "3": "e", "4": "a", "5": "s", "7": "t", "@": "a", "$": "s", "!": "i", "|": "l" };
 var MAX_LIST = 500;
 var START_COINS = 40;
@@ -19,7 +20,8 @@ function parse(payload) {
   if (!payload) return {};
   try { return JSON.parse(payload); } catch (e) { throw rkError("Bad request.", 3); }
 }
-function rkError(message, code) { var e = new Error(message); e.code = code || 13; return e; }
+// Nakama returns a thrown {message, code} object to the client as-is; an Error would add a stack trace.
+function rkError(message, code) { return { message: message, code: code || 13 }; }
 function now() { return Date.now(); }
 
 // ---------- storage helpers (system-owned documents) ----------
@@ -69,8 +71,9 @@ function nameProblem(name) {
   var n = String(name || "").trim();
   if (n.length < 3 || n.length > 18) return "Keeper names are 3 to 18 characters.";
   if (!/^[A-Za-z0-9 _'.-]+$/.test(n)) return "Use letters, numbers, spaces and _ ' . - only.";
-  var plain = n.toLowerCase().replace(/[013457@$!|]/g, function (c) { return LOOKALIKE[c]; }).replace(/[^a-z ]/g, "").trim();
-  if (RESERVED.test(n) || RESERVED.test(plain)) return "That name is reserved.";
+  var compact = n.toLowerCase().replace(/[^a-z0-9]/g, "");
+  var plain = n.toLowerCase().replace(/[013457@$!|]/g, function (c) { return LOOKALIKE[c]; }).replace(/[^a-z]/g, "");
+  if (RESERVED.test(compact) || RESERVED.test(plain)) return "That name is reserved.";
   return null;
 }
 

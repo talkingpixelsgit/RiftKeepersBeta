@@ -18,7 +18,7 @@ docker compose up -d --build
 Put a TLS proxy (Caddy, Traefik) in front of `web:80`.
 
 ## Nakama console
-Not published. Tunnel to it: `ssh -L 7351:<nakama container IP>:7351 root@<server>`, then open `http://localhost:7351` (user `admin`, password `NAKAMA_CONSOLE_PASSWORD`).
+Not published. Tunnel to it: `ssh -L 7351:<nakama container IP>:7351 root@<server>`, then open `http://localhost:7351` (user `rk-operator`, password `NAKAMA_CONSOLE_PASSWORD`).
 
 ## What works and what's next
 - **Works:** email accounts, Keeper names (reserved names blocked), cloud saves, area/world/every-world chat, the shared world (players, market stalls, mail, gifts, caves, rooms, gates, world events, world firsts), live content, the server-kept purse, reports, and staff roles with bans and mutes.

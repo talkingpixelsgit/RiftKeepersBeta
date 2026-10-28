@@ -35,7 +35,7 @@ services:
         --session.encryption_key "${NAKAMA_SESSION_KEY:?set NAKAMA_SESSION_KEY}"
         --session.refresh_encryption_key "${NAKAMA_REFRESH_KEY:?set NAKAMA_REFRESH_KEY}"
         --runtime.http_key "${NAKAMA_HTTP_KEY:?set NAKAMA_HTTP_KEY}"
-        --console.username admin
+        --console.username rk-operator
         --console.password "${NAKAMA_CONSOLE_PASSWORD:?set NAKAMA_CONSOLE_PASSWORD}"
         --console.signing_key "${NAKAMA_CONSOLE_KEY:?set NAKAMA_CONSOLE_KEY}"
         --runtime.env "RK_INVITE_ONLY=${RK_INVITE_ONLY:-false}"

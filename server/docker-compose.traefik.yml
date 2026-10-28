@@ -1,0 +1,23 @@
+# Run behind the Traefik proxy that Coolify already operates on the server (network "coolify"),
+# without creating a Coolify resource:
+#   docker compose -p rk-beta -f docker-compose.yml -f docker-compose.traefik.yml up -d --build
+services:
+  web:
+    networks: [default, coolify]
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=coolify
+      - traefik.http.routers.rk-beta.rule=Host(`${PUBLIC_HOST}`)
+      - traefik.http.routers.rk-beta.entrypoints=https
+      - traefik.http.routers.rk-beta.tls=true
+      - traefik.http.routers.rk-beta.tls.certresolver=letsencrypt
+      - traefik.http.routers.rk-beta.service=rk-beta
+      - traefik.http.services.rk-beta.loadbalancer.server.port=80
+      - traefik.http.routers.rk-beta-http.rule=Host(`${PUBLIC_HOST}`)
+      - traefik.http.routers.rk-beta-http.entrypoints=http
+      - traefik.http.routers.rk-beta-http.middlewares=rk-beta-https
+      - traefik.http.middlewares.rk-beta-https.redirectscheme.scheme=https
+
+networks:
+  coolify:
+    external: true
