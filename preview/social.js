@@ -5,7 +5,9 @@ window.RKParty=(()=>{
  const key=b=>b?.dataset?.partyKey;
  const button=(id,label,disabled=false,extra='')=>`<button class="btn" data-party-key="${id}" ${disabled?'disabled':''} ${extra}>${label}</button>`;
  async function request(path,body){
-  const res=await fetch('/mmo/'+path,{method:body?'POST':'GET',cache:'no-store',headers:{'Content-Type':'application/json',...(token?{Authorization:token}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(6000)});
+  // Signed in to the Hall (Nakama): the server links shared play to that account.
+  const auth=typeof NK!=='undefined'&&NK&&NK.session?'Nakama '+NK.session.token:token;
+  const res=await fetch('/mmo/'+path,{method:body?'POST':'GET',cache:'no-store',headers:{'Content-Type':'application/json',...(auth?{Authorization:auth}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(6000)});
   const result=await res.json();if(!res.ok){const e=Error(result.error||'The party service is unavailable.');e.rejected=true;throw e;}return result;
  }
  function accept(next,{quiet=false}={}){const continuing=connected&&state?.match?.id===next.match?.id;state=next;connected=true;error='';if(next.you?.role==='creator'&&token)localStorage.setItem('rk-admin-session',token);else localStorage.removeItem('rk-admin-session');if(token&&token!=='account')localStorage.setItem('rk-player-session',token);if(S?.arch&&next.you?.previousNames?.includes(S.handle)&&S.handle!==next.you.name){try{localStorage.setItem('rk-before-name-update',JSON.stringify(S));S.handle=next.you.name;writeLocalSave();toast('Your Keeper name is now '+S.handle+'. Progress is preserved.');}catch{error='Could not back up your previous name. Export your save before continuing.';}}const me=state.party?.members.find(m=>m.id===state.you.id);if(me)hero=me.hero;

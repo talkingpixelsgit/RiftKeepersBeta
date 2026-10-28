@@ -51,6 +51,22 @@ services:
     # The console (7351) is not published. Reach it with an SSH tunnel:
     #   ssh -L 7351:<nakama container ip>:7351 root@<server>
 
+  # Round-2 shared play (party battles, guilds, arena, tavern, trading, Patron quest, world presence),
+  # bridged to Nakama accounts until each service is ported into nakama/modules.
+  mmo:
+    image: node:22-alpine
+    restart: unless-stopped
+    command: ["node", "/bridge/serve-mmo.cjs"]
+    environment:
+      PUBLIC_HOST: ${PUBLIC_HOST}
+      NAKAMA_SESSION_KEY: ${NAKAMA_SESSION_KEY}
+    volumes:
+      - ./mmo-bridge:/bridge:ro
+      - ./legacy-round2:/legacy:ro
+      - mmostate:/state
+    expose:
+      - "8090"
+
   web:
     build:
       context: ..
@@ -66,3 +82,4 @@ services:
 
 volumes:
   pgdata:
+  mmostate:

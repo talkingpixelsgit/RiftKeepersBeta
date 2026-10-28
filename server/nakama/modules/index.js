@@ -67,13 +67,18 @@ function hasAccess(ctx, nk, uid) {
   if (roleOf(nk, uid)) return true;
   return !!readSys(nk, "rk_access", uid);
 }
+// Same rules as the round-2 server (legacy-round2/server/name-policy.cjs), plus the staff titles above.
+var ABUSE = /(fuck|shit|bitch|cunt|nigg|fagg|motherf|asshole|dickhead|cockhead|whore|slut|heilhitler|hitler|nazi)/;
+var RESERVED_R2 = /^(unknown|admin|administrator|moderator|mod|gamemaster|gm|operator|owner|creator|staff|support|system|official|developer|dev|talkingpixels|riftkeepers)\d*$/;
+function nameKey(value) {
+  return String(value).normalize("NFKC").toLowerCase().replace(/[013457@$!|]/g, function (c) { return LOOKALIKE[c]; }).replace(/[^a-z0-9]/g, "");
+}
 function nameProblem(name) {
-  var n = String(name || "").trim();
-  if (n.length < 3 || n.length > 18) return "Keeper names are 3 to 18 characters.";
-  if (!/^[A-Za-z0-9 _'.-]+$/.test(n)) return "Use letters, numbers, spaces and _ ' . - only.";
-  var compact = n.toLowerCase().replace(/[^a-z0-9]/g, "");
-  var plain = n.toLowerCase().replace(/[013457@$!|]/g, function (c) { return LOOKALIKE[c]; }).replace(/[^a-z]/g, "");
-  if (RESERVED.test(compact) || RESERVED.test(plain)) return "That name is reserved.";
+  var n = String(name || "").trim().normalize("NFKC");
+  if (!/^[A-Za-z][A-Za-z0-9 _'-]{2,17}$/.test(n)) return "Keeper names need 3–18 letters, numbers, spaces, apostrophes, hyphens or underscores, starting with a letter.";
+  var k = nameKey(n), bare = nameKey(n.replace(/\d+$/, ""));
+  if (ABUSE.test(k)) return "Please choose a different name; profanity and hateful names are not allowed.";
+  if (RESERVED_R2.test(k) || RESERVED_R2.test(bare) || RESERVED.test(k) || RESERVED.test(bare)) return "That name is reserved. Please choose another.";
   return null;
 }
 
