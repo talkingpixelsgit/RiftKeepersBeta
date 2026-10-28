@@ -1,6 +1,6 @@
 # Rift Keepers server (Nakama)
 
-Three containers: **postgres** (data), **nakama** (accounts, chat, storage, game RPCs in `nakama/modules/index.js`) and **web** (nginx: serves the game and proxies Nakama on the same origin). Players only ever talk to `web`.
+Four containers: **postgres** (data), **nakama** (accounts, chat, storage, game RPCs in `nakama/modules/index.js`), **mmo** (shared play, see below) and **web** (nginx: serves the game and proxies Nakama on the same origin). Players only ever talk to `web`.
 
 ## Deploy with Coolify
 1. **New Resource → Docker Compose**, from the `talkingpixelsgit/RiftKeepersBeta` repo, branch `systems/m1` (later `main`). Set the compose file to `server/docker-compose.yml`.
@@ -22,4 +22,4 @@ Not published. Tunnel to it: `ssh -L 7351:<nakama container IP>:7351 root@<serve
 
 ## What works and what's next
 - **Works:** email accounts, Keeper names (reserved names blocked), cloud saves, area/world/every-world chat, the shared world (players, market stalls, mail, gifts, caves, rooms, gates, world events, world firsts), live content, the server-kept purse, reports, and staff roles with bans and mutes.
-- **Coming back next** (they were on the old `/mmo` service; the game shows "moving to the new Hall"): party/Fellowship battles, guilds, arena brackets and tournaments, Honest Drew's tavern, trading, the Patron quest, duels and ambush.
+- **Shared play** (party/Fellowship battles, guilds, arena brackets and tournaments, Honest Drew's tavern, trading, the Patron quest, duels and ambush) runs in the **mmo** container: the recovered round-2 services in `legacy-round2/`, bridged to Nakama sign-ins by `mmo-bridge/`. They're being ported into Nakama one at a time; see `docs/PORTING.md`.
