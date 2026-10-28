@@ -1,0 +1,318 @@
+{
+  "tumbleknot": {
+    "name": "Tumbleknot",
+    "lore": "A ball of dry roots with two seeds for eyes. It rolls instead of walks, and it rolls toward whoever is kindest.",
+    "sourceMoves": [
+      {
+        "id": "vine",
+        "n": "Vine Lash",
+        "el": "grove",
+        "t": "dmg",
+        "p": 40
+      },
+      {
+        "id": "thornlash",
+        "n": "Thornlash",
+        "el": "leaf",
+        "t": "drain",
+        "p": 40,
+        "tag": "Leaf"
+      },
+      {
+        "id": "lore_tumbleknot_2",
+        "n": "Kindroot Coil",
+        "el": null,
+        "t": "shield",
+        "p": 0.28
+      },
+      {
+        "id": "lore_tumbleknot_3",
+        "n": "Seeds of Kindness",
+        "el": "grove",
+        "t": "dmg",
+        "p": 62
+      }
+    ],
+    "trialLevel": 8,
+    "hp": 80,
+    "atk": 16
+  },
+  "sootling": {
+    "name": "Sootling",
+    "lore": "A smudge of soot the size of a cat, coal-red cracks glowing through. Its footprints fade before you can follow them.",
+    "sourceMoves": [
+      {
+        "id": "kindle",
+        "n": "Kindle",
+        "el": "fire",
+        "t": "dmg",
+        "p": 50,
+        "tag": "Fire"
+      },
+      {
+        "id": "scorch",
+        "n": "Scorch",
+        "el": "ember",
+        "t": "dmg",
+        "p": 40
+      },
+      {
+        "id": "lore_sootling_2",
+        "n": "Banked Coal",
+        "el": null,
+        "t": "shield",
+        "p": 0.28
+      },
+      {
+        "id": "lore_sootling_3",
+        "n": "Footprints in Cinders",
+        "el": "ember",
+        "t": "dmg",
+        "p": 62
+      }
+    ],
+    "trialLevel": 8,
+    "hp": 80,
+    "atk": 16
+  },
+  "ticktail": {
+    "name": "Ticktail",
+    "lore": "A grey lizard whose tail swings like a pendulum. It flinches one second before anything happens.",
+    "sourceMoves": [
+      {
+        "id": "borrowedsec",
+        "n": "Borrowed Second",
+        "el": "time",
+        "t": "dmg",
+        "p": 20,
+        "haste": 900,
+        "tag": "Time · Weapon"
+      },
+      {
+        "id": "tackle",
+        "n": "Tackle",
+        "el": null,
+        "t": "dmg",
+        "p": 34
+      },
+      {
+        "id": "lore_ticktail_2",
+        "n": "Before the Blow",
+        "el": null,
+        "t": "shield",
+        "p": 0.28
+      },
+      {
+        "id": "lore_ticktail_3",
+        "n": "Pendulum at Midnight",
+        "el": "time",
+        "t": "dmg",
+        "p": 110,
+        "delay": 900,
+        "tag": "Time · Mythic"
+      }
+    ],
+    "trialLevel": 8,
+    "hp": 80,
+    "atk": 16
+  },
+  "pipwisp": {
+    "name": "Pipwisp",
+    "lore": "A candle flame with a calm little face. It dims when its Keeper is hurt, and it has never once gone out.",
+    "sourceMoves": [
+      {
+        "id": "kindle",
+        "n": "Kindle",
+        "el": "fire",
+        "t": "dmg",
+        "p": 50,
+        "tag": "Fire"
+      },
+      {
+        "id": "harvest",
+        "n": "Harvest",
+        "el": "spirit",
+        "t": "drain",
+        "p": 52,
+        "tag": "Metal · Weapon"
+      },
+      {
+        "id": "lore_pipwisp_2",
+        "n": "Never Out",
+        "el": null,
+        "t": "heal",
+        "p": 0.32
+      },
+      {
+        "id": "lore_pipwisp_3",
+        "n": "A Light for Everyone",
+        "el": "light",
+        "t": "healAll",
+        "p": 0.25,
+        "tag": "Light"
+      }
+    ],
+    "trialLevel": 8,
+    "hp": 80,
+    "atk": 16
+  },
+  "hushmoth": {
+    "name": "Hushmoth",
+    "lore": "A moth with drum-skin wings that eats noise. Battles near it go quiet. So do arguments.",
+    "sourceMoves": [
+      {
+        "id": "resonance",
+        "n": "Resonance",
+        "el": "sound",
+        "t": "dmgAll",
+        "p": 34,
+        "tag": "Sound"
+      },
+      {
+        "id": "chainrhythm",
+        "n": "Chain Rhythm",
+        "el": "sound",
+        "t": "dmg",
+        "p": 14,
+        "hits": 5,
+        "tag": "Sound · Weapon"
+      },
+      {
+        "id": "lore_hushmoth_2",
+        "n": "Quiet Cocoon",
+        "el": null,
+        "t": "shield",
+        "p": 0.28
+      },
+      {
+        "id": "lore_hushmoth_3",
+        "n": "All the Stolen Noise",
+        "el": "sound",
+        "t": "dmgAll",
+        "p": 36,
+        "tag": "Sound · Secret"
+      }
+    ],
+    "trialLevel": 8,
+    "hp": 80,
+    "atk": 16
+  },
+  "hollowknave": {
+    "name": "Hollowknave",
+    "lore": "A child-sized suit of hollow armour, nothing inside but a faint blue light. It stands guard over things it doesn't remember.",
+    "sourceMoves": [
+      {
+        "id": "shade",
+        "n": "Shade Bite",
+        "el": "void",
+        "t": "dmg",
+        "p": 40
+      },
+      {
+        "id": "umbralstep",
+        "n": "Umbral Step",
+        "el": "shadow",
+        "t": "dmg",
+        "p": 34,
+        "haste": 500,
+        "tag": "Shadow"
+      },
+      {
+        "id": "lore_hollowknave_2",
+        "n": "Forgotten Watch",
+        "el": null,
+        "t": "shield",
+        "p": 0.28
+      },
+      {
+        "id": "lore_hollowknave_3",
+        "n": "The Oath Remains",
+        "el": "void",
+        "t": "dmg",
+        "p": 62
+      }
+    ],
+    "trialLevel": 8,
+    "hp": 80,
+    "atk": 16
+  },
+  "shardheart": {
+    "name": "Shardheart",
+    "lore": "A floating cluster of violet crystal with one ring of small eyes. It hums a chord that almost sounds like a word.",
+    "sourceMoves": [
+      {
+        "id": "prismshot",
+        "n": "Prism Shot",
+        "el": "crystal",
+        "t": "dmgAll",
+        "p": 28,
+        "tag": "Crystal · Weapon"
+      },
+      {
+        "id": "arcanebolt",
+        "n": "Arcane Bolt",
+        "el": "arcane",
+        "t": "dmg",
+        "p": 58,
+        "tag": "Arcane"
+      },
+      {
+        "id": "lore_shardheart_2",
+        "n": "Crystal Chorus",
+        "el": null,
+        "t": "shield",
+        "p": 0.28
+      },
+      {
+        "id": "lore_shardheart_3",
+        "n": "The Almost Word",
+        "el": "arcane",
+        "t": "dmgAll",
+        "p": 30,
+        "tag": "Arcane · Weapon"
+      }
+    ],
+    "trialLevel": 8,
+    "hp": 80,
+    "atk": 16
+  },
+  "boltwarden": {
+    "name": "Bolt Warden",
+    "lore": "A hollow suit of clockwork armour with a cannon for an arm. Something inside it hums when it is happy.",
+    "sourceMoves": [
+      {
+        "id": "spark",
+        "n": "Spark",
+        "el": "storm",
+        "t": "dmg",
+        "p": 40
+      },
+      {
+        "id": "arcflash",
+        "n": "Arc Flash",
+        "el": "lightning",
+        "t": "dmg",
+        "p": 30,
+        "haste": 400,
+        "tag": "Lightning"
+      },
+      {
+        "id": "lore_boltwarden_2",
+        "n": "Humming Housing",
+        "el": null,
+        "t": "shield",
+        "p": 0.28
+      },
+      {
+        "id": "lore_boltwarden_3",
+        "n": "Clockwork Crescendo",
+        "el": "storm",
+        "t": "dmg",
+        "p": 62
+      }
+    ],
+    "trialLevel": 8,
+    "hp": 80,
+    "atk": 16
+  }
+}
