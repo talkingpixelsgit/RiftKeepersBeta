@@ -37,6 +37,18 @@ The game is **free to play**. There is no subscription and no monetization code 
 - To start over, clear site data for `localhost:8080` (localStorage and sessionStorage).
 - Flow: title/character creation → the Island of Nowhere tutorial → Hall's Edge (the town hub) and the world map. Play through to the hub at least once.
 
+### Browser and installed client: design for both
+The same web client ships three ways, and your design has to work in all of them:
+1. **Browser**: `/play` in Chrome, Edge, Safari or Firefox, on desktop and phone.
+2. **Installed app (PWA)**: installed from the browser to the desktop or a phone home screen. `manifest.webmanifest` sets `display: standalone` and `start_url: /play`. It has **no browser chrome**: no back button or address bar. Every screen needs an in-app way back, and dialogs need a visible close. Respect the safe-area insets (notches, home indicator); `:root` already pads for `env(safe-area-inset-*)`. Test with Chrome/Edge "Install app", or check `@media (display-mode: standalone)` rules.
+3. **Talking Pixels Game Launcher** (the desktop client, `C:\Talking Pixels\Pixel Launcher`, Tauri): it reads `launcher.json` for version and news and opens `playUrl` in a window.
+
+   Desktop players often use a **gamepad**, so controller focus has to stay obvious on every screen.
+
+Don't change `manifest.webmanifest` (`id`, `start_url`, `scope`), `sw.js` or the format of `launcher.json`. Installed apps and the launcher depend on them. You may change the manifest's `theme_color` and `background_color` to match the new palette.
+
+Add both to the done checklist: the layout works in a standalone window at 1280×800 and 1600×1000 (the launcher's default window size), and at phone size in standalone mode.
+
 ### Asset library
 - The studio's licensed asset library is at **`C:\Talking Pixels\Talking Pixels Development\Assets`**.
   - `2D\` holds zipped 2D packs: HUD_Sharp, tinyRPG_manaSoulGUI, alchemy/potion icon sets, fishing, tavern and inn props, food, pets and animals. `2D.zip` is an archive of the same folder.
