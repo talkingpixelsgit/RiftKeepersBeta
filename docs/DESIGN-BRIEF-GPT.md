@@ -37,8 +37,8 @@ The game is **free to play**. There is no subscription. A cosmetic-only cash sho
 - Prefer the library over drawing from scratch when a pack fits the game's style. Otherwise draw original SVGs. Never pull art from the web or from other games.
 
 ### Git workflow
-1. If `git status` shows the imported game as untracked, commit it first on `main` as `Import live game (Build 28)` and include `tools/`, `docs/` and `.claude/`.
-2. Do all your work on a branch named `design/m1-interface`. Commit in small, described steps.
+1. The imported game is already committed on `main` ("Import live game (Playtest Build 28)").
+2. Do all your work on a branch named `design/m1-interface`, created from `main` in this folder. Claude works on `systems/m1` in a separate worktree (`..\RiftKeepersBeta-systems`). Don't edit, check out or delete that worktree or branch. Commit in small, described steps.
 3. **Don't push, merge into `main`, force-push or rewrite history.** The owner reviews first.
 4. Never copy anything from `C:\Talking Pixels\Talking Pixels Development\Games\Rift-Keepers-Admin` into the repo. It holds server credentials. Don't open it.
 
