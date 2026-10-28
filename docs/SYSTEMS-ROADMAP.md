@@ -69,9 +69,40 @@ Code health: `play/index.html` is about 7,300 lines, and about 60 `preview/*.js`
 
 **S8. Cosmetic cash shop** built on the existing looks system, with server-side entitlements and no gameplay items.
 
-## 4. Decisions needed from the owner
-1. **Server access (S0):** which SSH key reaches `179.236.253.120`, or should we skip recovery and rebuild?
-2. **Rebuild the server on Nakama (S1)?** Recommended.
-3. **Races:** add a Rift Keepers-flavored origin (for example, which world the lesser god fell from), or keep callings only?
-4. **Energy numbers (S4):** target pool and full-refill time (for example, 200 energy refilling over about 8 hours).
-5. **Desktop client:** its own Tauri app, or a mode inside the Talking Pixels Game Launcher?
+## 4. Decided (28 October 2026)
+- **Desktop client:** its own app (not a mode inside the Game Launcher). The browser version may be cut.
+- **Races:** none. Callings, cloaks, bodies and companions stay the identity.
+- **Server:** rebuild rather than recover. Where it runs is section 5.
+
+## 5. Which back end runs the game
+
+| Option | Good at | Fit for Rift Keepers |
+|---|---|---|
+| **Nakama** (PostgreSQL), deployed through **Coolify** on our server | Always-on shared world: accounts, chat channels, presence, friends, groups (guilds), storage, leaderboards with weekly resets, authoritative matches (duels, dungeons), server-side TypeScript modules | **Best fit.** It's also the studio's planned social layer (`tp-social` in the Platform plan), and the client already has a dormant Nakama path. |
+| **Platform server** (Next.js + Postgres + Better Auth + Stripe) | Accounts, store, payments, community pages | Not a real-time game server. Use it for **sign-in** (Platform account → Nakama custom auth) and later for **cash-shop payments**. |
+| **RealmForge** (multiplayer client/host) | Session worlds hosted on a player's PC or our servers, invite links, one Godot server per world | Built for many separate worlds (Broken Rift), not one persistent shared world. Possible later use: private realms or dungeon instances. Not the main server. |
+| **Coolify** | Hosting panel | Not an alternative: it's **how** the Nakama stack gets deployed and run. |
+
+**Plan:** Nakama for the game, deployed via Coolify on our server. Platform accounts for sign-in and the later cash shop. RealmForge is optional, later.
+
+## 6. Proposed energy numbers (S4)
+- **Pool:** 150 energy. Regenerates 1 per 4 minutes, so a full refill takes 10 hours: two check-ins a day, the browser-MMO rhythm.
+- **Costs:**
+  - travel to a zone: 2 (near) to 8 (Riftscar, other worlds)
+  - explore or search: 5
+  - start a Rift Gate run: 15
+  - gathering: 2
+  - crafting: 3
+  - shout to the whole world: 10
+  - town actions (market, tavern, arena browsing): free
+- **Restores:**
+  - Honest Drew's daily meal: +50, once a day
+  - Energy Draught (Brewing): +30, up to 3 a day
+  - every Keeper level-up: full refill
+  - items may overfill up to 2× the pool
+- **No combat penalty** for low energy: energy gates *starting* actions; it never weakens you mid-fight (today's `restState` attack and capture penalties go).
+- Away/idle progress stays as is (8 h full rate, 24 h cap).
+
+## 7. Decisions still open
+1. Confirm Nakama (section 5) and the energy numbers (section 6).
+2. **Deploying needs server access:** an SSH key for `179.236.253.120`, or the owner adding the Nakama Compose app in Coolify from `server/` once it's built and tested locally.
