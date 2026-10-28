@@ -4989,7 +4989,20 @@ function setPad(on){ if(padOn===on) return; padOn=on; document.body.classList.to
   if(on&&(!document.activeElement||document.activeElement===document.body)) focusFirst(); if(B) renderBattle(); }
 window.addEventListener("gamepadconnected",()=>{ setPad(true); toast("Controller connected"); });
 window.addEventListener("gamepaddisconnected",()=>{ if(![...navigator.getGamepads()].some(g=>g&&g.connected)) setPad(false); });
-["pointerdown","keydown"].forEach(t=>window.addEventListener(t,()=>{ if(padOn) setPad(false); },true));
+// Mouse or keyboard takes over: remember where the sticks rest, so a drifting stick can't switch controller mode back on.
+let padQuiet=null;
+["pointerdown","keydown"].forEach(t=>window.addEventListener(t,()=>{ if(padOn) setPad(false); const gp=[...(navigator.getGamepads?navigator.getGamepads():[])].find(g=>g&&g.connected); padQuiet=gp?[...gp.axes]:null; },true));
+// What the game reads from the controller. Unknown layouts only get the left stick (their other axes are often triggers resting at -1).
+// While quiet, sticks read as centred until a button is newly pressed or a stick moves well away from where it rested.
+function padInput(raw){
+  const axes=[...raw.axes]; if(raw.mapping!=="standard") for(let i=2;i<axes.length;i++) axes[i]=0;
+  if(padQuiet){
+    const moved=axes.some((v,i)=>Math.abs(v-(raw.mapping!=="standard"&&i>=2?0:(padQuiet[i]||0)))>.5);
+    const pressed=raw.buttons.some((b,i)=>(b.pressed||b.value>.5)&&!padPrev[i]);
+    if(moved||pressed) padQuiet=null; else axes.fill(0);
+  }
+  return {id:raw.id,index:raw.index,connected:true,mapping:raw.mapping,timestamp:raw.timestamp,buttons:raw.buttons,axes};
+}
 function padScope(){ return document.querySelector(".ask")||document.querySelector(".timing")||document.querySelector(".sheet")||[...document.querySelectorAll(".overlay")].pop()||null; }
 function shown(el){ const r=el.getBoundingClientRect(); return r.width>0&&r.height>0&&getComputedStyle(el).visibility!=="hidden"&&!el.closest("[hidden]"); }
 function focusables(root){ return [...(root||document).querySelectorAll('button:not(:disabled),input:not([type=hidden]),select,[tabindex="0"]')].filter(shown); }
@@ -5059,7 +5072,7 @@ function padDir(dx,dy){
 let padLast={};
 function padLoop(t){
   if(MG_ON){ requestAnimationFrame(padLoop); return; }
-  const gp=[...(navigator.getGamepads?navigator.getGamepads():[])].find(g=>g&&g.connected);
+  const raw=[...(navigator.getGamepads?navigator.getGamepads():[])].find(g=>g&&g.connected), gp=raw&&padInput(raw);
   if(gp){
     const pressed=gp.buttons.map(b=>b.pressed||b.value>.5);
     pressed.forEach((p,i)=>{ if(p&&!padPrev[i]&&i<12){ if(t-(padLast[i]||0)>120){ padLast[i]=t; padPress(i); } } });
