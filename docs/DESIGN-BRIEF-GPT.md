@@ -63,6 +63,30 @@ Add both to the done checklist: the layout works in a standalone window at 1280�
 - Before using a pack, read its license file. Copy that license next to the files you use (the same way `preview/assets/icons/LICENSE.txt` already does), and add a line per pack to `docs/CREDITS.md` (pack, author, license, which files). Skip any pack whose license is missing or forbids commercial use, and list it in your log.
 - Prefer the library over drawing from scratch when a pack fits the game's style. Otherwise draw original SVGs. Never pull art from the web or from other games.
 
+### Art inventory: pick the right size for each use
+Measured from the files in this repo. **Never show an image larger than its native size** (it goes blurry). **Never use a small sprite where a character is the focus** (it looks like a thumbnail).
+
+| Folder | Native size | What it is | Use it for |
+|---|---|---|---|
+| `art/poses/<id>.webp` (+ `_a1`–`_a3`, `_ult`, `_awakened_ult`) | **1536×1024** | Full-body character art with attack and ultimate frames. 31 characters: astergrave, axiom, beast, boltwarden, bram, brasswidow, cael, cinderpip, foxsonik, hingeling, inksnout, keeper, kilnfang, mossbell, nacresovereign, nullprior, orrix, palinode, reedkip, rowan, sable, saltlick, seren, soren, tibrs, velmora, vesper, veyra, voth, wrenna (a few are `.png`) | **Featured / selected character**, team cards, hero moments, "steps out of the door" |
+| `art/portraits/<id>.webp` | 320–357×768 (tall) | Painted full-height portraits: voth, ruri, tibrs, beast, keeper_m1–m3, keeper_f1–f3 | Team cards, profile, character select |
+| `preview/assets/voth-child/*.png` | 1638×1228 (+ 512×512 portrait) | Voth's large art and attack frames | Voth featured views |
+| `preview/assets/keeper-idle-r2/composite-24.png` | 2304×2304 (24-frame sheet) | Keeper idle animation | Animated Keeper on Keeper and hub screens |
+| `preview/assets/keeper-028/{world,battle}/…/composite.png` + `clip.json` | 2560×1600 sheets | Keeper walk, idle and battle clips (frame data in `clip.json`) | Keeper movement and battle |
+| `preview/assets/keeper-tattered-r1/*.png` | 1536×1024 | Keeper per-weapon stances | Armoury, weapon previews |
+| `art/souls/<id>.webp` | **256×256** | Small creature sprites (126 souls) | **List rows, codex grid, chips only.** Max about 128 px on screen. Not for featured views. |
+| `art/bg/*_battle.jpg` | 1920×1080 | Painted area backdrops | Full-screen backgrounds for screens and battles |
+| `art/bg/*.gif` | 832–1600 px | Animated area backdrops | Map cards, area headers, ambient backgrounds |
+| `rift-play/areas/<id>.svg`, `<id>-scene.svg` | Vector | Area emblem and scene strip | Area icons, location chip, small banners |
+| `rift-ui/icons/*.svg` | Vector | UI and element icons (47) | Nav, stats, buttons |
+| `art/icons/i*.png` | 32×32 | Item icons | Bag and shop slots at 32 or 64 px (pixel-art scaling: `image-rendering: pixelated`) |
+| `preview/assets/status/*.png` | 64×64 | Status effects | Battle and status chips |
+
+Size rules of thumb:
+- A featured character fills **at least 75% of its frame's height**, and may break out of the frame's top edge.
+- A frame is never more than about 1.3× the size of what's inside it.
+- Empty slots are clearly quieter and smaller than filled ones.
+
 ### Git workflow
 1. The imported game is already committed on `main` ("Import live game (Playtest Build 28)").
 2. Do all your work on a branch named `design/m1-interface`, created from `main` in this folder. Claude works on `systems/m1` in a separate worktree (`..\RiftKeepersBeta-systems`). Don't edit, check out or delete that worktree or branch. Commit in small, described steps.
@@ -143,6 +167,18 @@ If a design change needs a logic change (new state, a new stat on the top bar th
 - [ ] Layout holds at 1440×900, 1280×800, 1024×768, 768×1024 and 375×812, with no horizontal scroll.
 - [ ] Keyboard-only: you can tab through nav and main screens, and focus is always visible.
 - [ ] Before/after screenshots of the hub, map, keeper, team, market, a battle and phone views, saved in `docs/design-m1/`.
+
+### Self-review before calling any screen done
+Look at your own screenshot of each screen, at 1440×900 and 375×812, and fix anything that fails:
+- [ ] **Proportions:** every featured character fills at least 75% of its frame's height. No character looks like a thumbnail inside a big empty frame.
+- [ ] **Right asset:** featured characters use `art/poses` or `art/portraits`, never the 256 px `art/souls` sprites. No image is stretched past its native size.
+- [ ] **Nothing cut off or overlapping:** no half-hidden rows behind tabs, no buttons (Fullscreen, Chat) covering content, every tab label on the same baseline.
+- [ ] **Nothing unexplained:** no unlabelled bars, `???` chips, placeholder text or developer wording (prototype, snapshot, debug, preview).
+- [ ] **Hierarchy:** the most important thing on the screen is the biggest and brightest. Empty states are quieter than filled ones. Background effects never compete with text.
+- [ ] **Space:** information sits in open space, not box-in-box-in-box. No panel is more than half empty.
+- [ ] **Above the fold:** the screen's main action and its key information are visible at 1440×900 without scrolling.
+
+If any box fails, fix it before moving on. Note in the log what you changed because of this review.
 
 ## 8. Log and handoff
 
