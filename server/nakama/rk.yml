@@ -1,0 +1,14 @@
+name: rift-keepers
+logger:
+  level: INFO
+runtime:
+  js_entrypoint: "index.js"
+session:
+  token_expiry_sec: 86400          # 1 day
+  refresh_token_expiry_sec: 2592000 # 30 days
+socket:
+  max_message_size_bytes: 65536
+  # The web container proxies /v2, /ws and /healthcheck to this port on the same origin.
+  port: 7350
+match:
+  input_queue_size: 128

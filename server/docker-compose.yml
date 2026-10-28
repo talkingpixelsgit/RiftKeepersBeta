@@ -1,0 +1,68 @@
+# Rift Keepers online stack: PostgreSQL + Nakama + the web client.
+# Deploy with Coolify (Docker Compose resource, base directory /server) or `docker compose up -d --build`.
+# Only `web` needs a public domain; it serves the game and proxies Nakama on the same origin.
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: nakama
+      POSTGRES_USER: nakama
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nakama -d nakama"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  nakama:
+    image: registry.heroiclabs.com/heroiclabs/nakama:3.25.0
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    entrypoint:
+      - /bin/sh
+      - -ecx
+      - >
+        /nakama/nakama migrate up --database.address "nakama:${POSTGRES_PASSWORD}@postgres:5432/nakama" &&
+        exec /nakama/nakama
+        --config /nakama/data/rk.yml
+        --database.address "nakama:${POSTGRES_PASSWORD}@postgres:5432/nakama"
+        --socket.server_key "${NAKAMA_SERVER_KEY:?set NAKAMA_SERVER_KEY}"
+        --session.encryption_key "${NAKAMA_SESSION_KEY:?set NAKAMA_SESSION_KEY}"
+        --session.refresh_encryption_key "${NAKAMA_REFRESH_KEY:?set NAKAMA_REFRESH_KEY}"
+        --runtime.http_key "${NAKAMA_HTTP_KEY:?set NAKAMA_HTTP_KEY}"
+        --console.username admin
+        --console.password "${NAKAMA_CONSOLE_PASSWORD:?set NAKAMA_CONSOLE_PASSWORD}"
+        --console.signing_key "${NAKAMA_CONSOLE_KEY:?set NAKAMA_CONSOLE_KEY}"
+        --runtime.env "RK_INVITE_ONLY=${RK_INVITE_ONLY:-false}"
+        --runtime.env "RK_CREATOR_CODE=${RK_CREATOR_CODE:-}"
+    volumes:
+      - ./nakama/rk.yml:/nakama/data/rk.yml:ro
+      - ./nakama/modules:/nakama/data/modules:ro
+    healthcheck:
+      test: ["CMD", "/nakama/nakama", "healthcheck"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    # The console (7351) is not published. Reach it with an SSH tunnel:
+    #   ssh -L 7351:<nakama container ip>:7351 root@<server>
+
+  web:
+    build:
+      context: ..
+      dockerfile: server/web/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - nakama
+    environment:
+      PUBLIC_HOST: ${PUBLIC_HOST:?set PUBLIC_HOST (the domain players use)}
+      NAKAMA_SERVER_KEY: ${NAKAMA_SERVER_KEY}
+    expose:
+      - "80"
+
+volumes:
+  pgdata:
