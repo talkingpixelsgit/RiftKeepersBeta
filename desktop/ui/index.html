@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rift Keepers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="door" aria-labelledby="door-title">
+      <img class="logo" src="art/logo.png" alt="Rift Keepers, Time Keepers prequel, by Talking Pixels Studios" width="1400" height="485">
+      <h1 id="door-title" class="sr-only">Rift Keepers</h1>
+
+      <div class="card">
+        <div class="card-head">
+          <span class="eyebrow">Server</span>
+          <button class="link" id="add-toggle" type="button" aria-expanded="false" aria-controls="add-form">Add a server</button>
+        </div>
+        <div class="servers" id="servers" role="radiogroup" aria-label="Server"></div>
+
+        <form class="add" id="add-form" hidden>
+          <label for="add-name">Name</label>
+          <input id="add-name" maxlength="40" placeholder="My RealmForge world" autocomplete="off">
+          <label for="add-address">Address</label>
+          <input id="add-address" maxlength="200" placeholder="203.0.113.7:7801" autocomplete="off" spellcheck="false">
+          <p class="hint">The address RealmForge shows for your world, or a website like playtk.talkingpixels.games.</p>
+          <div class="row">
+            <button class="btn ghost" type="button" id="add-cancel">Cancel</button>
+            <button class="btn" type="submit">Save server</button>
+          </div>
+          <p class="error" id="add-error" role="alert"></p>
+        </form>
+
+        <div class="status" id="status" role="status" aria-live="polite">
+          <span class="dot"></span>
+          <div><b id="status-title">Checking the Hall…</b><p id="status-message"></p></div>
+          <button class="link" id="recheck" type="button">Check again</button>
+        </div>
+
+        <div class="update" id="update" hidden>
+          <p>This copy of Rift Keepers is older than the server accepts. Download the new one from the game's website.</p>
+          <button class="btn ghost" type="button" id="get-update">Open the website</button>
+        </div>
+
+        <button class="btn play" id="play" type="button" disabled>Play</button>
+        <p class="error" id="play-error" role="alert"></p>
+      </div>
+
+      <p class="keys"><kbd>F11</kbd> fullscreen · <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>H</kbd> back to this screen</p>
+    </section>
+
+    <section class="news" aria-labelledby="news-title">
+      <div class="news-head">
+        <h2 id="news-title">From the Hall</h2>
+        <span class="build" id="build"></span>
+      </div>
+      <div class="news-list" id="news"><p class="empty">News appears here once the server answers.</p></div>
+    </section>
+  </main>
+  <footer class="foot"><span id="version"></span><span>Talking Pixels Studios</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

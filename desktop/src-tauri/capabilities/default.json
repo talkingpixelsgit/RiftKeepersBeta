@@ -1,0 +1,16 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "start-page",
+  "description": "The bundled start page: check a server, start the game, open the server's website.",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "allow-server-info",
+    "allow-play",
+    "allow-open-site",
+    "allow-toggle-fullscreen",
+    "allow-set-fullscreen"
+  ]
+}
