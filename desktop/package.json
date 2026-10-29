@@ -1,0 +1,15 @@
+{
+  "name": "rift-keepers-desktop",
+  "private": true,
+  "version": "0.3.0",
+  "description": "Rift Keepers for Windows: start page, server check and the game in one window.",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "icons": "tauri icon src-tauri/icons/source.png"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  }
+}
